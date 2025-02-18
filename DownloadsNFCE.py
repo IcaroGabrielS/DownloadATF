@@ -7,15 +7,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from ManageFilesNFCE import executar_processo_manage_files_nfce
 from util import (iniciar_navegador, realizar_login, acessar_link)
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.FileHandler("schedule.log"),  # Salva logs em um arquivo
-        logging.StreamHandler()  # Exibe logs no console
-    ]
-)
-logger = logging.getLogger(__name__)
 
 with open("json_files/constantes.json", "r", encoding="utf-8") as arquivo_constantes:
     constantes = json.load(arquivo_constantes)

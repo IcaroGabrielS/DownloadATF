@@ -1,7 +1,7 @@
 {
     "NFCE": {
         "LINK_SEFAZ_NFCE": "https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true",
-        "ARQUIVO_JSON": "solicitacoes.json",
+        "ARQUIVO_JSON": "json_files/solicitacoes.json",
         "XPATH_DATA_INICIO": "/html/body/table/tbody/tr[2]/td/form/table/tbody/tr[2]/td[2]/input[1]",
         "XPATH_DATA_FIM": "/html/body/table/tbody/tr[2]/td/form/table/tbody/tr[2]/td[2]/input[2]",
         "XPATH_IFRAME": "/html/body/table/tbody/tr[2]/td/form/table/tbody/tr[8]/td/table/tbody/tr[2]/td/iframe",
