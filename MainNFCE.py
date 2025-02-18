@@ -3,7 +3,6 @@ from RequestsNFCE import executar_processo_requests_nfce
 from DownloadsNFCE import executar_processo_downloads_nfce
 
 
-# Configuração do logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",

@@ -35,6 +35,11 @@
                 "CAMPO_SENHA": "/html/body/table/tbody/tr[2]/td/table[1]/tbody/tr[4]/td[2]/input",
                 "BOTAO_AVANCAR": "/html/body/table/tbody/tr[2]/td/table[1]/tbody/tr[5]/td[2]/input[2]"
             }
+        },
+
+        "DIR": {
+            "DIRETORIO_DONWLOADS": "C:\\NFCE_XML_TEMP",
+            "DIRETORIO_FINAL": "Z:\\Fiscal\\18. Agendador de Downloads\\NFCE"
         }
     },
 
@@ -58,5 +63,6 @@
             "CURTA": 2,
             "LONGA": 20
         }
+        
     }
 }

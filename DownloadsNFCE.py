@@ -15,6 +15,7 @@ logging.basicConfig(
         logging.StreamHandler()  # Exibe logs no console
     ]
 )
+logger = logging.getLogger(__name__)
 
 with open("json_files/constantes.json", "r", encoding="utf-8") as arquivo_constantes:
     constantes = json.load(arquivo_constantes)

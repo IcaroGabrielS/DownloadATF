@@ -5,14 +5,18 @@ from selenium.webdriver.support import expected_conditions as EC
 from util import (
     listar_empresas, salvar_horario_json, verificar_registro_json,
     iniciar_navegador, aguardar_tempo_para_clicar, realizar_login,
-    acessar_link, definir_datas_por_tipo, carregar_datas_solicitacoes
+    acessar_link, definir_datas_por_tipo
 )
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
-    handlers=[logging.FileHandler("schedule.log"), logging.StreamHandler()]
+    handlers=[
+        logging.FileHandler("schedule.log"),  # Salva logs em um arquivo
+        logging.StreamHandler()  # Exibe logs no console
+    ]
 )
+logger = logging.getLogger(__name__)
 
 with open("json_files/constantes.json", "r", encoding="utf-8") as arquivo_constantes:
     constantes = json.load(arquivo_constantes)
