@@ -16,11 +16,11 @@ logging.basicConfig(
     ]
 )
 
-with open("constantes.json", "r", encoding="utf-8") as arquivo_constantes:
+with open("json_files/constantes.json", "r", encoding="utf-8") as arquivo_constantes:
     constantes = json.load(arquivo_constantes)
     DOWNLOAD = constantes["DOWNLOAD"]
 
-with open("solicitacoes.json", "r", encoding="utf-8") as arquivo_solicitacoes:
+with open("json_files/solicitacoes.json", "r", encoding="utf-8") as arquivo_solicitacoes:
     dados_json = json.load(arquivo_solicitacoes)
 
 def salvar_links(navegador, dados_json):
@@ -46,7 +46,7 @@ def salvar_links(navegador, dados_json):
                                 break
                     except ValueError: continue
         except: continue
-    with open("solicitacoes.json", "w", encoding="utf-8") as arquivo_solicitacoes:
+    with open("json_files/solicitacoes.json", "w", encoding="utf-8") as arquivo_solicitacoes:
         json.dump(dados_json, arquivo_solicitacoes, ensure_ascii=False, indent=4)
     return dados_json
 
@@ -101,7 +101,7 @@ def executar_processo_downloads_nfce():
                     item["baixado"] = False
 
                 # Salva o JSON após cada iteração para garantir que o progresso não seja perdido
-                with open("solicitacoes.json", "w", encoding="utf-8") as arquivo_solicitacoes:
+                with open("json_files/solicitacoes.json", "w", encoding="utf-8") as arquivo_solicitacoes:
                     json.dump(dados_json, arquivo_solicitacoes, ensure_ascii=False, indent=4)
 
                 time.sleep(10)

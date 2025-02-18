@@ -93,8 +93,6 @@ def criar_pastas_empresas_no_destino(diretorio_destino):
         pasta_empresa = os.path.join(diretorio_destino, f"{nome_empresa}_{ie_empresa}")
         if not os.path.exists(pasta_empresa): os.makedirs(pasta_empresa)
 
-
-
 def executar_processo_manage_files_nfce(diretorio_principal = r"C:\NFCE_XML_TEMP", diretorio_destino = r"Z:\Fiscal\18. Agendador de Downloads\NFCE"):
     criar_pastas_empresas_no_destino(diretorio_destino)
     descompactar_arquivos(diretorio_principal)

@@ -11,7 +11,7 @@ from selenium import webdriver
 # Configuração do logger
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-with open("constantes.json", "r", encoding="utf-8") as arquivo_constantes:
+with open("json_files/constantes.json", "r", encoding="utf-8") as arquivo_constantes:
     constantes = json.load(arquivo_constantes)
     NFCE = constantes["NFCE"]
     UTIL = constantes["UTIL"]
@@ -134,7 +134,7 @@ def iniciar_navegador():
         return
 
 def carregar_datas_solicitacoes():
-    caminho_json = os.path.join(os.path.dirname(__file__), "solicitacoes.json")
+    caminho_json = os.path.join(os.path.dirname(__file__), "json_files/solicitacoes.json")
     with open(caminho_json, 'r', encoding='utf-8') as f: dados = json.load(f)
     primeira_solicitacao = dados[0]
     data_ini = primeira_solicitacao.get("data_ini")
@@ -142,4 +142,3 @@ def carregar_datas_solicitacoes():
     data_ini = datetime.strptime(data_ini, '%d/%m/%Y').strftime('%Y%m%d')
     data_fim = datetime.strptime(data_fim, '%d/%m/%Y').strftime('%Y%m%d')
     return data_ini, data_fim
-

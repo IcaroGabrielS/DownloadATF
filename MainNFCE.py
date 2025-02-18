@@ -15,20 +15,15 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 def excluir_solicitacoes_anteriores():
-    caminho_json = os.path.join(os.path.dirname(__file__), 'solicitacoes.json')
+    caminho_json = os.path.join(os.path.dirname(__file__), 'json_files/solicitacoes.json')
     if os.path.exists(caminho_json): os.remove(caminho_json)
 
 def agendar_tarefas():
-    schedule.every(5).days.at("00:00").do(excluir_solicitacoes_anteriores)
     schedule.every(5).days.at("00:01").do(executar_processo_requests_nfce)
-    schedule.every(5).days.at("23:59").do(executar_processo_downloads_nfce)
-
-def agendar_tarefas_teste(): 
-    schedule.every(1).days.at("00:01").do(executar_processo_requests_nfce)
-    schedule.every(1).days.at("23:59").do(executar_processo_downloads_nfce)
+    schedule.every(5).days.at("12:00").do(executar_processo_downloads_nfce)
 
 def executar_agendador():
-    agendar_tarefas_teste()
+    agendar_tarefas()
     while True:
         schedule.run_pending()
         time.sleep(60)

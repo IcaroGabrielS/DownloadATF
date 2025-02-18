@@ -14,10 +14,9 @@ logging.basicConfig(
     handlers=[logging.FileHandler("schedule.log"), logging.StreamHandler()]
 )
 
-with open("constantes.json", "r", encoding="utf-8") as arquivo_constantes:
+with open("json_files/constantes.json", "r", encoding="utf-8") as arquivo_constantes:
     constantes = json.load(arquivo_constantes)
     NFCE = constantes["NFCE"]
-
 
 def preencher_datas(navegador, data_inicio, data_fim, espera=2):
     wait = WebDriverWait(navegador, espera)
@@ -27,7 +26,6 @@ def preencher_datas(navegador, data_inicio, data_fim, espera=2):
     data_fim_elemento = wait.until(EC.presence_of_element_located((By.XPATH, NFCE["XPATH_DATA_FIM"])))
     data_fim_elemento.clear()
     data_fim_elemento.send_keys(data_fim)
-
 
 def preencher_campo_iframe(navegador, ie_empresa, espera=2):
     wait = WebDriverWait(navegador, espera)
@@ -39,7 +37,6 @@ def preencher_campo_iframe(navegador, ie_empresa, espera=2):
     botao_pesquisar.click()
     navegador.switch_to.default_content()
 
-
 def selecionar_xml_e_executar(navegador, espera=2):
     wait = WebDriverWait(navegador, espera)
     dropdown_xml = wait.until(EC.presence_of_element_located((By.XPATH, NFCE["XPATH_DROPDOWN_XML"])))
@@ -49,7 +46,6 @@ def selecionar_xml_e_executar(navegador, espera=2):
     botao_executar = wait.until(EC.element_to_be_clickable((By.XPATH, NFCE["XPATH_BOTAO_EXECUTAR"])))
     aguardar_tempo_para_clicar()
     botao_executar.click()
-
 
 def solicitacoes_nfce(navegador, ie_empresa, data_inicio, data_fim, espera=2):
     if verificar_registro_json(ie_empresa, data_inicio, data_fim, NFCE["ARQUIVO_JSON"], "NFCE"): 
@@ -66,9 +62,8 @@ def solicitacoes_nfce(navegador, ie_empresa, data_inicio, data_fim, espera=2):
         return False
 
 def excluir_solicitacoes_anteriores():
-    caminho_json = os.path.join(os.path.dirname(__file__), 'solicitacoes.json')
+    caminho_json = os.path.join(os.path.dirname(__file__), 'json_files/solicitacoes.json')
     if os.path.exists(caminho_json): os.remove(caminho_json)
-
 
 def executar_processo_requests_nfce():
 
