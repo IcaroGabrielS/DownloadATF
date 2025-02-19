@@ -2,7 +2,8 @@ import time, json, logging, os
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from util import (capturar_data_hora, iniciar_navegador_firefox, autenticar_sefaz, acessar_pagina, montar_lista_solicitacoes)
+from util import (capturar_data_hora, iniciar_navegador_firefox, autenticar_sefaz, 
+                  acessar_pagina, montar_lista_solicitacoes, remover_solicitacoes_anteriores)
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -77,13 +78,9 @@ def solicitar_nfce(navegador, empresa, espera=2):
         logging.error(f"Erro ao solicitar NFCE: {e}")
         return False
 
-def remover_solicitacoes_anteriores():
-    caminho_json = os.path.join(os.path.dirname(__file__), 'json_files/solicitacoes.json')
-    if os.path.exists(caminho_json): os.remove(caminho_json)
-
 def executar_processo_requests_nfce():
 
-    remover_solicitacoes_anteriores(), montar_lista_solicitacoes("NFCE")
+    #remover_solicitacoes_anteriores(), montar_lista_solicitacoes("NFCE")
     solicitacoes = carregar_solicitacoes()  # Carrega o novo JSON
     logging.info("Iniciando processo de solicitações de NFC-e...")
 

@@ -157,3 +157,7 @@ def montar_lista_solicitacoes(tipo):
         with open("json_files/solicitacoes.json", "w", encoding="utf-8") as f:
             json.dump(solicitacoes, f, indent=4, ensure_ascii=False)
     return []
+
+def remover_solicitacoes_anteriores():
+    caminho_json = os.path.join(os.path.dirname(__file__), 'json_files/solicitacoes.json')
+    if os.path.exists(caminho_json): os.remove(caminho_json)

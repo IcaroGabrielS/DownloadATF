@@ -1,12 +1,12 @@
 [
     {
-        "inscricao_estadual": "160967562",
+        "inscricao_estadual": "67891",
         "data_ini": "14/02/2025",
         "data_fim": "18/02/2025",
         "tipo": "NFCE",
-        "horario": "19/02/2025 16:25:31",
-        "link": "https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=74945246",
-        "solicitado": true,
-        "baixado": true
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
     }
 ]

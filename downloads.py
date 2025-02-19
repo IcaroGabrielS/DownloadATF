@@ -42,6 +42,18 @@ def salvar_links(navegador, dados_json):
         json.dump(dados_json, arquivo_solicitacoes, ensure_ascii=False, indent=4)
     return dados_json
 
+def filtrar_pendentes(dados_json):
+    solicitacoes_pendentes = []
+    for solicitacao in dados_json:
+        if not solicitacao.get('baixado', False):
+            solicitacao['link'] = None
+            solicitacao['horario'] = None
+            solicitacao['solicitado'] = False
+            solicitacoes_pendentes.append(solicitacao)
+    with open("json_files/solicitacoes.json", "w", encoding="utf-8") as arquivo_solicitacoes:
+        json.dump(solicitacoes_pendentes, arquivo_solicitacoes, ensure_ascii=False, indent=4)
+    return solicitacoes_pendentes
+
 def executar_processo_downloads_nfce():
     navegador = None
     logging.info("Iniciando processo de download de NFC-e...")
@@ -70,6 +82,7 @@ def executar_processo_downloads_nfce():
         if navegador: navegador.quit()
         
         #executar_processo_manage_files_nfce()
+    
 
 if __name__ == "__main__":
-    executar_processo_downloads_nfce()
+    filtrar_pendentes(dados_json)
