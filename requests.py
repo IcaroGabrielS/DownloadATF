@@ -4,24 +4,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from util import (capturar_data_hora, iniciar_navegador_firefox, autenticar_sefaz, acessar_pagina, montar_lista_solicitacoes)
 
-# Configuração de logs
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.FileHandler("schedule.log"),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Carregar constantes do JSON
 with open("json_files/constantes.json", "r", encoding="utf-8") as arquivo_constantes:
     constantes = json.load(arquivo_constantes)
     NFCE = constantes["NFCE"]
 
 def carregar_solicitacoes():
-    """Carrega o JSON de solicitações, garantindo que seja uma lista."""
     caminho_json = "json_files/solicitacoes.json"
     if os.path.exists(caminho_json):
         with open(caminho_json, "r", encoding="utf-8") as arquivo:
@@ -29,7 +18,6 @@ def carregar_solicitacoes():
     return []
 
 def salvar_solicitacoes(solicitacoes):
-    """Salva o JSON de solicitações atualizado."""
     caminho_json = "json_files/solicitacoes.json"
     with open(caminho_json, "w", encoding="utf-8") as arquivo:
         json.dump(solicitacoes, arquivo, indent=4, ensure_ascii=False)
@@ -75,7 +63,6 @@ def selecionar_xml_executar(navegador, espera=2):
     espera_para_clicar()
     botao_executar.click()
 
-
 def solicitar_nfce(navegador, empresa, espera=2):
     try:
         inserir_datas_formulario(navegador, empresa["data_ini"], empresa["data_fim"], espera)
@@ -95,12 +82,9 @@ def remover_solicitacoes_anteriores():
     if os.path.exists(caminho_json): os.remove(caminho_json)
 
 def executar_processo_requests_nfce():
-    """Executa todo o processo de solicitação de NFC-e usando os dados do JSON."""
-    remover_solicitacoes_anteriores()
-    montar_lista_solicitacoes("NFCE")  # Gera novo JSON
-    solicitacoes = carregar_solicitacoes()  # Carrega o novo JSON
 
-    navegador = None
+    remover_solicitacoes_anteriores(), montar_lista_solicitacoes("NFCE")
+    solicitacoes = carregar_solicitacoes()  # Carrega o novo JSON
     logging.info("Iniciando processo de solicitações de NFC-e...")
 
     try:
@@ -108,12 +92,11 @@ def executar_processo_requests_nfce():
         if navegador and autenticar_sefaz(navegador):
             link = NFCE["LINK_SEFAZ_NFCE"]
             acessar_pagina(navegador, link)
-
             for empresa in solicitacoes:
                 if not empresa["solicitado"]:
                     if solicitar_nfce(navegador, empresa):
-                        empresa["solicitado"] = True  # Marca como solicitado
-                        salvar_solicitacoes(solicitacoes)  # Salva atualização no JSON
+                        empresa["solicitado"] = True
+                        salvar_solicitacoes(solicitacoes)
                     acessar_pagina(navegador, link)
                 else:
                     logging.info(f"Já solicitado: IE {empresa['inscricao_estadual']}, Data Início {empresa['data_ini']}, Data Fim {empresa['data_fim']}")

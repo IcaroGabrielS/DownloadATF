@@ -3,6 +3,7 @@ from datetime import datetime
 from selenium.webdriver.common.by import By
 from util import (iniciar_navegador_firefox, autenticar_sefaz, acessar_pagina, clicar_elemento)
 
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 with open("json_files/constantes.json", "r", encoding="utf-8") as arquivo_constantes:
     constantes = json.load(arquivo_constantes)
@@ -10,6 +11,9 @@ with open("json_files/constantes.json", "r", encoding="utf-8") as arquivo_consta
 
 with open("json_files/solicitacoes.json", "r", encoding="utf-8") as arquivo_solicitacoes:
     dados_json = json.load(arquivo_solicitacoes)
+
+def verificar_downloads_em_progresso(diretorio_download):
+    return any(arquivo.endswith('.part') for arquivo in os.listdir(diretorio_download))
 
 def salvar_links(navegador, dados_json):
     linhas = navegador.find_elements(By.XPATH, "//table/tbody/tr")
@@ -38,14 +42,6 @@ def salvar_links(navegador, dados_json):
         json.dump(dados_json, arquivo_solicitacoes, ensure_ascii=False, indent=4)
     return dados_json
 
-
-
-def verificar_downloads_em_progresso(diretorio_download):
-    for arquivo in os.listdir(diretorio_download):
-        if arquivo.endswith('.part'):  # Arquivos temporários de download no Firefox
-            return True
-    return False
-
 def executar_processo_downloads_nfce():
     navegador = None
     logging.info("Iniciando processo de download de NFC-e...")
@@ -54,47 +50,26 @@ def executar_processo_downloads_nfce():
         if navegador and autenticar_sefaz(navegador):
             acessar_pagina(navegador, DOWNLOAD["URL_CAIXA_DOWNLOADS"])
             salvar_links(navegador, dados_json)
-
-        # Inicializa o campo "baixado" como False para todos os itens que não o possuem
         for item in dados_json:
-            if "baixado" not in item:
-                item["baixado"] = False
-
-        for item in dados_json:
-            link = item.get("link")
-            baixado = item.get("baixado")
-
-            if baixado:
-                logging.info(f"Download já realizado anteriormente para o link: {link}")
-                continue
-
+            link, baixado = item.get("link"), item.get("baixado")
+            if baixado: continue
             if link:
                 acessar_pagina(navegador, link)
                 if clicar_elemento(navegador, DOWNLOAD["XPATHS"]["IMAGEM_ANEXO"]) and clicar_elemento(navegador, DOWNLOAD["XPATHS"]["LINK_DOWNLOAD"]):
                     item["baixado"] = True
-                else:
-                    logging.error(f"Falha ao realizar o download para o link: {link}")
-                    item["baixado"] = False
-
-                # Salva o JSON após cada iteração para garantir que o progresso não seja perdido
+                else: logging.error(f"Falha ao realizar o download para o link: {link}")
                 with open("json_files/solicitacoes.json", "w", encoding="utf-8") as arquivo_solicitacoes:
                     json.dump(dados_json, arquivo_solicitacoes, ensure_ascii=False, indent=4)
-
                 time.sleep(10)
-
-    except Exception as e:
-        logging.error(f"Erro durante a execução: {e}")
-
+    except Exception as e: logging.error(f"Erro durante a execução: {e}")
     finally:
-        max_tentativas = 10
-        tentativa = 0
+        tentativa, max_tentativas = 0, 10
         while verificar_downloads_em_progresso(r"C:\NFCE_XML_TEMP") and tentativa < max_tentativas:
             time.sleep(2)
             tentativa += 1
-        if navegador:
-            navegador.quit()
+        if navegador: navegador.quit()
+        
         #executar_processo_manage_files_nfce()
-        #criar a lista dos não baixados
 
 if __name__ == "__main__":
     executar_processo_downloads_nfce()

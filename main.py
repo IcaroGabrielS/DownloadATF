@@ -1,19 +1,6 @@
-import time, schedule, logging, os
+import time, schedule
 from requests import executar_processo_requests_nfce
 from downloads import executar_processo_downloads_nfce
-
-
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.FileHandler("schedule.log"),  # Salva logs em um arquivo
-        logging.StreamHandler()  # Exibe logs no console
-    ]
-)
-logger = logging.getLogger(__name__)
-
-
 
 def agendar_tarefas():
     schedule.every(5).days.at("00:01").do(executar_processo_requests_nfce)
@@ -25,10 +12,7 @@ def executar_agendador():
         schedule.run_pending()
         time.sleep(60)
 
-
 if __name__ == "__main__":
     try: executar_agendador()
-    except KeyboardInterrupt:
-        logger.info("Programa interrompido pelo usuário.")
-    except Exception as e:
-        logger.error(f"Erro inesperado: {e}", exc_info=True)
+    except KeyboardInterrupt: print("Programa interrompido pelo usuário.")
+    except Exception as e: print(f"Erro inesperado: {e}", exc_info=True)

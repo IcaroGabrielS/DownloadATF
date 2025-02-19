@@ -1,15 +1,13 @@
-import os, time, json, logging
-from selenium.webdriver.common.by import By
+import os, time, json, logging, mysql.connector
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.common.by import By
 from datetime import datetime, timedelta
 from mysql.connector import Error
-import mysql.connector
 from selenium import webdriver
 
-# Configuração do logger
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 with open("json_files/constantes.json", "r", encoding="utf-8") as arquivo_constantes:
@@ -18,7 +16,6 @@ with open("json_files/constantes.json", "r", encoding="utf-8") as arquivo_consta
     NFCE = constantes["NFCE"]
     UTIL = constantes["UTIL"]
     
-
 def obter_periodo_datas():
     hoje = datetime.now()
     cinco_dias_atras = hoje - timedelta(days=5)
