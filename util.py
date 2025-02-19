@@ -1,6 +1,7 @@
 import os, time, json, logging
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.firefox.options import Options
 from datetime import datetime, timedelta
@@ -13,22 +14,18 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 with open("json_files/constantes.json", "r", encoding="utf-8") as arquivo_constantes:
     constantes = json.load(arquivo_constantes)
+    DOWNLOAD = constantes["DOWNLOAD"]
     NFCE = constantes["NFCE"]
     UTIL = constantes["UTIL"]
+    
 
-def definir_datas_por_tipo(tipo):
+def obter_periodo_datas():
     hoje = datetime.now()
-    if tipo == 'NFE':
-        primeiro_dia_mes_atual = hoje.replace(day=1)
-        ultimo_dia_mes_anterior = primeiro_dia_mes_atual - timedelta(days=1)
-        primeiro_dia_mes_anterior = ultimo_dia_mes_anterior.replace(day=1)
-        return primeiro_dia_mes_anterior.strftime('%d/%m/%Y'), ultimo_dia_mes_anterior.strftime('%d/%m/%Y')
-    elif tipo == 'NFCE':
-        cinco_dias_atras = hoje - timedelta(days=5)
-        ontem = hoje - timedelta(days=1)
-        return cinco_dias_atras.strftime('%d/%m/%Y'), ontem.strftime('%d/%m/%Y')
+    cinco_dias_atras = hoje - timedelta(days=5)
+    ontem = hoje - timedelta(days=1)
+    return cinco_dias_atras.strftime('%d/%m/%Y'), ontem.strftime('%d/%m/%Y')
 
-def conectar_banco_dados():
+def conectar_banco():
     try:
         conexao = mysql.connector.connect(
             host=UTIL["DATABASE"]["HOST"],
@@ -41,8 +38,8 @@ def conectar_banco_dados():
         logging.error(f"Erro ao conectar ao MySQL: {erro}")
         return None
 
-def obter_credenciais():
-    conexao = conectar_banco_dados()
+def obter_credenciais_banco():
+    conexao = conectar_banco()
     if conexao and conexao.is_connected():
         cursor = conexao.cursor()
         cursor.execute(UTIL["QUERIES"]["OBTER_CREDENCIAIS"])
@@ -52,8 +49,8 @@ def obter_credenciais():
         return resultado[0], resultado[1]
     return None, None
 
-def listar_empresas():
-    conexao = conectar_banco_dados()
+def obter_empresas_banco():
+    conexao = conectar_banco()
     if conexao and conexao.is_connected():
         cursor = conexao.cursor()
         cursor.execute(UTIL["QUERIES"]["LISTAR_EMPRESAS"])
@@ -64,11 +61,11 @@ def listar_empresas():
         return [dict(zip(colunas, linha)) for linha in resultados]
     return []
 
-def capturar_horario():
+def capturar_data_hora():
     horario_atual = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     return horario_atual
 
-def aguardar_tempo_para_clicar():
+def espera_para_clicar():
     now = time.localtime()
     segundo = now.tm_sec
     if segundo < 1:
@@ -82,8 +79,8 @@ def aguardar_tempo_para_clicar():
         tempo_espera = 1
     time.sleep(max(0, tempo_espera - segundo))
 
-def realizar_login(navegador, espera=2):
-    usuario, senha = obter_credenciais()
+def autenticar_sefaz(navegador, espera=2):
+    usuario, senha = obter_credenciais_banco()
     if not usuario or not senha:
         return False
     try:
@@ -99,16 +96,24 @@ def realizar_login(navegador, espera=2):
         logging.error(f"Erro ao realizar login: {e}")
         return False
 
-def acessar_link(navegador, link):
+def acessar_pagina(navegador, link):
     navegador.get(link)
     return navegador
 
-def iniciar_navegador():
+def clicar_elemento(navegador, xpath):
+    try:
+        elemento = WebDriverWait(navegador, DOWNLOAD["ESPERAS"]["CURTA"]).until(EC.visibility_of_element_located((By.XPATH, xpath)))
+        elemento.click()
+        return True
+    except TimeoutException:
+        return False
+
+def iniciar_navegador_firefox():
     options = Options()
     options.set_preference("browser.download.dir", r"C:\NFCE_XML_TEMP")
     options.set_preference("browser.download.folderList", 2)
     options.set_preference("browser.download.useDownloadDir", True)
-    options.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf, application/x-pdf, application/octet-stream") 
+    options.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf, application/x-pdf, application/octet-stream")
 
     try:
         navegador = webdriver.Firefox(options=options)
@@ -118,7 +123,7 @@ def iniciar_navegador():
         logging.error(f"Erro ao inicializar o navegador: {e}")
         return
 
-def carregar_datas_solicitacoes():
+def obter_datas_solicitacoes():
     caminho_json = os.path.join(os.path.dirname(__file__), "json_files/solicitacoes.json")
     with open(caminho_json, 'r', encoding='utf-8') as f: dados = json.load(f)
     primeira_solicitacao = dados[0]
@@ -128,8 +133,8 @@ def carregar_datas_solicitacoes():
     data_fim = datetime.strptime(data_fim, '%d/%m/%Y').strftime('%Y%m%d')
     return data_ini, data_fim
 
-def criar_lista_solicitacoes(tipo):
-    conexao = conectar_banco_dados()
+def montar_lista_solicitacoes(tipo):
+    conexao = conectar_banco()
     if conexao and conexao.is_connected():
         cursor = conexao.cursor()
         cursor.execute(UTIL["QUERIES"]["LISTAR_EMPRESAS"])
@@ -138,7 +143,7 @@ def criar_lista_solicitacoes(tipo):
         cursor.close()
         conexao.close()
         dados = [dict(zip(colunas, linha)) for linha in resultados]
-        data_ini, data_fim = definir_datas_por_tipo("NFCE")
+        data_ini, data_fim = obter_periodo_datas()
         solicitacoes = [
             {
                 "inscricao_estadual": item["inscricao_estadual"],
@@ -155,5 +160,3 @@ def criar_lista_solicitacoes(tipo):
         with open("json_files/solicitacoes.json", "w", encoding="utf-8") as f:
             json.dump(solicitacoes, f, indent=4, ensure_ascii=False)
     return []
-
-

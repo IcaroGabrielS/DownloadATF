@@ -13,6 +13,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+
+
 def agendar_tarefas():
     schedule.every(5).days.at("00:01").do(executar_processo_requests_nfce)
     schedule.every(5).days.at("12:00").do(executar_processo_downloads_nfce)
