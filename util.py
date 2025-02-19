@@ -68,12 +68,6 @@ def capturar_horario():
     horario_atual = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     return horario_atual
 
-def verificar_registro_json(inscricao_estadual, data_ini, data_fim, arquivo_json, tipo):
-    if not os.path.exists(arquivo_json): return False
-    with open(arquivo_json, 'r') as file: registros = json.load(file)
-    return any(registro["inscricao_estadual"] == inscricao_estadual and registro["data_ini"] == data_ini 
-               and registro["data_fim"] == data_fim and registro["tipo"] == tipo for registro in registros)
-
 def aguardar_tempo_para_clicar():
     now = time.localtime()
     segundo = now.tm_sec

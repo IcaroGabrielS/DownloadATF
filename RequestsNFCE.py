@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from util import (
     capturar_horario, iniciar_navegador, aguardar_tempo_para_clicar, 
-    realizar_login, acessar_link, definir_datas_por_tipo, criar_lista_solicitacoes
+    realizar_login, acessar_link, criar_lista_solicitacoes
 )
 
 # Configuração de logs
