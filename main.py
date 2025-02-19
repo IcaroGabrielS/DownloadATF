@@ -1,6 +1,6 @@
 import time, schedule, logging, os
-from RequestsNFCE import executar_processo_requests_nfce
-from DownloadsNFCE import executar_processo_downloads_nfce
+from requests import executar_processo_requests_nfce
+from downloads import executar_processo_downloads_nfce
 
 
 logging.basicConfig(
