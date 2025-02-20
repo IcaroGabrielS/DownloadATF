@@ -1,8 +1,1798 @@
 [
     {
-        "inscricao_estadual": "67891",
-        "data_ini": "14/02/2025",
-        "data_fim": "18/02/2025",
+        "inscricao_estadual": "160967562",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161579019",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161117287",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161436790",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162533080",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161344607",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161957471",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161339670",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161538940",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161037054",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "160973406",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161457533",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "160190606",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161414591",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161081274",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161309151",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161439683",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161188206",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161616186",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162308493",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "160337607",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161063772",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161526071",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162355750",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162513127",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161490905",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161382746",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162380160",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162489978",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161081207",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161755330",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163040648",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162949405",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161291481",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163126739",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162869649",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161249205",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162802021",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162664192",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161613713",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163152080",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163143005",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163281025",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161492061",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162194110",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163276978",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161599680",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162640102",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163383359",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161716130",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161413773",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161589391",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161321720",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161481540",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161217001",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163227659",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161501800",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161622003",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161590608",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162959567",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161390447",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162921721",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163491437",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163530718",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162893396",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161753639",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161009301",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161563872",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162544715",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163598770",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163560811",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163561052",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162459483",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161202802",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164637850",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164640002",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164642560",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163573301",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161596886",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162310706",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "160317916",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162853203",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163916977",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163994684",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "160985706",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163994641",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163525986",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164938931",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164087257",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164049142",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161325360",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164146423",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163673330",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164145958",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161419038",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163579415",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162565364",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "160880840",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161616500",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "160393108",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161030386",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161941982",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163594325",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163835535",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164237151",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164243615",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163994420",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164258957",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164311505",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164251383",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164345698",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161484271",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163531242",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164373713",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163908770",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164399518",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164430814",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161639984",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163749256",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163923639",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164450602",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164462058",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164434003",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163894787",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164485180",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164519343",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161704581",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162266138",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164527710",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164527770",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164527753",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163440000",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161501052",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162602103",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164571817",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164519637",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162355688",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164577548",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164298460",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164602801",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164602003",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161329268",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164790519",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164814639",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164855017",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162909144",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161922376",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "160636493",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162912170",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164874550",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164859802",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164881875",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164071318",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164285229",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161579515",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164900683",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "162136676",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164969012",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164701869",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164708464",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164796207",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164995170",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "165014288",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "165012536",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "165030160",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "165031530",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164700200",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161890415",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "165041528",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161251579",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "164750088",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "165047704",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "165104040",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "165101229",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "165107847",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "165140216",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "163173460",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "161228852",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "165206624",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
+        "tipo": "NFCE",
+        "horario": null,
+        "link": null,
+        "solicitado": false,
+        "baixado": false
+    },
+    {
+        "inscricao_estadual": "165214465",
+        "data_ini": "15/02/2025",
+        "data_fim": "19/02/2025",
         "tipo": "NFCE",
         "horario": null,
         "link": null,

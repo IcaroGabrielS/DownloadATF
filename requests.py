@@ -2,8 +2,7 @@ import time, json, logging, os
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from util import (capturar_data_hora, iniciar_navegador_firefox, autenticar_sefaz, 
-                  acessar_pagina, montar_lista_solicitacoes, remover_solicitacoes_anteriores)
+from util import (capturar_data_hora, iniciar_navegador_firefox, autenticar_sefaz, acessar_pagina)
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -79,11 +78,8 @@ def solicitar_nfce(navegador, empresa, espera=2):
         return False
 
 def executar_processo_requests_nfce():
-
-    #remover_solicitacoes_anteriores(), montar_lista_solicitacoes("NFCE")
-    solicitacoes = carregar_solicitacoes()  # Carrega o novo JSON
+    solicitacoes = carregar_solicitacoes()
     logging.info("Iniciando processo de solicitações de NFC-e...")
-
     try:
         navegador = iniciar_navegador_firefox()
         if navegador and autenticar_sefaz(navegador):
@@ -91,19 +87,13 @@ def executar_processo_requests_nfce():
             acessar_pagina(navegador, link)
             for empresa in solicitacoes:
                 if not empresa["solicitado"]:
-                    if solicitar_nfce(navegador, empresa):
+                    if solicitar_nfce(navegador, empresa): 
                         empresa["solicitado"] = True
                         salvar_solicitacoes(solicitacoes)
                     acessar_pagina(navegador, link)
-                else:
-                    logging.info(f"Já solicitado: IE {empresa['inscricao_estadual']}, Data Início {empresa['data_ini']}, Data Fim {empresa['data_fim']}")
-
-    except Exception as e:
-        logging.error(f"Erro durante a execução: {e}")
-
-    finally:
-        if navegador:
-            navegador.quit()
+                else: logging.info(f"Já solicitado: IE {empresa['inscricao_estadual']}")
+    except Exception as e: logging.error(f"Erro durante a execução: {e}")
+    finally: navegador.quit()
 
 if __name__ == "__main__":
     executar_processo_requests_nfce()

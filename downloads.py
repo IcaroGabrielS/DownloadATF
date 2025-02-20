@@ -83,6 +83,5 @@ def executar_processo_downloads_nfce():
         
         #executar_processo_manage_files_nfce()
     
-
 if __name__ == "__main__":
     filtrar_pendentes(dados_json)

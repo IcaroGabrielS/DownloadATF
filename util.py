@@ -151,13 +151,18 @@ def montar_lista_solicitacoes(tipo):
                 "link": None,
                 "solicitado": False,
                 "baixado": False
-            }
-            for item in dados]
+            } for item in dados]
+        
+        empresas_baixadas = [{"inscricao_estadual": item["inscricao_estadual"], "finalizado": False} for item in dados]      
+
         os.makedirs("json_files", exist_ok=True)
-        with open("json_files/solicitacoes.json", "w", encoding="utf-8") as f:
-            json.dump(solicitacoes, f, indent=4, ensure_ascii=False)
+        with open("json_files/solicitacoes.json", "w", encoding="utf-8") as f: json.dump(solicitacoes, f, indent=4, ensure_ascii=False)
+        with open("json_files/finalizados.json", "w", encoding="utf-8") as g: json.dump(empresas_baixadas, g, indent=4, ensure_ascii=False)
     return []
 
 def remover_solicitacoes_anteriores():
     caminho_json = os.path.join(os.path.dirname(__file__), 'json_files/solicitacoes.json')
+    if os.path.exists(caminho_json): os.remove(caminho_json)
+
+    caminho_json = os.path.join(os.path.dirname(__file__), 'json_files/finalizados.json')
     if os.path.exists(caminho_json): os.remove(caminho_json)
