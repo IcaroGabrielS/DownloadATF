@@ -160,9 +160,24 @@ def montar_lista_solicitacoes(tipo):
         with open("json_files/finalizados.json", "w", encoding="utf-8") as g: json.dump(empresas_baixadas, g, indent=4, ensure_ascii=False)
     return []
 
+def listar_empresas():
+    conexao = conectar_banco()
+    if conexao and conexao.is_connected():
+        cursor = conexao.cursor()
+        cursor.execute(UTIL["QUERIES"]["LISTAR_EMPRESAS"])
+        resultados = cursor.fetchall()
+        colunas = [desc[0] for desc in cursor.description]
+        cursor.close()
+        conexao.close()
+        dados = [dict(zip(colunas, linha)) for linha in resultados]
+        return dados
+    return []
+
 def remover_solicitacoes_anteriores():
     caminho_json = os.path.join(os.path.dirname(__file__), 'json_files/solicitacoes.json')
     if os.path.exists(caminho_json): os.remove(caminho_json)
 
     caminho_json = os.path.join(os.path.dirname(__file__), 'json_files/finalizados.json')
     if os.path.exists(caminho_json): os.remove(caminho_json)
+
+print(listar_empresas())

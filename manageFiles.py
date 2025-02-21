@@ -1,7 +1,7 @@
-import os, zipfile, json, shutil, logging
+import os, re, zipfile, json, shutil, logging
 import xml.etree.ElementTree as ET
 from dateutil import parser
-from datetime import datetime
+from util import listar_empresas
 
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -19,29 +19,33 @@ def gerar_nome_unico_se_existir(caminho):
         contador += 1
     return caminho
 
-def extrair_ie_do_xml(xml_path):
-    try:
-        tree = ET.parse(xml_path)
-        root = tree.getroot()
-        namespace = {'nfe': 'http://www.portalfiscal.inf.br/nfe'}
-        ie_empresa = root.find('.//nfe:emit/nfe:IE', namespace)
-        return ie_empresa.text if ie_empresa is not None else None
-    except Exception as e:
-        logger.error(f"Erro ao extrair IE do XML {xml_path}: {e}")
-        return None
+def extrair_dado_xml(xml_path, tipo):
+    """
+    Extrai a Inscrição Estadual (IE) ou a Data de Emissão de um XML.
 
-def extrair_data_do_xml(xml_path):
+    Parâmetros:
+        xml_path (str): Caminho do arquivo XML.
+        tipo (str): Tipo de dado a ser extraído. Pode ser "ie" ou "data".
+
+    Retorna:
+        str: Inscrição Estadual (IE) ou Data de Emissão no formato datetime.
+        None: Caso ocorra um erro ou o dado não seja encontrado.
+    """
     try:
         tree = ET.parse(xml_path)
         root = tree.getroot()
         namespace = {'nfe': 'http://www.portalfiscal.inf.br/nfe'}
-        dh_emi = root.find('.//nfe:ide/nfe:dhEmi', namespace)
-        if dh_emi is not None:
-            # Usar dateutil.parser para lidar com o formato da data
-            return parser.isoparse(dh_emi.text)
-        return None
+        if tipo == "ie":
+            ie_empresa = root.find('.//nfe:emit/nfe:IE', namespace)
+            return ie_empresa.text if ie_empresa is not None else None
+        elif tipo == "data":
+            dh_emi = root.find('.//nfe:ide/nfe:dhEmi', namespace)
+            return parser.isoparse(dh_emi.text) if dh_emi is not None else None
+        else:
+            logger.error(f"Tipo inválido: {tipo}. Use 'ie' ou 'data'.")
+            return None
     except Exception as e:
-        logger.error(f"Erro ao extrair data de emissão do XML {xml_path}: {e}")
+        logger.error(f"Erro ao processar o XML {xml_path}: {e}")
         return None
 
 def descompactar_arquivos_zip(pasta):
@@ -81,41 +85,51 @@ def renomear_pastas_por_ie(diretorio_principal):
                 ies = set()
                 for xml_file in xml_files:
                     xml_path = os.path.join(subdir_path, xml_file)
-                    
-                    data_emissao = extrair_data_do_xml(xml_path)
+                    data_emissao = extrair_dado_xml(xml_path, "ie")
                     if data_emissao: datas.append(data_emissao)
-                    
-                    ie_empresa = extrair_ie_do_xml(xml_path)
+                    ie_empresa = extrair_dado_xml(xml_path, "data")
                     if ie_empresa: ies.add(ie_empresa)
-                
-                if datas:
+                if datas: 
                     data_ini = min(datas).strftime('%Y%m%d')
                     data_fim = max(datas).strftime('%Y%m%d')
-                
                 else: data_ini = data_fim = '00000000'
-                
-                if len(ies) > 1:
-                    novo_nome = f"ERR_{data_ini}_{data_fim}_" + "_".join(ies)
-                else:
-                    novo_nome = f"{data_ini}_{data_fim}_{next(iter(ies), 'SEM_IE')}"
-                
+                if len(ies) > 1: novo_nome = f"ERR_{data_ini}_{data_fim}_" + "_".join(ies)
+                else: novo_nome = f"{data_ini}_{data_fim}_{next(iter(ies), 'SEM_IE')}"
                 novo_subdir_path = os.path.join(diretorio_principal, novo_nome)
-                os.rename(subdir_path, novo_subdir_path)
-                logger.info(f"Renomeado diretório {subdir} para {novo_nome}")
+                for i in range(1, 6):
+                    if not os.path.exists(novo_subdir_path): break
+                    novo_nome_com_sufixo = f"{novo_nome} ({i})"
+                    novo_subdir_path = os.path.join(diretorio_principal, novo_nome_com_sufixo)
+                if os.path.exists(novo_subdir_path):
+                    logger.error(f"Não foi possível renomear a pasta {subdir}. Limite de tentativas atingido.")
+                else:
+                    os.rename(subdir_path, novo_subdir_path)
+                    logger.info(f"Renomeado diretório {subdir} para {os.path.basename(novo_subdir_path)}")
 
 
 def mover_pastas_para_destino_final(diretorio_principal, destino):
-    if not os.path.exists(destino):
-        os.makedirs(destino)
+    erros_path = os.path.join(destino, "ERROS")
+    if not os.path.exists(erros_path):
+        os.makedirs(erros_path)
+        logger.info(f"Subpasta 'ERROS' criada em {erros_path}")
+
     for subdir in os.listdir(diretorio_principal):
         subdir_path = os.path.join(diretorio_principal, subdir)
         if os.path.isdir(subdir_path):
-            try:
-                *_, ie = subdir.rsplit('_', 1)
+            if not re.match(r"^[0-9_]+$", subdir):
+                destino_final = os.path.join(erros_path, subdir)
+                shutil.move(subdir_path, destino_final)
+                logger.info(f"Movido para ERROS (caracteres inválidos): {subdir} -> {destino_final}")
+                continue
+            if subdir.count("_") != 2:
+                destino_final = os.path.join(erros_path, subdir)
+                shutil.move(subdir_path, destino_final)
+                logger.info(f"Movido para ERROS (formato inválido): {subdir} -> {destino_final}")
+                continue
+            try: *_, ie = subdir.rsplit('_', 1)
             except ValueError:
                 logger.error(f"Formato inválido: {subdir}")
                 continue
-            # Localiza subpasta no destino que termina com a mesma IE
             matching_folder = None
             for folder in os.listdir(destino):
                 folder_path = os.path.join(destino, folder)
@@ -126,8 +140,7 @@ def mover_pastas_para_destino_final(diretorio_principal, destino):
                 destino_final = os.path.join(destino, matching_folder, subdir)
                 shutil.move(subdir_path, destino_final)
                 logger.info(f"Movido: {subdir} -> {destino_final}")
-            else:
-                logger.error(f"Não foi encontrada subpasta para {subdir}")
+            else: logger.error(f"Não foi encontrada subpasta para {subdir}")
 
 def criar_pastas_empresas_destino(diretorio_destino):
     empresas = listar_empresas()
@@ -142,10 +155,10 @@ def criar_pastas_empresas_destino(diretorio_destino):
 
 def executar_processo_gerenciar_arquivos_nfce(diretorio_principal = diretorios["DIRETORIO_DONWLOADS"], diretorio_destino = diretorios["DIRETORIO_FINAL"]):
     logger.info("Iniciando processo de gerenciamento de arquivos NFC-e...")
-    #criar_pastas_empresas_destino(diretorio_destino)
+    criar_pastas_empresas_destino(diretorio_destino)
     descompactar_arquivos_zip(diretorio_principal)
     renomear_pastas_por_ie(diretorio_principal)
-    #mover_pastas_para_destino_final(diretorio_principal, diretorio_destino)
+    mover_pastas_para_destino_final(diretorio_principal, diretorio_destino)
     logger.info("Processo de gerenciamento de arquivos NFC-e concluído.")
 
 if __name__ == "__main__":
