@@ -11,6 +11,9 @@ with open("json_files/constantes.json", "r", encoding="utf-8") as arquivo_consta
     constantes = json.load(arquivo_constantes)
     diretorios = constantes["UTIL"]["DIR"]
 
+with open("json_files/solicitacoes.json", "r", encoding="utf-8") as arquivo_solicitacoes:
+    dados_json = json.load(arquivo_solicitacoes)
+
 def gerar_nome_unico_se_existir(caminho):
     contador = 1
     nome_base, extensao = os.path.splitext(caminho)
@@ -153,11 +156,31 @@ def criar_pastas_empresas_destino(diretorio_destino):
             os.makedirs(pasta_empresa)
             logger.info(f"Criada pasta para empresa {nome_empresa}")
 
+def definir_finalizados(diretorio_principal):
+    with open("json_files/finalizados.json", "r", encoding="utf-8") as arquivo_solicitacoes:
+        dados_json = json.load(arquivo_solicitacoes)
+    regex = re.compile(r'^\d+_\d+_\d+$')
+    for nome_pasta in os.listdir(diretorio_principal):
+        caminho_completo = os.path.join(diretorio_principal, nome_pasta)
+        if os.path.isdir(caminho_completo) and regex.match(nome_pasta):
+            partes = nome_pasta.split('_')
+            if len(partes) == 3:
+                numero = partes[-1]
+                for item in dados_json:
+                    if item.get("inscricao_estadual") == numero:
+                        item["FINALIZADO"] = True
+    
+        with open("json_files/finalizados.json", 'w', encoding='utf-8') as arquivo_json:
+            json.dump(dados_json, arquivo_json, ensure_ascii=False, indent=4)
+
+
+
 def executar_processo_gerenciar_arquivos_nfce(diretorio_principal = diretorios["DIRETORIO_DONWLOADS"], diretorio_destino = diretorios["DIRETORIO_FINAL"]):
     logger.info("Iniciando processo de gerenciamento de arquivos NFC-e...")
     criar_pastas_empresas_destino(diretorio_destino)
     descompactar_arquivos_zip(diretorio_principal)
     renomear_pastas_por_ie(diretorio_principal)
+    definir_finalizados(diretorio_principal)
     mover_pastas_para_destino_final(diretorio_principal, diretorio_destino)
     logger.info("Processo de gerenciamento de arquivos NFC-e concluído.")
 

@@ -150,7 +150,8 @@ def montar_lista_solicitacoes(tipo):
                 "horario": None,
                 "link": None,
                 "solicitado": False,
-                "baixado": False
+                "baixado": False,
+                "FINALIZADO": False
             } for item in dados]
         
         empresas_baixadas = [{"inscricao_estadual": item["inscricao_estadual"], "finalizado": False} for item in dados]      
