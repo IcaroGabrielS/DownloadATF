@@ -19,6 +19,7 @@ def agendar_tarefas():
 
 
 def executar_agendador():
+    print("Iniciado agendador de tarefas...")
     agendar_tarefas()
     while True:
         schedule.run_pending()
@@ -27,4 +28,4 @@ def executar_agendador():
 if __name__ == "__main__":
     try: executar_agendador()
     except KeyboardInterrupt: print("Programa interrompido pelo usuário.")
-    except Exception as e: print(f"Erro inesperado: {e}", exc_info=True)
+    except Exception as e: print(f"Erro inesperado: {e}")

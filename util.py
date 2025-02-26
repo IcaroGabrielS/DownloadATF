@@ -130,7 +130,7 @@ def obter_datas_solicitacoes():
     data_fim = datetime.strptime(data_fim, '%d/%m/%Y').strftime('%Y%m%d')
     return data_ini, data_fim
 
-def montar_lista_solicitacoes(tipo):
+def montar_lista_solicitacoes():
     conexao = conectar_banco()
     if conexao and conexao.is_connected():
         cursor = conexao.cursor()
@@ -146,7 +146,7 @@ def montar_lista_solicitacoes(tipo):
                 "inscricao_estadual": item["inscricao_estadual"],
                 "data_ini": data_ini,
                 "data_fim": data_fim,
-                "tipo": tipo,
+                "tipo": "NFCE",
                 "horario": None,
                 "link": None,
                 "solicitado": False,
@@ -180,5 +180,3 @@ def remover_solicitacoes_anteriores():
 
     caminho_json = os.path.join(os.path.dirname(__file__), 'json_files/finalizados.json')
     if os.path.exists(caminho_json): os.remove(caminho_json)
-
-print(listar_empresas())
