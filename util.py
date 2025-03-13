@@ -30,9 +30,10 @@ def conectar_banco():
             password=UTIL["DATABASE"]["PASSWORD"],
             database=UTIL["DATABASE"]["DATABASE"]
         )
+        print("Conexão ao banco de dados estabelecida.")
         return conexao
     except Error as erro:
-        logging.error(f"Erro ao conectar ao MySQL: {erro}")
+        print(f"Erro ao conectar ao MySQL: {erro}")
         return None
 
 def obter_credenciais_banco():
@@ -43,7 +44,9 @@ def obter_credenciais_banco():
         resultado = cursor.fetchone()
         cursor.close()
         conexao.close()
+        print("Credenciais do banco de dados obtidas.")
         return resultado[0], resultado[1]
+    print("Falha ao obter credenciais do banco de dados.")
     return None, None
 
 def obter_empresas_banco():
@@ -55,7 +58,9 @@ def obter_empresas_banco():
         colunas = [desc[0] for desc in cursor.description]
         cursor.close()
         conexao.close()
+        print("Empresas obtidas do banco de dados.")
         return [dict(zip(colunas, linha)) for linha in resultados]
+    print("Falha ao obter empresas do banco de dados.")
     return []
 
 def capturar_data_hora():
@@ -88,21 +93,25 @@ def autenticar_sefaz(navegador, espera=2):
         campo_login.send_keys(usuario)
         campo_senha.send_keys(senha)
         botao_avancar.click()
+        print("Autenticação no SEFAZ realizada com sucesso.")
         return True
     except Exception as e:
-        logging.error(f"Erro ao realizar login: {e}")
+        print(f"Erro ao realizar login: {e}")
         return False
 
 def acessar_pagina(navegador, link):
     navegador.get(link)
+    print(f"Acessando página: {link}")
     return navegador
 
 def clicar_elemento(navegador, xpath):
     try:
         elemento = WebDriverWait(navegador, DOWNLOAD["ESPERAS"]["CURTA"]).until(EC.visibility_of_element_located((By.XPATH, xpath)))
         elemento.click()
+        print(f"Elemento clicado: {xpath}")
         return True
     except TimeoutException:
+        print(f"Falha ao clicar no elemento: {xpath}")
         return False
 
 def iniciar_navegador_firefox():
@@ -115,9 +124,10 @@ def iniciar_navegador_firefox():
     try:
         navegador = webdriver.Firefox(options=options)
         navegador.get(UTIL["URLS"]["LOGIN"])
+        print("Navegador Firefox iniciado.")
         return navegador
     except Exception as e:
-        logging.error(f"Erro ao inicializar o navegador: {e}")
+        print(f"Erro ao inicializar o navegador: {e}")
         return
 
 def obter_datas_solicitacoes():
@@ -128,6 +138,7 @@ def obter_datas_solicitacoes():
     data_fim = primeira_solicitacao.get("data_fim")
     data_ini = datetime.strptime(data_ini, '%d/%m/%Y').strftime('%Y%m%d')
     data_fim = datetime.strptime(data_fim, '%d/%m/%Y').strftime('%Y%m%d')
+    print("Datas de solicitação obtidas.")
     return data_ini, data_fim
 
 def montar_lista_solicitacoes():
@@ -159,6 +170,7 @@ def montar_lista_solicitacoes():
         os.makedirs("json_files", exist_ok=True)
         with open("json_files/solicitacoes.json", "w", encoding="utf-8") as f: json.dump(solicitacoes, f, indent=4, ensure_ascii=False)
         with open("json_files/finalizados.json", "w", encoding="utf-8") as g: json.dump(empresas_baixadas, g, indent=4, ensure_ascii=False)
+        print("Lista de solicitações montada.")
     return []
 
 def listar_empresas():
@@ -171,12 +183,16 @@ def listar_empresas():
         cursor.close()
         conexao.close()
         dados = [dict(zip(colunas, linha)) for linha in resultados]
+        print("Empresas listadas.")
         return dados
+    print("Falha ao listar empresas.")
     return []
 
 def remover_solicitacoes_anteriores():
     caminho_json = os.path.join(os.path.dirname(__file__), 'json_files/solicitacoes.json')
     if os.path.exists(caminho_json): os.remove(caminho_json)
+    print("Solicitações anteriores removidas.")
 
     caminho_json = os.path.join(os.path.dirname(__file__), 'json_files/finalizados.json')
     if os.path.exists(caminho_json): os.remove(caminho_json)
+    print("Finalizados anteriores removidos.")
