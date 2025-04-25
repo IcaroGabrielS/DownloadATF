@@ -1,0 +1,47 @@
+2025-04-24 14:56:47,764 - INFO - ================================================================================
+2025-04-24 14:56:47,764 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
+2025-04-24 14:56:47,764 - INFO - ================================================================================
+2025-04-24 14:56:47,864 - INFO - Encontradas 190 empresas no MySQL
+2025-04-24 14:56:47,976 - INFO - Sincronização concluída: 190 empresas inseridas, 0 atualizadas
+2025-04-24 14:56:47,977 - INFO - Total de empresas sincronizadas: 190
+2025-04-24 14:56:47,977 - INFO - Criando solicitações para a data: 19/04/2025
+2025-04-24 14:56:48,032 - ERROR - Erro durante criação de solicitações: ERRO:  coluna "solicitado" é do tipo integer mas expressão é do tipo boolean
+LINE 4: ...04-19'::date, 'NFCE', '19/04/2025', '19/04/2025', false, fal...
+                                                             ^
+HINT:  Você precisará reescrever ou converter a expressão.
+
+2025-04-24 14:56:48,033 - INFO - Total de solicitações criadas: 0
+2025-04-24 14:56:48,033 - INFO - Processo finalizado com sucesso!
+2025-04-24 15:00:31,193 - INFO - ================================================================================
+2025-04-24 15:00:31,193 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
+2025-04-24 15:00:31,193 - INFO - ================================================================================
+2025-04-24 15:01:06,932 - INFO - ================================================================================
+2025-04-24 15:01:06,932 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
+2025-04-24 15:01:06,932 - INFO - ================================================================================
+2025-04-24 15:01:07,041 - INFO - Encontradas 190 empresas no MySQL
+2025-04-24 15:01:07,175 - INFO - Sincronização concluída: 0 empresas inseridas, 190 atualizadas
+2025-04-24 15:01:07,175 - INFO - Total de empresas sincronizadas: 190
+2025-04-24 15:01:07,176 - INFO - Criando solicitações para a data: 19/04/2025
+2025-04-24 15:01:07,305 - INFO - Processo concluído: 190 novas solicitações criadas para 19/04/2025
+2025-04-24 15:01:07,306 - INFO - Total de solicitações criadas: 190
+2025-04-24 15:01:07,306 - INFO - Processo finalizado com sucesso!
+2025-04-25 11:12:17,391 - INFO - ================================================================================
+2025-04-25 11:12:17,401 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
+2025-04-25 11:12:17,401 - INFO - ================================================================================
+2025-04-25 11:12:17,491 - INFO - Encontradas 190 empresas no MySQL
+2025-04-25 11:12:17,598 - INFO - Sincronização concluída: 0 empresas inseridas, 190 atualizadas
+2025-04-25 11:12:17,598 - INFO - Total de empresas sincronizadas: 190
+2025-04-25 11:12:17,598 - INFO - Criando solicitações para a data: 20/04/2025
+2025-04-25 11:12:17,719 - INFO - Processo concluído: 190 novas solicitações criadas para 20/04/2025
+2025-04-25 11:12:17,720 - INFO - Total de solicitações criadas: 190
+2025-04-25 11:12:17,720 - INFO - Processo finalizado com sucesso!
+2025-04-25 11:14:13,628 - INFO - ================================================================================
+2025-04-25 11:14:13,629 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
+2025-04-25 11:14:13,629 - INFO - ================================================================================
+2025-04-25 11:14:13,713 - INFO - Encontradas 190 empresas no MySQL
+2025-04-25 11:14:13,821 - INFO - Sincronização concluída: 0 empresas inseridas, 190 atualizadas
+2025-04-25 11:14:13,821 - INFO - Total de empresas sincronizadas: 190
+2025-04-25 11:14:13,821 - INFO - Criando solicitações para a data: 20/04/2025
+2025-04-25 11:14:13,904 - INFO - Processo concluído: 0 novas solicitações criadas para 20/04/2025
+2025-04-25 11:14:13,904 - INFO - Total de solicitações criadas: 0
+2025-04-25 11:14:13,905 - INFO - Processo finalizado com sucesso!
