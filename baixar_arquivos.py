@@ -1,11 +1,5 @@
-import time
-import logging
-import os
-import sys
-import mysql.connector
-import psycopg2
+import time, logging, os, sys, mysql.connector, psycopg2
 from selenium import webdriver
-from datetime import datetime
 from mysql.connector import Error
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
@@ -13,8 +7,18 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 
-# Configuração de logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+os.makedirs("logs", exist_ok=True)
+from logging.handlers import RotatingFileHandler
+MAX_LOG_SIZE = 220 * 1024 * 1024  # 220 MB
+logging.getLogger().setLevel(logging.INFO)
+log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+log_file = "logs/baixar_arquivos.log"
+file_handler = RotatingFileHandler(log_file, maxBytes=MAX_LOG_SIZE, backupCount=5, encoding='utf-8')
+file_handler.setFormatter(log_formatter)
+logging.getLogger().addHandler(file_handler)
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(log_formatter)
+logging.getLogger().addHandler(console_handler)
 
 # ============================================
 # FUNÇÕES DE DIRETÓRIO

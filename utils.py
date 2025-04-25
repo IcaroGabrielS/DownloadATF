@@ -1,11 +1,6 @@
-import logging
-import os
-import sys
-import mysql.connector
-import psycopg2
+import logging, os, sys, mysql.connector, psycopg2, xml.etree.ElementTree as ET
 from mysql.connector import Error
 from datetime import datetime
-import xml.etree.ElementTree as ET
 from dateutil import parser
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -14,18 +9,20 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from dotenv import load_dotenv
 
-# Load environment variables
 load_dotenv()
+os.makedirs("logs", exist_ok=True)
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("operacoes.log"),
-        logging.StreamHandler()
-    ]
-)
+from logging.handlers import RotatingFileHandler
+MAX_LOG_SIZE = 220 * 1024 * 1024  # 220 MB
+logging.getLogger().setLevel(logging.INFO)
+log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+log_file = "logs/utils.log"
+file_handler = RotatingFileHandler(log_file, maxBytes=MAX_LOG_SIZE, backupCount=5, encoding='utf-8')
+file_handler.setFormatter(log_formatter)
+logging.getLogger().addHandler(file_handler)
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(log_formatter)
+logging.getLogger().addHandler(console_handler)
 
 # ============================================
 # DIRECTORY FUNCTIONS

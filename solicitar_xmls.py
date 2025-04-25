@@ -1,23 +1,25 @@
-import time, logging
-import os
+import time, logging, os
 from datetime import datetime
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from dotenv import load_dotenv
-from utils import (
-    conectar_postgres,
-    iniciar_navegador_firefox,
-    autenticar_sefaz,
-    acessar_pagina,
-    espera_para_clicar
-)
+from utils import (conectar_postgres, iniciar_navegador_firefox, autenticar_sefaz, acessar_pagina, espera_para_clicar)
 
-# Load environment variables
 load_dotenv()
+os.makedirs("logs", exist_ok=True)
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+from logging.handlers import RotatingFileHandler
+MAX_LOG_SIZE = 220 * 1024 * 1024  # 220 MB
+logging.getLogger().setLevel(logging.INFO)
+log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+log_file = "logs/solicitar_xmls.log"
+file_handler = RotatingFileHandler(log_file, maxBytes=MAX_LOG_SIZE, backupCount=5, encoding='utf-8')
+file_handler.setFormatter(log_formatter)
+logging.getLogger().addHandler(file_handler)
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(log_formatter)
+logging.getLogger().addHandler(console_handler)
 
 def obter_solicitacoes_pendentes():
     """Busca solicitações pendentes no banco de dados PostgreSQL"""

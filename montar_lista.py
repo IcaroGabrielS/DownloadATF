@@ -1,25 +1,23 @@
-import logging
-import os
+import logging, os
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
-from utils import (
-    conectar_mysql, 
-    conectar_postgres, 
-    garantir_diretorios
-)
+from utils import (conectar_mysql, conectar_postgres)
 
-# Load environment variables
 load_dotenv()
 
-# Configurar logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("solicitacoes.log"),
-        logging.StreamHandler()
-    ]
-)
+os.makedirs("logs", exist_ok=True)
+
+from logging.handlers import RotatingFileHandler
+MAX_LOG_SIZE = 220 * 1024 * 1024  # 220 MB
+logging.getLogger().setLevel(logging.INFO)
+log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+log_file = "logs/montar_lista.log"
+file_handler = RotatingFileHandler(log_file, maxBytes=MAX_LOG_SIZE, backupCount=5, encoding='utf-8')
+file_handler.setFormatter(log_formatter)
+logging.getLogger().addHandler(file_handler)
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(log_formatter)
+logging.getLogger().addHandler(console_handler)
 
 def criar_estrutura_banco():
     """Verifica e cria a estrutura do banco de dados se não existir."""

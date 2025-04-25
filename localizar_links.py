@@ -1,21 +1,24 @@
-import re
-import logging
-import os
+import re, logging, os
 from datetime import datetime
 from selenium.webdriver.common.by import By
 from dotenv import load_dotenv
-from utils import (
-    conectar_postgres,
-    iniciar_navegador_firefox,
-    autenticar_sefaz,
-    acessar_pagina
-)
+from utils import (conectar_postgres, iniciar_navegador_firefox, autenticar_sefaz, acessar_pagina)
 
-# Load environment variables
 load_dotenv()
 
-# Configuração de logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+os.makedirs("logs", exist_ok=True)
+
+from logging.handlers import RotatingFileHandler
+MAX_LOG_SIZE = 220 * 1024 * 1024  # 220 MB
+logging.getLogger().setLevel(logging.INFO)
+log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+log_file = "logs/localizar_links.log"
+file_handler = RotatingFileHandler(log_file, maxBytes=MAX_LOG_SIZE, backupCount=5, encoding='utf-8')
+file_handler.setFormatter(log_formatter)
+logging.getLogger().addHandler(file_handler)
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(log_formatter)
+logging.getLogger().addHandler(console_handler)
 
 def obter_solicitacoes_solicitadas():
     """Busca solicitações que foram solicitadas mas ainda não foram baixadas"""
