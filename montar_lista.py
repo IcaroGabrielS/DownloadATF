@@ -1,9 +1,15 @@
 import logging
-import psycopg2
-import mysql.connector
-from mysql.connector import Error
-from datetime import datetime, timedelta
 import os
+from datetime import datetime, timedelta
+from dotenv import load_dotenv
+from utils import (
+    conectar_mysql, 
+    conectar_postgres, 
+    garantir_diretorios
+)
+
+# Load environment variables
+load_dotenv()
 
 # Configurar logging
 logging.basicConfig(
@@ -14,52 +20,6 @@ logging.basicConfig(
         logging.StreamHandler()
     ]
 )
-
-# Configurações de conexão
-CONFIG = {
-    "MYSQL": {
-        "HOST": "10.0.100.37",
-        "USER": "externo",
-        "PASSWORD": "externo",
-        "DATABASE": "transmissoes"
-    },
-    "POSTGRES": {
-        "HOST": "localhost",
-        "USER": "postgres",
-        "PASSWORD": "root",
-        "DATABASE": "xmlsnfceatf",
-        "PORT": "5432"
-    }
-}
-
-def conectar_mysql():
-    """Estabelece conexão com o banco de dados MySQL."""
-    try:
-        conexao = mysql.connector.connect(
-            host=CONFIG["MYSQL"]["HOST"],
-            user=CONFIG["MYSQL"]["USER"],
-            password=CONFIG["MYSQL"]["PASSWORD"],
-            database=CONFIG["MYSQL"]["DATABASE"]
-        )
-        return conexao
-    except Error as erro:
-        logging.error(f"Erro ao conectar ao MySQL: {erro}")
-        return None
-
-def conectar_postgres():
-    """Estabelece conexão com o banco de dados PostgreSQL."""
-    try:
-        conexao = psycopg2.connect(
-            host=CONFIG["POSTGRES"]["HOST"],
-            user=CONFIG["POSTGRES"]["USER"],
-            password=CONFIG["POSTGRES"]["PASSWORD"],
-            dbname=CONFIG["POSTGRES"]["DATABASE"],
-            port=CONFIG["POSTGRES"]["PORT"]
-        )
-        return conexao
-    except psycopg2.Error as erro:
-        logging.error(f"Erro ao conectar ao PostgreSQL: {erro}")
-        return None
 
 def criar_estrutura_banco():
     """Verifica e cria a estrutura do banco de dados se não existir."""
@@ -140,7 +100,7 @@ def criar_estrutura_banco():
         
         return True
         
-    except psycopg2.Error as erro:
+    except Exception as erro:
         conexao.rollback()
         logging.error(f"Erro ao criar estrutura do banco: {erro}")
         return False
@@ -158,14 +118,10 @@ def sincronizar_empresas():
     
     try:
         cursor_mysql = conexao_mysql.cursor()
-        # Usar EXATAMENTE a consulta fornecida
-        cursor_mysql.execute(
-            "SELECT apelido, inscricao_estadual FROM transmissoes.empresas WHERE status_empresa = 'A' "
-            "AND inscricao_estadual IS NOT NULL AND inscricao_estadual != 0 AND uf = 'PB'"
-        )
+        cursor_mysql.execute(os.environ.get('QUERY_LISTAR_EMPRESAS'))
         empresas = cursor_mysql.fetchall()
         logging.info(f"Encontradas {len(empresas)} empresas no MySQL")
-    except Error as erro:
+    except Exception as erro:
         logging.error(f"Erro ao buscar empresas no MySQL: {erro}")
         return 0
     finally:
@@ -217,7 +173,7 @@ def sincronizar_empresas():
         conexao_pg.commit()
         logging.info(f"Sincronização concluída: {empresas_inseridas} empresas inseridas, {empresas_atualizadas} atualizadas")
     
-    except psycopg2.Error as erro:
+    except Exception as erro:
         conexao_pg.rollback()
         logging.error(f"Erro durante sincronização de empresas: {erro}")
         return 0
@@ -295,7 +251,7 @@ def criar_solicitacoes_cinco_dias_atras():
         conexao_pg.commit()
         logging.info(f"Processo concluído: {solicitacoes_criadas} novas solicitações criadas para {data_formatada}")
     
-    except psycopg2.Error as erro:
+    except Exception as erro:
         conexao_pg.rollback()
         logging.error(f"Erro durante criação de solicitações: {erro}")
         return 0
