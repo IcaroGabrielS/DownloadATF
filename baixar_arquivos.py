@@ -1,13 +1,23 @@
-import time, logging, os, sys, mysql.connector, psycopg2
-from selenium import webdriver
-from mysql.connector import Error
-from selenium.webdriver.support import expected_conditions as EC
+import time, logging, os
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from dotenv import load_dotenv
+from utils import (
+    obter_diretorio_execucao,
+    garantir_diretorios,
+    conectar_postgres,
+    iniciar_navegador_firefox,
+    autenticar_sefaz,
+    acessar_pagina,
+    verificar_downloads_em_progresso,
+    clicar_elemento
+)
 
+load_dotenv()
 os.makedirs("logs", exist_ok=True)
+
 from logging.handlers import RotatingFileHandler
 MAX_LOG_SIZE = 220 * 1024 * 1024  # 220 MB
 logging.getLogger().setLevel(logging.INFO)
@@ -21,111 +31,8 @@ console_handler.setFormatter(log_formatter)
 logging.getLogger().addHandler(console_handler)
 
 # ============================================
-# FUNÇÕES DE DIRETÓRIO
+# FUNÇÕES DE BANCO DE DADOS E SOLICITAÇÕES
 # ============================================
-
-def obter_diretorio_execucao():
-    """Retorna o diretório onde o programa está sendo executado"""
-    if getattr(sys, 'frozen', False):
-        return os.path.dirname(sys.executable)
-    else:
-        return os.path.dirname(os.path.abspath(__file__))
-
-# ============================================
-# CONSTANTES
-# ============================================
-
-# Diretórios importantes
-DIRETORIO_EXECUCAO = obter_diretorio_execucao()
-DIRETORIO_DOWNLOADS = os.path.join(DIRETORIO_EXECUCAO, "NFCE_XML_TEMP")
-
-# Constantes de utilidade
-UTIL = {
-    "MYSQL": {
-        "HOST": "10.0.100.37",
-        "USER": "externo",
-        "PASSWORD": "externo",
-        "DATABASE": "transmissoes"
-    },
-    "POSTGRES": {
-        "HOST": "localhost",
-        "USER": "postgres",
-        "PASSWORD": "root",
-        "DATABASE": "xmlsnfceatf",
-        "PORT": "5432"
-    },
-    "URLS": {
-        "LOGIN": "https://www4.sefaz.pb.gov.br/atf/seg/SEGf_Login.jsp"
-    },
-    "XPATHS": {
-        "LOGIN": {
-            "CAMPO_LOGIN": "//*[@id='login']",
-            "CAMPO_SENHA": "/html/body/table/tbody/tr[2]/td/table[1]/tbody/tr[4]/td[2]/input",
-            "BOTAO_AVANCAR": "/html/body/table/tbody/tr[2]/td/table[1]/tbody/tr[5]/td[2]/input[2]"
-        }
-    },
-    "DIR": {
-        "DIRETORIO_DOWNLOADS": DIRETORIO_DOWNLOADS,
-        "DIRETORIO_FINAL": "Z:\\Fiscal\\18. Agendador de Downloads\\NFCE"
-    }
-}
-
-# Constantes para download
-DOWNLOAD = {
-    "XPATHS": {
-        "IMAGEM_ANEXO": "//img[@alt='Anexo']",
-        "LINK_DOWNLOAD": "//a[@href='javascript:mostrarArquivo(0)']"
-    },
-    "ESPERAS": {
-        "CURTA": 2,
-        "LONGA": 20
-    }
-}
-
-# ============================================
-# FUNÇÕES AUXILIARES
-# ============================================
-
-def garantir_diretorios():
-    """Garante que os diretórios necessários existam"""
-    os.makedirs(DIRETORIO_DOWNLOADS, exist_ok=True)
-    logging.info(f"Diretório de downloads verificado: {DIRETORIO_DOWNLOADS}")
-
-# ============================================
-# FUNÇÕES DE BANCO DE DADOS
-# ============================================
-
-def conectar_mysql():
-    """Estabelece conexão com o banco de dados MySQL"""
-    try:
-        conexao = mysql.connector.connect(
-            host=UTIL["MYSQL"]["HOST"],
-            user=UTIL["MYSQL"]["USER"],
-            password=UTIL["MYSQL"]["PASSWORD"],
-            database=UTIL["MYSQL"]["DATABASE"]
-        )
-        if conexao.is_connected():
-            logging.info("Conexão ao MySQL estabelecida com sucesso")
-        return conexao
-    except Error as erro:
-        logging.error(f"Erro na conexão com o MySQL: {str(erro)}")
-        return None
-
-def conectar_postgres():
-    """Estabelece conexão com o banco de dados PostgreSQL"""
-    try:
-        conexao = psycopg2.connect(
-            host=UTIL["POSTGRES"]["HOST"],
-            user=UTIL["POSTGRES"]["USER"],
-            password=UTIL["POSTGRES"]["PASSWORD"],
-            dbname=UTIL["POSTGRES"]["DATABASE"],
-            port=UTIL["POSTGRES"]["PORT"]
-        )
-        logging.info("Conexão ao PostgreSQL estabelecida com sucesso")
-        return conexao
-    except psycopg2.Error as erro:
-        logging.error(f"Erro na conexão com o PostgreSQL: {str(erro)}")
-        return None
 
 def obter_solicitacoes_com_link():
     """Busca solicitações que têm link mas ainda não foram baixadas"""
@@ -157,7 +64,7 @@ def obter_solicitacoes_com_link():
         logging.info(f"Encontradas {len(solicitacoes)} solicitações com link pendentes de download")
         return solicitacoes
     
-    except psycopg2.Error as erro:
+    except Exception as erro:
         logging.error(f"Erro ao buscar solicitações: {erro}")
         if conexao:
             conexao.close()
@@ -185,7 +92,7 @@ def marcar_como_baixado(id_solicitacao):
         logging.info(f"Solicitação {id_solicitacao} marcada como baixada")
         return True
     
-    except psycopg2.Error as erro:
+    except Exception as erro:
         logging.error(f"Erro ao marcar solicitação {id_solicitacao} como baixada: {erro}")
         if conexao:
             conexao.rollback()
@@ -193,112 +100,8 @@ def marcar_como_baixado(id_solicitacao):
         return False
 
 # ============================================
-# FUNÇÕES DE NAVEGADOR E CONEXÃO
+# FUNÇÕES DE DOWNLOAD
 # ============================================
-
-def iniciar_navegador_firefox():
-    """Inicia o navegador Firefox com as configurações adequadas para download"""
-    logging.info("Iniciando navegador Firefox para downloads")
-    
-    # Configurar opções do Firefox
-    options = Options()
-    
-    # Definir diretório de download
-    download_dir = UTIL["DIR"]["DIRETORIO_DOWNLOADS"]
-    logging.info(f"Configurando downloads para o diretório: {download_dir}")
-    
-    options.set_preference("browser.download.dir", download_dir)
-    options.set_preference("browser.download.folderList", 2)
-    options.set_preference("browser.download.useDownloadDir", True)
-    options.set_preference("browser.helperApps.neverAsk.saveToDisk", 
-                          "application/pdf, application/x-pdf, application/octet-stream, application/xml")
-    options.set_preference("browser.download.manager.showWhenStarting", False)
-    options.set_preference("browser.download.manager.focusWhenStarting", False)
-    options.set_preference("browser.download.manager.closeWhenDone", True)
-
-    try:
-        navegador = webdriver.Firefox(options=options)
-        navegador.get(UTIL["URLS"]["LOGIN"])
-        return navegador
-    except Exception as e:
-        logging.error(f"Erro ao iniciar o navegador: {str(e)}")
-        return None
-
-def obter_credenciais_banco():
-    """Obtém credenciais de login do banco de dados"""
-    conexao = conectar_mysql()
-    if conexao and conexao.is_connected():
-        cursor = conexao.cursor()
-        cursor.execute("SELECT login_atf, senha_atf FROM transmissoes.configuracoes_analytics")
-        resultado = cursor.fetchone()
-        cursor.close()
-        conexao.close()
-        return resultado[0], resultado[1]
-    return None, None
-
-def autenticar_sefaz(navegador, espera=2):
-    """Autentica no sistema da SEFAZ"""
-    usuario, senha = obter_credenciais_banco()
-    if not usuario or not senha:
-        logging.error("Falha ao obter credenciais do banco de dados")
-        return False
-    
-    try:
-        wait = WebDriverWait(navegador, espera)
-        campo_login = wait.until(EC.presence_of_element_located((By.XPATH, UTIL["XPATHS"]["LOGIN"]["CAMPO_LOGIN"])))
-        campo_senha = wait.until(EC.presence_of_element_located((By.XPATH, UTIL["XPATHS"]["LOGIN"]["CAMPO_SENHA"])))
-        botao_avancar = wait.until(EC.element_to_be_clickable((By.XPATH, UTIL["XPATHS"]["LOGIN"]["BOTAO_AVANCAR"])))
-        
-        campo_login.send_keys(usuario)
-        campo_senha.send_keys(senha)
-        botao_avancar.click()
-        logging.info("Autenticação realizada com sucesso")
-        return True
-    except Exception as e:
-        logging.error(f"Erro durante autenticação: {str(e)}")
-        return False
-
-def acessar_pagina(navegador, link):
-    """Acessa uma página específica no navegador"""
-    logging.info(f"Acessando página: {link}")
-    navegador.get(link)
-    return navegador
-
-def clicar_elemento(navegador, xpath):
-    """Clica em um elemento na página pelo seu XPath"""
-    try:
-        elemento = WebDriverWait(navegador, DOWNLOAD["ESPERAS"]["CURTA"]).until(
-            EC.visibility_of_element_located((By.XPATH, xpath))
-        )
-        elemento.click()
-        return True
-    except TimeoutException:
-        logging.warning(f"Tempo esgotado ao esperar pelo elemento com XPath: {xpath}")
-        return False
-    except Exception as e:
-        logging.error(f"Erro ao clicar no elemento com XPath {xpath}: {str(e)}")
-        return False
-
-# ============================================
-# FUNÇÕES DE PROCESSAMENTO DE DOWNLOADS
-# ============================================
-
-def verificar_downloads_em_progresso(diretorio_download):
-    """Verifica se existem downloads em andamento"""
-    try:
-        if os.path.exists(diretorio_download):
-            downloads_em_progresso = any(arquivo.endswith('.part') for arquivo in os.listdir(diretorio_download))
-            if downloads_em_progresso:
-                logging.info(f"Existem downloads em andamento no diretório {diretorio_download}")
-            else:
-                logging.info(f"Nenhum download em andamento detectado no diretório {diretorio_download}")
-            return downloads_em_progresso
-        else:
-            logging.warning(f"Diretório de download não existe: {diretorio_download}")
-            return False
-    except Exception as e:
-        logging.error(f"Erro ao verificar downloads em progresso: {str(e)}")
-        return False
 
 def realizar_download(navegador, solicitacao):
     """Acessa o link e inicia o download do arquivo"""
@@ -307,7 +110,8 @@ def realizar_download(navegador, solicitacao):
         acessar_pagina(navegador, solicitacao["link"])
         
         # Clica nos elementos de download
-        if clicar_elemento(navegador, DOWNLOAD["XPATHS"]["IMAGEM_ANEXO"]) and clicar_elemento(navegador, DOWNLOAD["XPATHS"]["LINK_DOWNLOAD"]):
+        if clicar_elemento(navegador, os.environ.get("XPATH_IMAGEM_ANEXO"), int(os.environ.get("ESPERA_CURTA", 2))) and \
+           clicar_elemento(navegador, os.environ.get("XPATH_LINK_DOWNLOAD"), int(os.environ.get("ESPERA_CURTA", 2))):
             logging.info(f"Download iniciado para solicitação {solicitacao['id']}")
             # Aguarda um pouco para o download iniciar
             time.sleep(5)
@@ -327,8 +131,15 @@ def executar_processo_downloads():
     """Função principal que executa o processo de download dos arquivos"""
     logging.info("Iniciando processo de download dos arquivos")
     
-    # Garante que os diretórios existam
-    garantir_diretorios()
+    # Obtém o diretório de execução do programa
+    diretorio_base = obter_diretorio_execucao()
+    
+    # Cria um caminho absoluto para o diretório de downloads
+    diretorio_downloads = os.path.join(diretorio_base, os.environ.get("DIRETORIO_DOWNLOADS"))
+    logging.info(f"Diretório de downloads configurado: {diretorio_downloads}")
+    
+    # Garante que o diretório de downloads existe
+    os.makedirs(diretorio_downloads, exist_ok=True)
     
     # Carrega as solicitações pendentes de download do banco de dados
     solicitacoes = obter_solicitacoes_com_link()
@@ -339,7 +150,8 @@ def executar_processo_downloads():
     
     navegador = None
     try:
-        navegador = iniciar_navegador_firefox()
+        # Inicia o navegador com o diretório de downloads absoluto
+        navegador = iniciar_navegador_firefox(diretorio_downloads)
         
         if navegador and autenticar_sefaz(navegador):
             downloads_realizados = 0
@@ -364,11 +176,11 @@ def executar_processo_downloads():
     except Exception as e:
         logging.error(f"Erro durante a execução: {str(e)}")
     finally:
-        diretorio_temp = UTIL["DIR"]["DIRETORIO_DOWNLOADS"]
-        tentativa, max_tentativas = 0, 10
+        # Usa o caminho absoluto para verificar downloads em progresso
+        tentativa, max_tentativas = 0, int(os.environ.get("MAX_TENTATIVAS", 10))
         
         # Aguarda downloads em andamento concluírem
-        while verificar_downloads_em_progresso(diretorio_temp) and tentativa < max_tentativas:
+        while verificar_downloads_em_progresso(diretorio_downloads) and tentativa < max_tentativas:
             time.sleep(2)
             tentativa += 1
             
