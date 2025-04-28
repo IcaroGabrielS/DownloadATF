@@ -37,6 +37,7 @@ QUERY_LISTAR_EMPRESAS = "SELECT apelido, inscricao_estadual FROM transmissoes.em
 # ============================================
 # UTILITY FUNCTIONS
 # ============================================
+os.makedirs("/home/desenvolvimento/DownloadATF/logs/", exist_ok=True)
 
 def obter_diretorio_execucao():
     """Retorna o diretório onde o programa está sendo executado"""
@@ -48,7 +49,7 @@ def obter_diretorio_execucao():
 # Diretórios
 DIRETORIO_EXECUCAO = obter_diretorio_execucao()
 DIRETORIO_BASE = os.path.join(DIRETORIO_EXECUCAO, "NFCE_XML_TEMP")
-DIRETORIO_FINAL = "Z:\\Fiscal\\18. Agendador de Downloads\\NFCE"
+DIRETORIO_FINAL=r'/mnt/arquivos/Fiscal/18. Agendador de Downloads/NFCE'
 
 # Estrutura de diretórios de trabalho
 ESTRUTURA_DIRETORIOS = {
