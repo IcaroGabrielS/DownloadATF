@@ -14,19 +14,28 @@ from utils import (
 )
 
 load_dotenv()
+
+# Configurar diretórios de log
 os.makedirs("logs", exist_ok=True)
 
+# Configurar logging
 from logging.handlers import RotatingFileHandler
 MAX_LOG_SIZE = 220 * 1024 * 1024  # 220 MB
 logging.getLogger().setLevel(logging.INFO)
 log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-log_file = "logs/baixar_arquivos.log"  # Caminho relativo para maior portabilidade
+log_file = "logs/baixar_arquivos.log"
 file_handler = RotatingFileHandler(log_file, maxBytes=MAX_LOG_SIZE, backupCount=5, encoding='utf-8')
 file_handler.setFormatter(log_formatter)
 logging.getLogger().addHandler(file_handler)
 console_handler = logging.StreamHandler()
 console_handler.setFormatter(log_formatter)
 logging.getLogger().addHandler(console_handler)
+
+# Configurar diretório de downloads
+DIRETORIO_DOWNLOADS = "/home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming"
+# Garantir que o diretório existe com as permissões corretas
+os.makedirs(DIRETORIO_DOWNLOADS, exist_ok=True)
+os.chmod(DIRETORIO_DOWNLOADS, 0o777)  # Dar todas as permissões para garantir acesso
 
 # ============================================
 # FUNÇÕES DE BANCO DE DADOS E SOLICITAÇÕES
@@ -112,8 +121,8 @@ def realizar_download(navegador, solicitacao):
         if clicar_elemento(navegador, os.environ.get("XPATH_IMAGEM_ANEXO"), espera_curta) and \
            clicar_elemento(navegador, os.environ.get("XPATH_LINK_DOWNLOAD"), espera_curta):
             logging.info(f"Download iniciado para solicitação {solicitacao['id']}")
-            # Aguarda um pouco para o download iniciar
-            time.sleep(5)
+            # Aguardar um pouco mais para o download iniciar
+            time.sleep(10)  # Aumentado para dar mais tempo ao download
             return True
         else:
             logging.error(f"Falha ao clicar nos elementos para download da solicitação {solicitacao['id']}")
@@ -130,12 +139,18 @@ def executar_processo_downloads():
     """Função principal que executa o processo de download dos arquivos"""
     logging.info("Iniciando processo de download dos arquivos")
     
-    # Definir diretório de downloads fixo conforme solicitado
-    diretorio_downloads = "/home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming"
-    logging.info(f"Diretório de downloads configurado: {diretorio_downloads}")
+    logging.info(f"Diretório de downloads configurado: {DIRETORIO_DOWNLOADS}")
     
-    # Garante que o diretório de downloads existe
-    os.makedirs(diretorio_downloads, exist_ok=True)
+    # Verificar permissões do diretório
+    try:
+        test_file_path = os.path.join(DIRETORIO_DOWNLOADS, "test_write_permission.tmp")
+        with open(test_file_path, 'w') as f:
+            f.write("Teste de permissão de escrita")
+        os.remove(test_file_path)
+        logging.info(f"Permissão de escrita verificada no diretório {DIRETORIO_DOWNLOADS}")
+    except Exception as e:
+        logging.error(f"ERRO DE PERMISSÃO: Não é possível escrever no diretório {DIRETORIO_DOWNLOADS}: {str(e)}")
+        return
     
     # Carrega as solicitações pendentes de download do banco de dados
     solicitacoes = obter_solicitacoes_com_link()
@@ -146,9 +161,9 @@ def executar_processo_downloads():
     
     navegador = None
     try:
-        # Inicia o navegador com Selenoid (com mapeamento de volume)
+        # Inicia o navegador com Selenoid
         browser_type = os.environ.get("SELENOID_BROWSER", "chrome")
-        navegador = iniciar_navegador_selenoid(diretorio_downloads, browser_type)
+        navegador = iniciar_navegador_selenoid(DIRETORIO_DOWNLOADS, browser_type)
         
         if navegador and autenticar_sefaz(navegador):
             downloads_realizados = 0
@@ -163,8 +178,16 @@ def executar_processo_downloads():
                     else:
                         logging.error(f"Falha ao atualizar status no banco para solicitação {solicitacao['id']}")
                 
-                # Espera um pouco entre os downloads para evitar sobrecarga
-                time.sleep(10)
+                # Listar arquivos após cada download para verificar
+                try:
+                    logging.info(f"Arquivos no diretório de download após solicitação {solicitacao['id']}:")
+                    for arquivo in os.listdir(DIRETORIO_DOWNLOADS):
+                        logging.info(f"  - {arquivo}")
+                except Exception as e:
+                    logging.error(f"Erro ao listar arquivos: {str(e)}")
+                
+                # Espera entre os downloads para evitar sobrecarga
+                time.sleep(15)  # Aumentado para dar mais tempo
             
             logging.info(f"Processo de downloads concluído. {downloads_realizados} arquivos baixados.")
         else:
@@ -177,12 +200,16 @@ def executar_processo_downloads():
         max_tentativas = int(os.environ.get("MAX_TENTATIVAS", 10))
         tentativa = 0
         
-        while verificar_downloads_em_progresso(diretorio_downloads) and tentativa < max_tentativas:
+        while verificar_downloads_em_progresso(DIRETORIO_DOWNLOADS) and tentativa < max_tentativas:
             time.sleep(2)
             tentativa += 1
             
-        if tentativa >= max_tentativas:
-            logging.warning("Tempo máximo de espera atingido, alguns downloads podem não ter sido concluídos")
+        # Verificar se há arquivos no diretório de downloads
+        try:
+            arquivos = os.listdir(DIRETORIO_DOWNLOADS)
+            logging.info(f"Total de {len(arquivos)} arquivos no diretório de download após o processo")
+        except Exception as e:
+            logging.error(f"Erro ao listar arquivos finais: {str(e)}")
             
         if navegador:
             navegador.quit()

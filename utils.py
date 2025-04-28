@@ -163,57 +163,57 @@ def iniciar_navegador_selenoid(download_dir=None, browser_type="chrome"):
         options = FirefoxOptions()
     else:  # chrome é o padrão
         options = ChromeOptions()
-        
-    # Adicionar capacidades específicas do Selenoid
+    
+    # Caminho fixo dentro do contêiner onde os downloads serão salvos
+    container_download_path = "/home/selenium/Downloads"
+    
+    # Configurar capacidades específicas do Selenoid
     capabilities = {
         "browserName": browser_type.lower(),
         "browserVersion": os.environ.get("SELENOID_VERSION", "latest"),
         "selenoid:options": {
             "enableVNC": True,
             "enableVideo": False,
-            "sessionTimeout": "3m",
+            "sessionTimeout": "3m"
         }
     }
     
-    # Configuração para downloads em Selenoid
-    # Definir pasta padrão para downloads dentro do contêiner
-    container_download_path = "/downloads"
-    
-    # Adicionar volume para mapeamento entre contêiner e host
+    # Adicionar mapeamento de volume se um diretório de download foi especificado
     if download_dir:
-        capabilities["selenoid:options"]["volumes"] = [
-            f"{download_dir}:{container_download_path}:rw"
-        ]
+        # Garantir que o caminho no host seja absoluto
+        if not os.path.isabs(download_dir):
+            download_dir = os.path.abspath(download_dir)
         
-        # Configurações específicas do navegador para o diretório de download do CONTÊINER
+        # Configurar o mapeamento de volume no formato específico do Selenoid
+        capabilities["selenoid:options"]["env"] = ["ENABLE_FILE_UPLOAD=true"]
+        capabilities["selenoid:options"]["labels"] = {"manual": "true"}
+        capabilities["selenoid:options"]["hostEntries"] = []
+        capabilities["selenoid:options"]["volumes"] = [f"{download_dir}:{container_download_path}"]
+        
+        logging.info(f"Configurando mapeamento de volume: {download_dir} -> {container_download_path}")
+        
+        # Configurar preferências de download específicas do navegador
         if browser_type.lower() == "firefox":
-            # Configurações para Firefox
-            options.set_preference("browser.download.dir", container_download_path)
             options.set_preference("browser.download.folderList", 2)
-            options.set_preference("browser.download.useDownloadDir", True)
-            options.set_preference("browser.helperApps.neverAsk.saveToDisk", 
-                                 "application/pdf,application/x-pdf,application/octet-stream,application/xml")
             options.set_preference("browser.download.manager.showWhenStarting", False)
-            options.set_preference("browser.download.manager.focusWhenStarting", False)
-            options.set_preference("browser.download.manager.closeWhenDone", True)
-        else:
-            # Configurações para Chrome
+            options.set_preference("browser.download.dir", container_download_path)
+            options.set_preference("browser.helperApps.neverAsk.saveToDisk", 
+                                "application/xml,application/zip,application/octet-stream")
+            options.set_preference("browser.download.useDownloadDir", True)
+        else:  # Chrome
             prefs = {
                 "download.default_directory": container_download_path,
                 "download.prompt_for_download": False,
                 "download.directory_upgrade": True,
-                "safebrowsing.enabled": False
+                "safebrowsing.enabled": False,
+                "plugins.always_open_pdf_externally": True
             }
             options.add_experimental_option("prefs", prefs)
-            logging.info(f"Configurando download_dir dentro do contêiner: {container_download_path}")
-            logging.info(f"Mapeado para o host em: {download_dir}")
-
-    # Adicionar argumentos extras
+    
+    # Adicionar argumentos padrão
     if browser_type.lower() == "chrome":
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
-        options.add_argument("--disable-gpu")
-        options.add_argument("--disable-extensions")
     
     try:
         # Conectar ao Selenoid
