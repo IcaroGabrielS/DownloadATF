@@ -192,9 +192,19 @@ def executar_processo_downloads():
             navegador.quit()
             
         logging.info("Processo de download finalizado")
+            # Depois que todos os downloads forem concluídos
+        logging.info("Verificando arquivos baixados...")
+        if os.path.exists(diretorio_downloads):
+            arquivos = os.listdir(diretorio_downloads)
+            logging.info(f"Arquivos encontrados no diretório de downloads: {len(arquivos)}")
+            for arquivo in arquivos[:5]:  # Mostrar até 5 arquivos como exemplo
+                logging.info(f"Arquivo na pasta de downloads: {arquivo}")
+        else:
+            logging.warning(f"Diretório de downloads não existe: {diretorio_downloads}")
     
 if __name__ == "__main__":
     logging.info("=" * 80)
     logging.info("INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML")
     logging.info("=" * 80)
     executar_processo_downloads()
+    

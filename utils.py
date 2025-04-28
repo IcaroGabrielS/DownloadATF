@@ -171,15 +171,24 @@ def iniciar_navegador_selenoid(download_dir=None, browser_type="chrome"):
         "selenoid:options": {
             "enableVNC": True,
             "enableVideo": False,
-            "sessionTimeout": "3m"
+            "sessionTimeout": "3m",
         }
     }
     
-    # Adicionar configurações de download se especificado
+    # Configuração para downloads em Selenoid
+    # Definir pasta padrão para downloads dentro do contêiner
+    container_download_path = "/downloads"
+    
+    # Adicionar volume para mapeamento entre contêiner e host
     if download_dir:
+        capabilities["selenoid:options"]["volumes"] = [
+            f"{download_dir}:{container_download_path}:rw"
+        ]
+        
+        # Configurações específicas do navegador para o diretório de download do CONTÊINER
         if browser_type.lower() == "firefox":
             # Configurações para Firefox
-            options.set_preference("browser.download.dir", download_dir)
+            options.set_preference("browser.download.dir", container_download_path)
             options.set_preference("browser.download.folderList", 2)
             options.set_preference("browser.download.useDownloadDir", True)
             options.set_preference("browser.helperApps.neverAsk.saveToDisk", 
@@ -190,13 +199,14 @@ def iniciar_navegador_selenoid(download_dir=None, browser_type="chrome"):
         else:
             # Configurações para Chrome
             prefs = {
-                "download.default_directory": download_dir,
+                "download.default_directory": container_download_path,
                 "download.prompt_for_download": False,
                 "download.directory_upgrade": True,
                 "safebrowsing.enabled": False
             }
             options.add_experimental_option("prefs", prefs)
-            logging.info(f"Configurando download_dir: {download_dir}")
+            logging.info(f"Configurando download_dir dentro do contêiner: {container_download_path}")
+            logging.info(f"Mapeado para o host em: {download_dir}")
 
     # Adicionar argumentos extras
     if browser_type.lower() == "chrome":
