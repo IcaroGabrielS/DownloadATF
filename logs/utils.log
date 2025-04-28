@@ -1,365 +1,48 @@
-2025-04-25 18:00:00,965 - INFO - ================================================================================
-2025-04-25 18:00:00,966 - INFO - INICIANDO PROCESSO DE SOLICITAÇÃO DE ARQUIVOS XML
-2025-04-25 18:00:00,966 - INFO - ================================================================================
-2025-04-25 18:00:01,018 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-25 18:00:01,022 - INFO - Encontradas 0 solicitações pendentes
-2025-04-25 18:00:01,023 - INFO - Não há solicitações pendentes para processar
-2025-04-28 09:38:28,648 - INFO - ================================================================================
-2025-04-28 09:38:28,649 - INFO - INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML
-2025-04-28 09:38:28,658 - INFO - ================================================================================
-2025-04-28 09:38:28,658 - INFO - Iniciando processo de download dos arquivos
-2025-04-28 09:38:28,659 - INFO - Diretório de downloads verificado: Gerenciador De Arquivos\NFCE_XML_TEMP\incoming
-2025-04-28 09:38:28,714 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:38:28,718 - INFO - Encontradas 20 solicitações com link pendentes de download
-2025-04-28 09:38:28,718 - INFO - Iniciando navegador Firefox
-2025-04-28 09:38:29,128 - WARNING - The geckodriver version (0.35.0) detected in PATH at C:\Users\icaro.saldanha\AppData\Local\Programs\Python\Python313\geckodriver.exe might not be compatible with the detected firefox version (137.0.2.563); currently, geckodriver 0.36.0 is recommended for firefox 137.*, so it is advised to delete the driver in PATH and retry
-2025-04-28 09:38:36,285 - INFO - Autenticando no SEFAZ
-2025-04-28 09:38:36,310 - INFO - Conexão ao MySQL estabelecida com sucesso
-2025-04-28 09:38:37,438 - INFO - Autenticação bem-sucedida
-2025-04-28 09:38:37,439 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962215
-2025-04-28 09:38:41,160 - INFO - Download iniciado para solicitação 390
-2025-04-28 09:38:46,206 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:38:46,211 - INFO - Solicitação 390 marcada como baixada
-2025-04-28 09:38:46,211 - INFO - Solicitação 390 marcada como baixada no banco
-2025-04-28 09:38:56,211 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77963041
-2025-04-28 09:38:57,836 - INFO - Download iniciado para solicitação 411
-2025-04-28 09:39:02,988 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:39:02,996 - INFO - Solicitação 411 marcada como baixada
-2025-04-28 09:39:02,997 - INFO - Solicitação 411 marcada como baixada no banco
-2025-04-28 09:39:12,997 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962975
-2025-04-28 09:39:14,882 - INFO - Download iniciado para solicitação 408
-2025-04-28 09:39:19,940 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:39:19,950 - INFO - Solicitação 408 marcada como baixada
-2025-04-28 09:39:19,951 - INFO - Solicitação 408 marcada como baixada no banco
-2025-04-28 09:39:29,952 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962869
-2025-04-28 09:39:31,339 - INFO - Download iniciado para solicitação 405
-2025-04-28 09:39:36,495 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:39:36,512 - INFO - Solicitação 405 marcada como baixada
-2025-04-28 09:39:36,513 - INFO - Solicitação 405 marcada como baixada no banco
-2025-04-28 09:39:46,513 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962815
-2025-04-28 09:39:47,992 - INFO - Download iniciado para solicitação 404
-2025-04-28 09:39:53,151 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:39:53,164 - INFO - Solicitação 404 marcada como baixada
-2025-04-28 09:39:53,165 - INFO - Solicitação 404 marcada como baixada no banco
-2025-04-28 09:40:03,165 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77963080
-2025-04-28 09:40:05,119 - INFO - Download iniciado para solicitação 412
-2025-04-28 09:40:10,166 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:40:10,169 - INFO - Solicitação 412 marcada como baixada
-2025-04-28 09:40:10,170 - INFO - Solicitação 412 marcada como baixada no banco
-2025-04-28 09:40:20,170 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77963033
-2025-04-28 09:40:21,999 - INFO - Download iniciado para solicitação 410
-2025-04-28 09:40:27,043 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:40:27,057 - INFO - Solicitação 410 marcada como baixada
-2025-04-28 09:40:27,057 - INFO - Solicitação 410 marcada como baixada no banco
-2025-04-28 09:40:37,058 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962997
-2025-04-28 09:40:38,446 - INFO - Download iniciado para solicitação 409
-2025-04-28 09:40:43,491 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:40:43,505 - INFO - Solicitação 409 marcada como baixada
-2025-04-28 09:40:43,506 - INFO - Solicitação 409 marcada como baixada no banco
-2025-04-28 09:40:53,506 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962925
-2025-04-28 09:40:56,173 - INFO - Download iniciado para solicitação 407
-2025-04-28 09:41:01,219 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:41:01,232 - INFO - Solicitação 407 marcada como baixada
-2025-04-28 09:41:01,232 - INFO - Solicitação 407 marcada como baixada no banco
-2025-04-28 09:41:11,233 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962682
-2025-04-28 09:41:13,085 - INFO - Download iniciado para solicitação 401
-2025-04-28 09:41:18,244 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:41:18,250 - INFO - Solicitação 401 marcada como baixada
-2025-04-28 09:41:18,251 - INFO - Solicitação 401 marcada como baixada no banco
-2025-04-28 09:41:28,252 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962589
-2025-04-28 09:41:29,806 - INFO - Download iniciado para solicitação 398
-2025-04-28 09:41:34,853 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:41:34,867 - INFO - Solicitação 398 marcada como baixada
-2025-04-28 09:41:34,867 - INFO - Solicitação 398 marcada como baixada no banco
-2025-04-28 09:41:44,867 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962561
-2025-04-28 09:41:46,605 - INFO - Download iniciado para solicitação 397
-2025-04-28 09:41:51,654 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:41:51,668 - INFO - Solicitação 397 marcada como baixada
-2025-04-28 09:41:51,668 - INFO - Solicitação 397 marcada como baixada no banco
-2025-04-28 09:42:01,669 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962505
-2025-04-28 09:42:03,206 - INFO - Download iniciado para solicitação 396
-2025-04-28 09:42:08,361 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:42:08,367 - INFO - Solicitação 396 marcada como baixada
-2025-04-28 09:42:08,367 - INFO - Solicitação 396 marcada como baixada no banco
-2025-04-28 09:42:18,367 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962473
-2025-04-28 09:42:19,720 - INFO - Download iniciado para solicitação 395
-2025-04-28 09:42:24,769 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:42:24,784 - INFO - Solicitação 395 marcada como baixada
-2025-04-28 09:42:24,785 - INFO - Solicitação 395 marcada como baixada no banco
-2025-04-28 09:42:34,786 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962059
-2025-04-28 09:42:36,227 - INFO - Download iniciado para solicitação 387
-2025-04-28 09:42:41,276 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:42:41,283 - INFO - Solicitação 387 marcada como baixada
-2025-04-28 09:42:41,284 - INFO - Solicitação 387 marcada como baixada no banco
-2025-04-28 09:42:51,284 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962324
-2025-04-28 09:42:52,911 - INFO - Download iniciado para solicitação 392
-2025-04-28 09:42:58,074 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:42:58,089 - INFO - Solicitação 392 marcada como baixada
-2025-04-28 09:42:58,090 - INFO - Solicitação 392 marcada como baixada no banco
-2025-04-28 09:43:08,090 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962257
-2025-04-28 09:43:09,885 - INFO - Download iniciado para solicitação 391
-2025-04-28 09:43:14,937 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:43:14,942 - INFO - Solicitação 391 marcada como baixada
-2025-04-28 09:43:14,942 - INFO - Solicitação 391 marcada como baixada no banco
-2025-04-28 09:43:24,943 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962171
-2025-04-28 09:43:26,360 - INFO - Download iniciado para solicitação 389
-2025-04-28 09:43:31,415 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:43:31,421 - INFO - Solicitação 389 marcada como baixada
-2025-04-28 09:43:31,421 - INFO - Solicitação 389 marcada como baixada no banco
-2025-04-28 09:43:41,422 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77962106
-2025-04-28 09:43:42,957 - INFO - Download iniciado para solicitação 388
-2025-04-28 09:43:48,008 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:43:48,013 - INFO - Solicitação 388 marcada como baixada
-2025-04-28 09:43:48,014 - INFO - Solicitação 388 marcada como baixada no banco
-2025-04-28 09:43:58,014 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77961970
-2025-04-28 09:43:59,578 - INFO - Download iniciado para solicitação 385
-2025-04-28 09:44:04,628 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:44:04,632 - INFO - Solicitação 385 marcada como baixada
-2025-04-28 09:44:04,633 - INFO - Solicitação 385 marcada como baixada no banco
-2025-04-28 09:44:14,633 - INFO - Processo de downloads concluído. 20 arquivos baixados.
-2025-04-28 09:44:14,634 - INFO - Nenhum download em andamento detectado no diretório Gerenciador De Arquivos\NFCE_XML_TEMP\incoming
-2025-04-28 09:44:17,076 - INFO - Processo de download finalizado
-2025-04-28 09:45:00,236 - INFO - ================================================================================
-2025-04-28 09:45:00,237 - INFO - INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML
-2025-04-28 09:45:00,237 - INFO - ================================================================================
-2025-04-28 09:45:00,237 - INFO - Iniciando processo de download dos arquivos
-2025-04-28 09:45:00,237 - INFO - Diretório de downloads configurado: c:\Users\icaro.saldanha\Documents\DownloadATF\Gerenciador De Arquivos\NFCE_XML_TEMP\incoming
-2025-04-28 09:45:00,296 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 09:45:00,301 - INFO - Encontradas 0 solicitações com link pendentes de download
-2025-04-28 09:45:00,302 - INFO - Não há solicitações pendentes de download
-2025-04-28 10:00:02,292 - INFO - ================================================================================
-2025-04-28 10:00:02,292 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
-2025-04-28 10:00:02,293 - INFO - ================================================================================
-2025-04-28 10:00:02,362 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:00:02,381 - INFO - ================================================================================
-2025-04-28 10:00:02,381 - INFO - INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML
-2025-04-28 10:00:02,382 - INFO - ================================================================================
-2025-04-28 10:00:02,382 - INFO - Iniciando processo de download dos arquivos
-2025-04-28 10:00:02,382 - INFO - Diretório de downloads configurado: C:\Users\icaro.saldanha\Documents\DownloadATF\Gerenciador De Arquivos\NFCE_XML_TEMP\incoming
-2025-04-28 10:00:02,394 - INFO - Conexão ao MySQL estabelecida com sucesso
-2025-04-28 10:00:02,405 - INFO - Encontradas 190 empresas no MySQL
-2025-04-28 10:00:02,449 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:00:02,455 - INFO - Encontradas 0 solicitações com link pendentes de download
-2025-04-28 10:00:02,455 - INFO - Não há solicitações pendentes de download
-2025-04-28 10:00:02,464 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:00:02,554 - INFO - Sincronização concluída: 0 empresas inseridas, 190 atualizadas
-2025-04-28 10:00:02,555 - INFO - Total de empresas sincronizadas: 190
-2025-04-28 10:00:02,555 - INFO - Criando solicitações para a data: 23/04/2025
-2025-04-28 10:00:02,581 - INFO - ================================================================================
-2025-04-28 10:00:02,582 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
-2025-04-28 10:00:02,582 - INFO - ================================================================================
-2025-04-28 10:00:02,605 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:00:02,635 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:00:02,642 - INFO - Processo concluído: 0 novas solicitações criadas para 23/04/2025
-2025-04-28 10:00:02,643 - INFO - Total de solicitações criadas: 0
-2025-04-28 10:00:02,643 - INFO - Processo finalizado com sucesso!
-2025-04-28 10:00:02,664 - INFO - Conexão ao MySQL estabelecida com sucesso
-2025-04-28 10:00:02,672 - INFO - Encontradas 190 empresas no MySQL
-2025-04-28 10:00:02,727 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:00:02,796 - INFO - Sincronização concluída: 0 empresas inseridas, 190 atualizadas
-2025-04-28 10:00:02,797 - INFO - Total de empresas sincronizadas: 190
-2025-04-28 10:00:02,797 - INFO - Criando solicitações para a data: 23/04/2025
-2025-04-28 10:00:02,845 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:00:02,882 - INFO - Processo concluído: 0 novas solicitações criadas para 23/04/2025
-2025-04-28 10:00:02,882 - INFO - Total de solicitações criadas: 0
-2025-04-28 10:00:02,882 - INFO - Processo finalizado com sucesso!
-2025-04-28 10:01:58,999 - INFO - ================================================================================
-2025-04-28 10:01:58,999 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
-2025-04-28 10:01:59,000 - INFO - ================================================================================
-2025-04-28 10:01:59,000 - INFO - Iniciando processo de busca de links de download
-2025-04-28 10:01:59,053 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:01:59,058 - INFO - Encontradas 190 solicitações aguardando links
-2025-04-28 10:01:59,059 - INFO - Iniciando navegador chrome com Selenoid
-2025-04-28 10:01:59,059 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
-2025-04-28 10:02:03,106 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018E6593E660>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session
-2025-04-28 10:02:07,162 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018E65CFC550>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session
-2025-04-28 10:05:41,398 - INFO - ================================================================================
-2025-04-28 10:05:41,399 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
-2025-04-28 10:05:41,399 - INFO - ================================================================================
-2025-04-28 10:05:41,399 - INFO - Iniciando processo de busca de links de download
-2025-04-28 10:05:41,451 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:05:41,456 - INFO - Encontradas 190 solicitações aguardando links
-2025-04-28 10:05:41,457 - INFO - Iniciando navegador chrome com Selenoid
-2025-04-28 10:05:41,457 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
-2025-04-28 10:05:41,491 - ERROR - Erro ao iniciar o navegador com Selenoid: Message: Requested environment is not available
-
-2025-04-28 10:05:41,492 - ERROR - Falha na autenticação ou inicialização do navegador
-2025-04-28 10:05:41,492 - INFO - Processo finalizado
-2025-04-28 10:19:49,775 - INFO - ================================================================================
-2025-04-28 10:19:49,776 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
-2025-04-28 10:19:49,776 - INFO - ================================================================================
-2025-04-28 10:19:49,776 - INFO - Iniciando processo de busca de links de download
-2025-04-28 10:19:49,830 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:19:49,835 - INFO - Encontradas 190 solicitações aguardando links
-2025-04-28 10:19:49,836 - INFO - Iniciando navegador chrome com Selenoid
-2025-04-28 10:19:49,836 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
-2025-04-28 10:19:49,850 - ERROR - Erro ao iniciar o navegador com Selenoid: Message: Requested environment is not available
-
-2025-04-28 10:19:49,850 - ERROR - Falha na autenticação ou inicialização do navegador
-2025-04-28 10:19:49,851 - INFO - Processo finalizado
-2025-04-28 10:20:26,280 - INFO - ================================================================================
-2025-04-28 10:20:26,280 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
-2025-04-28 10:20:26,280 - INFO - ================================================================================
-2025-04-28 10:20:26,281 - INFO - Iniciando processo de busca de links de download
-2025-04-28 10:20:26,342 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:20:26,348 - INFO - Encontradas 190 solicitações aguardando links
-2025-04-28 10:20:26,349 - INFO - Iniciando navegador chrome com Selenoid
-2025-04-28 10:20:26,349 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
-2025-04-28 10:20:26,360 - ERROR - Erro ao iniciar o navegador com Selenoid: Message: Requested environment is not available
-
-2025-04-28 10:20:26,361 - ERROR - Falha na autenticação ou inicialização do navegador
-2025-04-28 10:20:26,361 - INFO - Processo finalizado
-2025-04-28 10:21:23,231 - INFO - ================================================================================
-2025-04-28 10:21:23,231 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
-2025-04-28 10:21:23,231 - INFO - ================================================================================
-2025-04-28 10:21:23,232 - INFO - Iniciando processo de busca de links de download
-2025-04-28 10:21:23,285 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:21:23,290 - INFO - Encontradas 190 solicitações aguardando links
-2025-04-28 10:21:23,290 - INFO - Iniciando navegador chrome com Selenoid
-2025-04-28 10:21:23,290 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
-2025-04-28 10:21:23,300 - ERROR - Erro ao iniciar o navegador com Selenoid: Message: Requested environment is not available
-
-2025-04-28 10:21:23,301 - ERROR - Falha na autenticação ou inicialização do navegador
-2025-04-28 10:21:23,302 - INFO - Processo finalizado
-2025-04-28 10:23:55,695 - INFO - ================================================================================
-2025-04-28 10:23:55,695 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
-2025-04-28 10:23:55,695 - INFO - ================================================================================
-2025-04-28 10:23:55,696 - INFO - Iniciando processo de busca de links de download
-2025-04-28 10:23:55,748 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:23:55,753 - INFO - Encontradas 190 solicitações aguardando links
-2025-04-28 10:23:55,753 - INFO - Iniciando navegador chrome com Selenoid
-2025-04-28 10:23:55,754 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
-2025-04-28 10:23:59,901 - INFO - Autenticando no SEFAZ
-2025-04-28 10:23:59,915 - INFO - Conexão ao MySQL estabelecida com sucesso
-2025-04-28 10:24:01,141 - INFO - Autenticação bem-sucedida
-2025-04-28 10:24:01,141 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?limparSessao=true
-2025-04-28 10:24:14,216 - INFO - Procurando links de download disponíveis
-2025-04-28 10:28:26,488 - INFO - Total de 0 links encontrados e atualizados
-2025-04-28 10:28:26,489 - INFO - Nenhum link correspondente encontrado
-2025-04-28 10:28:26,593 - INFO - Processo finalizado
-2025-04-28 10:29:00,053 - INFO - ================================================================================
-2025-04-28 10:29:00,053 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
-2025-04-28 10:29:00,053 - INFO - ================================================================================
-2025-04-28 10:29:00,053 - INFO - Iniciando processo de busca de links de download
-2025-04-28 10:29:00,215 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:29:00,220 - INFO - Encontradas 190 solicitações aguardando links
-2025-04-28 10:29:00,220 - INFO - Iniciando navegador firefox com Selenoid
-2025-04-28 10:29:00,221 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
-2025-04-28 10:29:01,731 - ERROR - Erro ao iniciar o navegador com Selenoid: Message: Requested environment is not available
-
-2025-04-28 10:29:01,731 - ERROR - Falha na autenticação ou inicialização do navegador
-2025-04-28 10:29:01,732 - INFO - Processo finalizado
-2025-04-28 10:29:35,074 - INFO - ================================================================================
-2025-04-28 10:29:35,075 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
-2025-04-28 10:29:35,075 - INFO - ================================================================================
-2025-04-28 10:29:35,075 - INFO - Iniciando processo de busca de links de download
-2025-04-28 10:29:35,129 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:29:35,134 - INFO - Encontradas 190 solicitações aguardando links
-2025-04-28 10:29:35,134 - INFO - Iniciando navegador firefox com Selenoid
-2025-04-28 10:29:35,135 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
-2025-04-28 10:29:36,389 - ERROR - Erro ao iniciar o navegador com Selenoid: Message: Requested environment is not available
-
-2025-04-28 10:29:36,390 - ERROR - Falha na autenticação ou inicialização do navegador
-2025-04-28 10:29:36,390 - INFO - Processo finalizado
-2025-04-28 10:30:12,154 - INFO - ================================================================================
-2025-04-28 10:30:12,154 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
-2025-04-28 10:30:12,155 - INFO - ================================================================================
-2025-04-28 10:30:12,155 - INFO - Iniciando processo de busca de links de download
-2025-04-28 10:30:12,210 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:30:12,216 - INFO - Encontradas 190 solicitações aguardando links
-2025-04-28 10:30:12,217 - INFO - Iniciando navegador firefox com Selenoid
-2025-04-28 10:30:12,217 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
-2025-04-28 10:30:13,592 - ERROR - Erro ao iniciar o navegador com Selenoid: Message: Requested environment is not available
-
-2025-04-28 10:30:13,593 - ERROR - Falha na autenticação ou inicialização do navegador
-2025-04-28 10:30:13,593 - INFO - Processo finalizado
-2025-04-28 10:31:21,532 - INFO - ================================================================================
-2025-04-28 10:31:21,532 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
-2025-04-28 10:31:21,532 - INFO - ================================================================================
-2025-04-28 10:31:21,533 - INFO - Iniciando processo de busca de links de download
-2025-04-28 10:31:21,585 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:31:21,590 - INFO - Encontradas 190 solicitações aguardando links
-2025-04-28 10:31:21,590 - INFO - Iniciando navegador firefox com Selenoid
-2025-04-28 10:31:21,591 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
-2025-04-28 10:31:22,951 - ERROR - Erro ao iniciar o navegador com Selenoid: Message: Requested environment is not available
-
-2025-04-28 10:31:22,951 - ERROR - Falha na autenticação ou inicialização do navegador
-2025-04-28 10:31:22,952 - INFO - Processo finalizado
-2025-04-28 10:35:08,776 - INFO - ================================================================================
-2025-04-28 10:35:08,777 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
-2025-04-28 10:35:08,777 - INFO - ================================================================================
-2025-04-28 10:35:08,777 - INFO - Iniciando processo de busca de links de download
-2025-04-28 10:35:08,832 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:35:08,838 - INFO - Encontradas 190 solicitações aguardando links
-2025-04-28 10:35:08,838 - INFO - Iniciando navegador chrome com Selenoid
-2025-04-28 10:35:08,838 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
-2025-04-28 10:35:10,796 - INFO - Autenticando no SEFAZ
-2025-04-28 10:35:10,811 - INFO - Conexão ao MySQL estabelecida com sucesso
-2025-04-28 10:35:12,194 - INFO - Autenticação bem-sucedida
-2025-04-28 10:35:12,195 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?limparSessao=true
-2025-04-28 10:35:22,320 - INFO - Procurando links de download disponíveis
-2025-04-28 10:35:22,389 - INFO - Tabela carregada, processando linhas...
-2025-04-28 10:35:22,437 - INFO - Encontradas 599 linhas com anexos para processar
-2025-04-28 10:35:23,073 - INFO - Progresso: 10/599 linhas processadas (1.7%) em 0.6s
-2025-04-28 10:35:24,722 - INFO - Progresso: 20/599 linhas processadas (3.3%) em 2.3s
-2025-04-28 10:35:26,519 - INFO - Progresso: 30/599 linhas processadas (5.0%) em 4.1s
-2025-04-28 10:35:28,509 - INFO - Progresso: 40/599 linhas processadas (6.7%) em 6.1s
-2025-04-28 10:35:30,322 - INFO - Progresso: 50/599 linhas processadas (8.3%) em 7.9s
-2025-04-28 10:35:32,258 - INFO - Progresso: 60/599 linhas processadas (10.0%) em 9.8s
-2025-04-28 10:35:34,108 - INFO - Progresso: 70/599 linhas processadas (11.7%) em 11.7s
-2025-04-28 10:35:35,169 - INFO - Progresso: 80/599 linhas processadas (13.4%) em 12.7s
-2025-04-28 10:35:37,089 - INFO - Progresso: 90/599 linhas processadas (15.0%) em 14.7s
-2025-04-28 10:35:39,079 - INFO - Progresso: 100/599 linhas processadas (16.7%) em 16.6s
-2025-04-28 10:35:41,049 - INFO - Progresso: 110/599 linhas processadas (18.4%) em 18.6s
-2025-04-28 10:35:43,037 - INFO - Progresso: 120/599 linhas processadas (20.0%) em 20.6s
-2025-04-28 10:35:45,033 - INFO - Progresso: 130/599 linhas processadas (21.7%) em 22.6s
-2025-04-28 10:35:46,252 - INFO - Progresso: 140/599 linhas processadas (23.4%) em 23.8s
-2025-04-28 10:35:46,951 - INFO - Progresso: 150/599 linhas processadas (25.0%) em 24.5s
-2025-04-28 10:35:48,051 - INFO - Progresso: 160/599 linhas processadas (26.7%) em 25.6s
-2025-04-28 10:35:49,278 - INFO - Progresso: 170/599 linhas processadas (28.4%) em 26.8s
-2025-04-28 10:35:50,997 - INFO - Progresso: 180/599 linhas processadas (30.1%) em 28.6s
-2025-04-28 10:35:52,808 - INFO - Progresso: 190/599 linhas processadas (31.7%) em 30.4s
-2025-04-28 10:35:54,797 - INFO - Progresso: 200/599 linhas processadas (33.4%) em 32.4s
-2025-04-28 10:35:56,841 - INFO - Progresso: 210/599 linhas processadas (35.1%) em 34.4s
-2025-04-28 10:35:58,828 - INFO - Progresso: 220/599 linhas processadas (36.7%) em 36.4s
-2025-04-28 10:36:00,828 - INFO - Progresso: 230/599 linhas processadas (38.4%) em 38.4s
-2025-04-28 10:36:02,878 - INFO - Progresso: 240/599 linhas processadas (40.1%) em 40.4s
-2025-04-28 10:36:04,867 - INFO - Progresso: 250/599 linhas processadas (41.7%) em 42.4s
-2025-04-28 10:36:06,819 - INFO - Progresso: 260/599 linhas processadas (43.4%) em 44.4s
-2025-04-28 10:36:08,798 - INFO - Progresso: 270/599 linhas processadas (45.1%) em 46.4s
-2025-04-28 10:36:10,819 - INFO - Progresso: 280/599 linhas processadas (46.7%) em 48.4s
-2025-04-28 10:36:12,811 - INFO - Progresso: 290/599 linhas processadas (48.4%) em 50.4s
-2025-04-28 10:36:14,787 - INFO - Progresso: 300/599 linhas processadas (50.1%) em 52.3s
-2025-04-28 10:36:16,807 - INFO - Progresso: 310/599 linhas processadas (51.8%) em 54.4s
-2025-04-28 10:36:18,777 - INFO - Progresso: 320/599 linhas processadas (53.4%) em 56.3s
-2025-04-28 10:36:20,776 - INFO - Progresso: 330/599 linhas processadas (55.1%) em 58.3s
-2025-04-28 10:36:22,766 - INFO - Progresso: 340/599 linhas processadas (56.8%) em 60.3s
-2025-04-28 10:36:24,726 - INFO - Progresso: 350/599 linhas processadas (58.4%) em 62.3s
-2025-04-28 10:36:26,191 - INFO - Progresso: 360/599 linhas processadas (60.1%) em 63.8s
-2025-04-28 10:36:26,890 - INFO - Progresso: 370/599 linhas processadas (61.8%) em 64.5s
-2025-04-28 10:36:27,847 - INFO - Progresso: 380/599 linhas processadas (63.4%) em 65.4s
-2025-04-28 10:36:29,849 - INFO - Progresso: 390/599 linhas processadas (65.1%) em 67.4s
-2025-04-28 10:36:31,815 - INFO - Progresso: 400/599 linhas processadas (66.8%) em 69.4s
-2025-04-28 10:36:33,786 - INFO - Progresso: 410/599 linhas processadas (68.4%) em 71.3s
-2025-04-28 10:36:35,496 - INFO - Progresso: 420/599 linhas processadas (70.1%) em 73.1s
-2025-04-28 10:36:37,509 - INFO - Progresso: 430/599 linhas processadas (71.8%) em 75.1s
-2025-04-28 10:36:39,476 - INFO - Progresso: 440/599 linhas processadas (73.5%) em 77.0s
-2025-04-28 10:36:41,296 - INFO - Progresso: 450/599 linhas processadas (75.1%) em 78.9s
-2025-04-28 10:36:43,126 - INFO - Progresso: 460/599 linhas processadas (76.8%) em 80.7s
-2025-04-28 10:36:45,066 - INFO - Progresso: 470/599 linhas processadas (78.5%) em 82.6s
-2025-04-28 10:36:47,016 - INFO - Progresso: 480/599 linhas processadas (80.1%) em 84.6s
-2025-04-28 10:36:48,996 - INFO - Progresso: 490/599 linhas processadas (81.8%) em 86.6s
-2025-04-28 10:36:50,685 - INFO - Progresso: 500/599 linhas processadas (83.5%) em 88.2s
-2025-04-28 10:36:51,378 - INFO - Progresso: 510/599 linhas processadas (85.1%) em 88.9s
-2025-04-28 10:36:52,595 - INFO - Progresso: 520/599 linhas processadas (86.8%) em 90.2s
-2025-04-28 10:36:54,555 - INFO - Progresso: 530/599 linhas processadas (88.5%) em 92.1s
-2025-04-28 10:36:56,305 - INFO - Progresso: 540/599 linhas processadas (90.2%) em 93.9s
-2025-04-28 10:36:57,403 - INFO - Progresso: 550/599 linhas processadas (91.8%) em 95.0s
-2025-04-28 10:36:58,385 - INFO - Progresso: 560/599 linhas processadas (93.5%) em 95.9s
-2025-04-28 10:36:59,256 - INFO - Progresso: 570/599 linhas processadas (95.2%) em 96.8s
-2025-04-28 10:37:00,100 - INFO - Progresso: 580/599 linhas processadas (96.8%) em 97.7s
-2025-04-28 10:37:01,318 - INFO - Progresso: 590/599 linhas processadas (98.5%) em 98.9s
-2025-04-28 10:37:02,019 - INFO - Processamento concluído: 599/599 linhas processadas em 99.6s
-2025-04-28 10:37:02,019 - INFO - Total de 0 links encontrados e atualizados
-2025-04-28 10:37:02,019 - INFO - Nenhum link correspondente encontrado
-2025-04-28 10:37:02,123 - INFO - Processo finalizado
+2025-04-28 11:00:02,206 - INFO - ================================================================================
+2025-04-28 11:00:02,207 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
+2025-04-28 11:00:02,207 - INFO - ================================================================================
+2025-04-28 11:00:02,216 - INFO - ================================================================================
+2025-04-28 11:00:02,216 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
+2025-04-28 11:00:02,216 - INFO - ================================================================================
+2025-04-28 11:00:02,217 - INFO - Iniciando processo de busca de links de download
+2025-04-28 11:00:02,217 - INFO - ================================================================================
+2025-04-28 11:00:02,218 - INFO - INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML
+2025-04-28 11:00:02,218 - INFO - ================================================================================
+2025-04-28 11:00:02,219 - INFO - Iniciando processo de download dos arquivos
+2025-04-28 11:00:02,219 - INFO - Diretório de downloads configurado: C:\Users\icaro.saldanha\Documents\DownloadATF\Gerenciador De Arquivos\NFCE_XML_TEMP\incoming
+2025-04-28 11:00:02,276 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 11:00:02,292 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 11:00:02,294 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 11:00:02,298 - INFO - Encontradas 0 solicitações com link pendentes de download
+2025-04-28 11:00:02,298 - INFO - Não há solicitações pendentes de download
+2025-04-28 11:00:02,299 - INFO - Encontradas 223 solicitações aguardando links
+2025-04-28 11:00:02,299 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 11:00:02,300 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 11:00:02,314 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 11:00:02,323 - INFO - Encontradas 190 empresas no MySQL
+2025-04-28 11:00:02,387 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 11:00:02,534 - INFO - Sincronização concluída: 0 empresas inseridas, 190 atualizadas
+2025-04-28 11:00:02,535 - INFO - Total de empresas sincronizadas: 190
+2025-04-28 11:00:02,535 - INFO - Criando solicitações para a data: 23/04/2025
+2025-04-28 11:00:02,541 - INFO - ================================================================================
+2025-04-28 11:00:02,541 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
+2025-04-28 11:00:02,541 - INFO - ================================================================================
+2025-04-28 11:00:02,593 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 11:00:02,605 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 11:00:02,631 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 11:00:02,641 - INFO - Encontradas 190 empresas no MySQL
+2025-04-28 11:00:02,643 - INFO - Processo concluído: 0 novas solicitações criadas para 23/04/2025
+2025-04-28 11:00:02,644 - INFO - Total de solicitações criadas: 0
+2025-04-28 11:00:02,644 - INFO - Processo finalizado com sucesso!
+2025-04-28 11:00:02,694 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 11:00:02,755 - INFO - Sincronização concluída: 0 empresas inseridas, 190 atualizadas
+2025-04-28 11:00:02,755 - INFO - Total de empresas sincronizadas: 190
+2025-04-28 11:00:02,755 - INFO - Criando solicitações para a data: 23/04/2025
+2025-04-28 11:00:02,813 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 11:00:02,865 - INFO - Processo concluído: 0 novas solicitações criadas para 23/04/2025
+2025-04-28 11:00:02,865 - INFO - Total de solicitações criadas: 0
+2025-04-28 11:00:02,865 - INFO - Processo finalizado com sucesso!
+2025-04-28 11:00:04,387 - INFO - Autenticando no SEFAZ
+2025-04-28 11:00:04,404 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 11:00:05,576 - INFO - Autenticação bem-sucedida
+2025-04-28 11:00:05,577 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?limparSessao=true

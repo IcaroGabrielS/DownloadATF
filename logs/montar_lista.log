@@ -1,42 +1,28 @@
-2025-04-25 17:53:19,095 - INFO - ================================================================================
-2025-04-25 17:53:19,095 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
-2025-04-25 17:53:19,095 - INFO - ================================================================================
-2025-04-25 17:53:19,148 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-25 17:53:19,170 - INFO - Conexão ao MySQL estabelecida com sucesso
-2025-04-25 17:53:19,179 - INFO - Encontradas 190 empresas no MySQL
-2025-04-25 17:53:19,225 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-25 17:53:19,303 - INFO - Sincronização concluída: 0 empresas inseridas, 190 atualizadas
-2025-04-25 17:53:19,303 - INFO - Total de empresas sincronizadas: 190
-2025-04-25 17:53:19,303 - INFO - Criando solicitações para a data: 20/04/2025
-2025-04-25 17:53:19,348 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-25 17:53:19,385 - INFO - Processo concluído: 0 novas solicitações criadas para 20/04/2025
-2025-04-25 17:53:19,386 - INFO - Total de solicitações criadas: 0
-2025-04-25 17:53:19,386 - INFO - Processo finalizado com sucesso!
-2025-04-28 10:00:02,292 - INFO - ================================================================================
-2025-04-28 10:00:02,292 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
-2025-04-28 10:00:02,293 - INFO - ================================================================================
-2025-04-28 10:00:02,362 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:00:02,394 - INFO - Conexão ao MySQL estabelecida com sucesso
-2025-04-28 10:00:02,405 - INFO - Encontradas 190 empresas no MySQL
-2025-04-28 10:00:02,464 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:00:02,554 - INFO - Sincronização concluída: 0 empresas inseridas, 190 atualizadas
-2025-04-28 10:00:02,555 - INFO - Total de empresas sincronizadas: 190
-2025-04-28 10:00:02,555 - INFO - Criando solicitações para a data: 23/04/2025
-2025-04-28 10:00:02,581 - INFO - ================================================================================
-2025-04-28 10:00:02,582 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
-2025-04-28 10:00:02,582 - INFO - ================================================================================
-2025-04-28 10:00:02,605 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:00:02,635 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:00:02,642 - INFO - Processo concluído: 0 novas solicitações criadas para 23/04/2025
-2025-04-28 10:00:02,643 - INFO - Total de solicitações criadas: 0
-2025-04-28 10:00:02,643 - INFO - Processo finalizado com sucesso!
-2025-04-28 10:00:02,664 - INFO - Conexão ao MySQL estabelecida com sucesso
-2025-04-28 10:00:02,672 - INFO - Encontradas 190 empresas no MySQL
-2025-04-28 10:00:02,727 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:00:02,796 - INFO - Sincronização concluída: 0 empresas inseridas, 190 atualizadas
-2025-04-28 10:00:02,797 - INFO - Total de empresas sincronizadas: 190
-2025-04-28 10:00:02,797 - INFO - Criando solicitações para a data: 23/04/2025
-2025-04-28 10:00:02,845 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
-2025-04-28 10:00:02,882 - INFO - Processo concluído: 0 novas solicitações criadas para 23/04/2025
-2025-04-28 10:00:02,882 - INFO - Total de solicitações criadas: 0
-2025-04-28 10:00:02,882 - INFO - Processo finalizado com sucesso!
+2025-04-28 11:00:02,206 - INFO - ================================================================================
+2025-04-28 11:00:02,207 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
+2025-04-28 11:00:02,207 - INFO - ================================================================================
+2025-04-28 11:00:02,276 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 11:00:02,314 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 11:00:02,323 - INFO - Encontradas 190 empresas no MySQL
+2025-04-28 11:00:02,387 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 11:00:02,534 - INFO - Sincronização concluída: 0 empresas inseridas, 190 atualizadas
+2025-04-28 11:00:02,535 - INFO - Total de empresas sincronizadas: 190
+2025-04-28 11:00:02,535 - INFO - Criando solicitações para a data: 23/04/2025
+2025-04-28 11:00:02,541 - INFO - ================================================================================
+2025-04-28 11:00:02,541 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
+2025-04-28 11:00:02,541 - INFO - ================================================================================
+2025-04-28 11:00:02,593 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 11:00:02,605 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 11:00:02,631 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 11:00:02,641 - INFO - Encontradas 190 empresas no MySQL
+2025-04-28 11:00:02,643 - INFO - Processo concluído: 0 novas solicitações criadas para 23/04/2025
+2025-04-28 11:00:02,644 - INFO - Total de solicitações criadas: 0
+2025-04-28 11:00:02,644 - INFO - Processo finalizado com sucesso!
+2025-04-28 11:00:02,694 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 11:00:02,755 - INFO - Sincronização concluída: 0 empresas inseridas, 190 atualizadas
+2025-04-28 11:00:02,755 - INFO - Total de empresas sincronizadas: 190
+2025-04-28 11:00:02,755 - INFO - Criando solicitações para a data: 23/04/2025
+2025-04-28 11:00:02,813 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 11:00:02,865 - INFO - Processo concluído: 0 novas solicitações criadas para 23/04/2025
+2025-04-28 11:00:02,865 - INFO - Total de solicitações criadas: 0
+2025-04-28 11:00:02,865 - INFO - Processo finalizado com sucesso!

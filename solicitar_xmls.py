@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from dotenv import load_dotenv
-from utils import (conectar_postgres, iniciar_navegador_firefox, autenticar_sefaz, acessar_pagina, espera_para_clicar)
+from utils import (conectar_postgres, iniciar_navegador_selenoid, autenticar_sefaz, acessar_pagina, espera_para_clicar)
 
 load_dotenv()
 os.makedirs("logs", exist_ok=True)
@@ -152,7 +152,10 @@ def executar_processo_requests_nfce():
     navegador = None
     
     try:
-        navegador = iniciar_navegador_firefox()
+        # Substitui a inicialização do Firefox pelo Selenoid
+        browser_type = os.environ.get("SELENOID_BROWSER", "chrome")
+        navegador = iniciar_navegador_selenoid(browser_type=browser_type)
+        
         if navegador and autenticar_sefaz(navegador):
             link = os.environ.get('LINK_SEFAZ_NFCE')
             acessar_pagina(navegador, link)
