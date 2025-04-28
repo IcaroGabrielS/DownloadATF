@@ -17,7 +17,7 @@ from logging.handlers import RotatingFileHandler
 MAX_LOG_SIZE = 220 * 1024 * 1024  # 220 MB
 logging.getLogger().setLevel(logging.INFO)
 log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-log_file = "logs/utils.log"
+log_file = "/home/desenvolvimento/DownloadATF/logs/utils.log"
 file_handler = RotatingFileHandler(log_file, maxBytes=MAX_LOG_SIZE, backupCount=5, encoding='utf-8')
 file_handler.setFormatter(log_formatter)
 logging.getLogger().addHandler(file_handler)

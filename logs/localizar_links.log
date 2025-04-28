@@ -10,3 +10,331 @@
 2025-04-28 11:00:04,404 - INFO - Conexão ao MySQL estabelecida com sucesso
 2025-04-28 11:00:05,576 - INFO - Autenticação bem-sucedida
 2025-04-28 11:00:05,577 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?limparSessao=true
+2025-04-28 11:01:05,600 - ERROR - Erro durante a execução: Message: timeout: Timed out receiving message from renderer: 49.529
+  (Session info: chrome=128.0.6613.137)
+Stacktrace:
+#0 0x559d7c3250ca <unknown>
+#1 0x559d7bff12b0 <unknown>
+#2 0x559d7bfd9380 <unknown>
+#3 0x559d7bfd906d <unknown>
+#4 0x559d7bfd7078 <unknown>
+#5 0x559d7bfd787f <unknown>
+#6 0x559d7bfe729b <unknown>
+#7 0x559d7bffd674 <unknown>
+#8 0x559d7c002bab <unknown>
+#9 0x559d7bfd7f8e <unknown>
+#10 0x559d7bffd4cf <unknown>
+#11 0x559d7c08408b <unknown>
+#12 0x559d7c0656a3 <unknown>
+#13 0x559d7c0334f3 <unknown>
+#14 0x559d7c0344fe <unknown>
+#15 0x559d7c2ebd7b <unknown>
+#16 0x559d7c2efd31 <unknown>
+#17 0x559d7c2d7c85 <unknown>
+#18 0x559d7c2f08a2 <unknown>
+#19 0x559d7c2bce1f <unknown>
+#20 0x559d7c313e48 <unknown>
+#21 0x559d7c314013 <unknown>
+#22 0x559d7c323ebc <unknown>
+#23 0x7f3b18af9ac3 <unknown>
+
+2025-04-28 11:01:05,653 - INFO - Processo finalizado
+2025-04-28 12:00:02,140 - INFO - ================================================================================
+2025-04-28 12:00:02,141 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
+2025-04-28 12:00:02,141 - INFO - ================================================================================
+2025-04-28 12:00:02,142 - INFO - Iniciando processo de busca de links de download
+2025-04-28 12:00:02,199 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:02,205 - INFO - Encontradas 223 solicitações aguardando links
+2025-04-28 12:00:02,206 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 12:00:02,206 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 12:00:06,227 - INFO - Autenticando no SEFAZ
+2025-04-28 12:00:06,241 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 12:00:07,611 - INFO - Autenticação bem-sucedida
+2025-04-28 12:00:07,612 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?limparSessao=true
+2025-04-28 12:00:17,772 - INFO - Procurando links de download disponíveis
+2025-04-28 12:00:17,849 - INFO - Tabela carregada, processando linhas...
+2025-04-28 12:00:17,900 - INFO - Encontradas 633 linhas com anexos para processar
+2025-04-28 12:00:19,675 - INFO - Progresso: 10/633 linhas processadas (1.6%) em 1.8s
+2025-04-28 12:00:20,587 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:20,601 - INFO - Link atualizado para solicitação 445
+2025-04-28 12:00:20,602 - INFO - Link adicionado para solicitação 445 (horário 28/04/2025 10:57:01)
+2025-04-28 12:00:20,914 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:20,918 - INFO - Link atualizado para solicitação 444
+2025-04-28 12:00:20,919 - INFO - Link adicionado para solicitação 444 (horário 28/04/2025 10:56:31)
+2025-04-28 12:00:21,155 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:21,160 - INFO - Link atualizado para solicitação 443
+2025-04-28 12:00:21,160 - INFO - Link adicionado para solicitação 443 (horário 28/04/2025 10:56:01)
+2025-04-28 12:00:21,404 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:21,410 - INFO - Link atualizado para solicitação 439
+2025-04-28 12:00:21,410 - INFO - Link adicionado para solicitação 439 (horário 28/04/2025 10:54:01)
+2025-04-28 12:00:21,655 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:21,661 - INFO - Link atualizado para solicitação 438
+2025-04-28 12:00:21,662 - INFO - Link adicionado para solicitação 438 (horário 28/04/2025 10:53:31)
+2025-04-28 12:00:21,662 - INFO - Progresso: 20/633 linhas processadas (3.2%) em 3.8s
+2025-04-28 12:00:21,907 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:21,921 - INFO - Link atualizado para solicitação 437
+2025-04-28 12:00:21,921 - INFO - Link adicionado para solicitação 437 (horário 28/04/2025 10:53:01)
+2025-04-28 12:00:22,159 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:22,163 - INFO - Link atualizado para solicitação 436
+2025-04-28 12:00:22,164 - INFO - Link adicionado para solicitação 436 (horário 28/04/2025 10:52:31)
+2025-04-28 12:00:22,480 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:22,484 - INFO - Link atualizado para solicitação 434
+2025-04-28 12:00:22,484 - INFO - Link adicionado para solicitação 434 (horário 28/04/2025 10:51:31)
+2025-04-28 12:00:22,841 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:22,848 - INFO - Link atualizado para solicitação 433
+2025-04-28 12:00:22,849 - INFO - Link adicionado para solicitação 433 (horário 28/04/2025 10:51:01)
+2025-04-28 12:00:23,208 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:23,215 - INFO - Link atualizado para solicitação 426
+2025-04-28 12:00:23,216 - INFO - Link adicionado para solicitação 426 (horário 28/04/2025 10:47:31)
+2025-04-28 12:00:23,466 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:23,471 - INFO - Link atualizado para solicitação 425
+2025-04-28 12:00:23,472 - INFO - Link adicionado para solicitação 425 (horário 28/04/2025 10:47:01)
+2025-04-28 12:00:23,713 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:23,717 - INFO - Link atualizado para solicitação 423
+2025-04-28 12:00:23,717 - INFO - Link adicionado para solicitação 423 (horário 28/04/2025 10:46:01)
+2025-04-28 12:00:23,956 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:23,962 - INFO - Link atualizado para solicitação 420
+2025-04-28 12:00:23,963 - INFO - Link adicionado para solicitação 420 (horário 28/04/2025 10:44:32)
+2025-04-28 12:00:24,226 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:24,231 - INFO - Link atualizado para solicitação 417
+2025-04-28 12:00:24,231 - INFO - Link adicionado para solicitação 417 (horário 28/04/2025 10:43:01)
+2025-04-28 12:00:24,232 - INFO - Progresso: 30/633 linhas processadas (4.7%) em 6.3s
+2025-04-28 12:00:24,478 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:24,483 - INFO - Link atualizado para solicitação 416
+2025-04-28 12:00:24,483 - INFO - Link adicionado para solicitação 416 (horário 28/04/2025 10:42:31)
+2025-04-28 12:00:24,746 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:24,760 - INFO - Link atualizado para solicitação 414
+2025-04-28 12:00:24,760 - INFO - Link adicionado para solicitação 414 (horário 28/04/2025 10:41:31)
+2025-04-28 12:00:25,005 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 12:00:25,013 - INFO - Link atualizado para solicitação 413
+2025-04-28 12:00:25,014 - INFO - Link adicionado para solicitação 413 (horário 28/04/2025 10:41:01)
+2025-04-28 12:00:25,517 - INFO - Progresso: 40/633 linhas processadas (6.3%) em 7.6s
+2025-04-28 12:00:26,739 - INFO - Progresso: 50/633 linhas processadas (7.9%) em 8.8s
+2025-04-28 12:00:28,534 - INFO - Progresso: 60/633 linhas processadas (9.5%) em 10.6s
+2025-04-28 12:00:30,522 - INFO - Progresso: 70/633 linhas processadas (11.1%) em 12.6s
+2025-04-28 12:00:32,582 - INFO - Progresso: 80/633 linhas processadas (12.6%) em 14.7s
+2025-04-28 12:00:34,432 - INFO - Progresso: 90/633 linhas processadas (14.2%) em 16.5s
+2025-04-28 12:00:36,452 - INFO - Progresso: 100/633 linhas processadas (15.8%) em 18.6s
+2025-04-28 12:00:37,553 - INFO - Progresso: 110/633 linhas processadas (17.4%) em 19.7s
+2025-04-28 12:00:39,371 - INFO - Progresso: 120/633 linhas processadas (19.0%) em 21.5s
+2025-04-28 12:00:41,362 - INFO - Progresso: 130/633 linhas processadas (20.5%) em 23.5s
+2025-04-28 12:00:43,351 - INFO - Progresso: 140/633 linhas processadas (22.1%) em 25.5s
+2025-04-28 12:00:45,362 - INFO - Progresso: 150/633 linhas processadas (23.7%) em 27.5s
+2025-04-28 12:00:47,361 - INFO - Progresso: 160/633 linhas processadas (25.3%) em 29.5s
+2025-04-28 12:00:49,053 - INFO - Progresso: 170/633 linhas processadas (26.9%) em 31.2s
+2025-04-28 12:00:49,763 - INFO - Progresso: 180/633 linhas processadas (28.4%) em 31.9s
+2025-04-28 12:00:50,883 - INFO - Progresso: 190/633 linhas processadas (30.0%) em 33.0s
+2025-04-28 12:00:51,583 - INFO - Progresso: 200/633 linhas processadas (31.6%) em 33.7s
+2025-04-28 12:00:53,550 - INFO - Progresso: 210/633 linhas processadas (33.2%) em 35.7s
+2025-04-28 12:00:55,235 - INFO - Progresso: 220/633 linhas processadas (34.8%) em 37.3s
+2025-04-28 12:00:57,090 - INFO - Progresso: 230/633 linhas processadas (36.3%) em 39.2s
+2025-04-28 12:00:59,025 - INFO - Progresso: 240/633 linhas processadas (37.9%) em 41.1s
+2025-04-28 12:01:01,011 - INFO - Progresso: 250/633 linhas processadas (39.5%) em 43.1s
+2025-04-28 12:01:02,990 - INFO - Progresso: 260/633 linhas processadas (41.1%) em 45.1s
+2025-04-28 12:01:04,981 - INFO - Progresso: 270/633 linhas processadas (42.7%) em 47.1s
+2025-04-28 12:01:07,031 - INFO - Progresso: 280/633 linhas processadas (44.2%) em 49.1s
+2025-04-28 12:01:09,020 - INFO - Progresso: 290/633 linhas processadas (45.8%) em 51.1s
+2025-04-28 12:01:11,020 - INFO - Progresso: 300/633 linhas processadas (47.4%) em 53.1s
+2025-04-28 12:01:13,011 - INFO - Progresso: 310/633 linhas processadas (49.0%) em 55.1s
+2025-04-28 12:01:15,009 - INFO - Progresso: 320/633 linhas processadas (50.6%) em 57.1s
+2025-04-28 12:01:17,010 - INFO - Progresso: 330/633 linhas processadas (52.1%) em 59.1s
+2025-04-28 12:01:19,000 - INFO - Progresso: 340/633 linhas processadas (53.7%) em 61.1s
+2025-04-28 12:01:21,031 - INFO - Progresso: 350/633 linhas processadas (55.3%) em 63.1s
+2025-04-28 12:01:23,059 - INFO - Progresso: 360/633 linhas processadas (56.9%) em 65.2s
+2025-04-28 12:01:25,060 - INFO - Progresso: 370/633 linhas processadas (58.5%) em 67.2s
+2025-04-28 12:01:27,040 - INFO - Progresso: 380/633 linhas processadas (60.0%) em 69.1s
+2025-04-28 12:01:28,978 - INFO - Progresso: 390/633 linhas processadas (61.6%) em 71.1s
+2025-04-28 12:01:29,705 - INFO - Progresso: 400/633 linhas processadas (63.2%) em 71.8s
+2025-04-28 12:01:30,412 - INFO - Progresso: 410/633 linhas processadas (64.8%) em 72.5s
+2025-04-28 12:01:32,159 - INFO - Progresso: 420/633 linhas processadas (66.4%) em 74.3s
+2025-04-28 12:01:34,118 - INFO - Progresso: 430/633 linhas processadas (67.9%) em 76.2s
+2025-04-28 12:01:36,120 - INFO - Progresso: 440/633 linhas processadas (69.5%) em 78.2s
+2025-04-28 12:01:37,879 - INFO - Progresso: 450/633 linhas processadas (71.1%) em 80.0s
+2025-04-28 12:01:39,798 - INFO - Progresso: 460/633 linhas processadas (72.7%) em 81.9s
+2025-04-28 12:01:41,779 - INFO - Progresso: 470/633 linhas processadas (74.2%) em 83.9s
+2025-04-28 12:01:43,640 - INFO - Progresso: 480/633 linhas processadas (75.8%) em 85.7s
+2025-04-28 12:01:45,579 - INFO - Progresso: 490/633 linhas processadas (77.4%) em 87.7s
+2025-04-28 12:01:47,579 - INFO - Progresso: 500/633 linhas processadas (79.0%) em 89.7s
+2025-04-28 12:01:49,578 - INFO - Progresso: 510/633 linhas processadas (80.6%) em 91.7s
+2025-04-28 12:01:51,589 - INFO - Progresso: 520/633 linhas processadas (82.1%) em 93.7s
+2025-04-28 12:01:53,588 - INFO - Progresso: 530/633 linhas processadas (83.7%) em 95.7s
+2025-04-28 12:01:54,531 - INFO - Progresso: 540/633 linhas processadas (85.3%) em 96.6s
+2025-04-28 12:01:55,250 - INFO - Progresso: 550/633 linhas processadas (86.9%) em 97.4s
+2025-04-28 12:01:57,248 - INFO - Progresso: 560/633 linhas processadas (88.5%) em 99.3s
+2025-04-28 12:01:58,967 - INFO - Progresso: 570/633 linhas processadas (90.0%) em 101.1s
+2025-04-28 12:02:00,571 - INFO - Progresso: 580/633 linhas processadas (91.6%) em 102.7s
+2025-04-28 12:02:01,291 - INFO - Progresso: 590/633 linhas processadas (93.2%) em 103.4s
+2025-04-28 12:02:02,239 - INFO - Progresso: 600/633 linhas processadas (94.8%) em 104.3s
+2025-04-28 12:02:03,190 - INFO - Progresso: 610/633 linhas processadas (96.4%) em 105.3s
+2025-04-28 12:02:04,407 - INFO - Progresso: 620/633 linhas processadas (97.9%) em 106.5s
+2025-04-28 12:02:05,120 - INFO - Progresso: 630/633 linhas processadas (99.5%) em 107.2s
+2025-04-28 12:02:05,400 - INFO - Processamento concluído: 633/633 linhas processadas em 107.5s
+2025-04-28 12:02:05,401 - INFO - Total de 17 links encontrados e atualizados
+2025-04-28 12:02:05,401 - INFO - Processo concluído com sucesso: 17 links encontrados e salvos
+2025-04-28 12:02:05,455 - INFO - Processo finalizado
+2025-04-28 13:00:02,150 - INFO - ================================================================================
+2025-04-28 13:00:02,150 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
+2025-04-28 13:00:02,150 - INFO - ================================================================================
+2025-04-28 13:00:02,151 - INFO - Iniciando processo de busca de links de download
+2025-04-28 13:00:02,219 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 13:00:02,226 - INFO - Encontradas 206 solicitações aguardando links
+2025-04-28 13:00:02,226 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 13:00:02,226 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 13:00:05,294 - INFO - Autenticando no SEFAZ
+2025-04-28 13:00:05,311 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 13:00:06,946 - INFO - Autenticação bem-sucedida
+2025-04-28 13:00:06,946 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?limparSessao=true
+2025-04-28 13:00:25,613 - INFO - Procurando links de download disponíveis
+2025-04-28 13:00:25,671 - INFO - Tabela carregada, processando linhas...
+2025-04-28 13:00:25,725 - INFO - Encontradas 638 linhas com anexos para processar
+2025-04-28 13:00:27,678 - INFO - Progresso: 10/638 linhas processadas (1.6%) em 2.0s
+2025-04-28 13:00:29,569 - INFO - Progresso: 20/638 linhas processadas (3.1%) em 3.8s
+2025-04-28 13:00:31,268 - INFO - Progresso: 30/638 linhas processadas (4.7%) em 5.5s
+2025-04-28 13:00:32,980 - INFO - Progresso: 40/638 linhas processadas (6.3%) em 7.3s
+2025-04-28 13:00:33,730 - INFO - Progresso: 50/638 linhas processadas (7.8%) em 8.0s
+2025-04-28 13:00:35,368 - INFO - Progresso: 60/638 linhas processadas (9.4%) em 9.6s
+2025-04-28 13:00:37,340 - INFO - Progresso: 70/638 linhas processadas (11.0%) em 11.6s
+2025-04-28 13:00:39,352 - INFO - Progresso: 80/638 linhas processadas (12.5%) em 13.6s
+2025-04-28 13:00:41,398 - INFO - Progresso: 90/638 linhas processadas (14.1%) em 15.7s
+2025-04-28 13:00:44,540 - INFO - Progresso: 100/638 linhas processadas (15.7%) em 18.8s
+2025-04-28 13:00:46,759 - INFO - Progresso: 110/638 linhas processadas (17.2%) em 21.0s
+2025-04-28 13:00:47,957 - INFO - Progresso: 120/638 linhas processadas (18.8%) em 22.2s
+2025-04-28 13:00:49,918 - INFO - Progresso: 130/638 linhas processadas (20.4%) em 24.2s
+2025-04-28 13:00:51,916 - INFO - Progresso: 140/638 linhas processadas (21.9%) em 26.2s
+2025-04-28 13:00:53,848 - INFO - Progresso: 150/638 linhas processadas (23.5%) em 28.1s
+2025-04-28 13:00:55,849 - INFO - Progresso: 160/638 linhas processadas (25.1%) em 30.1s
+2025-04-28 13:00:57,786 - INFO - Progresso: 170/638 linhas processadas (26.6%) em 32.1s
+2025-04-28 13:00:58,869 - INFO - Progresso: 180/638 linhas processadas (28.2%) em 33.1s
+2025-04-28 13:00:59,707 - INFO - Progresso: 190/638 linhas processadas (29.8%) em 34.0s
+2025-04-28 13:01:00,752 - INFO - Progresso: 200/638 linhas processadas (31.3%) em 35.0s
+2025-04-28 13:01:02,218 - INFO - Progresso: 210/638 linhas processadas (32.9%) em 36.5s
+2025-04-28 13:01:03,987 - INFO - Progresso: 220/638 linhas processadas (34.5%) em 38.3s
+2025-04-28 13:01:05,817 - INFO - Progresso: 230/638 linhas processadas (36.1%) em 40.1s
+2025-04-28 13:01:07,777 - INFO - Progresso: 240/638 linhas processadas (37.6%) em 42.1s
+2025-04-28 13:01:09,767 - INFO - Progresso: 250/638 linhas processadas (39.2%) em 44.0s
+2025-04-28 13:01:11,737 - INFO - Progresso: 260/638 linhas processadas (40.8%) em 46.0s
+2025-04-28 13:01:13,737 - INFO - Progresso: 270/638 linhas processadas (42.3%) em 48.0s
+2025-04-28 13:01:15,666 - INFO - Progresso: 280/638 linhas processadas (43.9%) em 49.9s
+2025-04-28 13:01:17,703 - INFO - Progresso: 290/638 linhas processadas (45.5%) em 52.0s
+2025-04-28 13:01:19,737 - INFO - Progresso: 300/638 linhas processadas (47.0%) em 54.0s
+2025-04-28 13:01:21,676 - INFO - Progresso: 310/638 linhas processadas (48.6%) em 56.0s
+2025-04-28 13:01:23,606 - INFO - Progresso: 320/638 linhas processadas (50.2%) em 57.9s
+2025-04-28 13:01:25,547 - INFO - Progresso: 330/638 linhas processadas (51.7%) em 59.8s
+2025-04-28 13:01:27,476 - INFO - Progresso: 340/638 linhas processadas (53.3%) em 61.8s
+2025-04-28 13:01:29,448 - INFO - Progresso: 350/638 linhas processadas (54.9%) em 63.7s
+2025-04-28 13:01:31,376 - INFO - Progresso: 360/638 linhas processadas (56.4%) em 65.7s
+2025-04-28 13:01:33,347 - INFO - Progresso: 370/638 linhas processadas (58.0%) em 67.6s
+2025-04-28 13:01:35,481 - INFO - Progresso: 380/638 linhas processadas (59.6%) em 69.8s
+2025-04-28 13:01:37,446 - INFO - Progresso: 390/638 linhas processadas (61.1%) em 71.7s
+2025-04-28 13:01:38,748 - INFO - Progresso: 400/638 linhas processadas (62.7%) em 73.0s
+2025-04-28 13:01:39,468 - INFO - Progresso: 410/638 linhas processadas (64.3%) em 73.7s
+2025-04-28 13:01:40,555 - INFO - Progresso: 420/638 linhas processadas (65.8%) em 74.8s
+2025-04-28 13:01:42,526 - INFO - Progresso: 430/638 linhas processadas (67.4%) em 76.8s
+2025-04-28 13:01:44,485 - INFO - Progresso: 440/638 linhas processadas (69.0%) em 78.8s
+2025-04-28 13:01:46,416 - INFO - Progresso: 450/638 linhas processadas (70.5%) em 80.7s
+2025-04-28 13:01:48,135 - INFO - Progresso: 460/638 linhas processadas (72.1%) em 82.4s
+2025-04-28 13:01:50,103 - INFO - Progresso: 470/638 linhas processadas (73.7%) em 84.4s
+2025-04-28 13:01:52,079 - INFO - Progresso: 480/638 linhas processadas (75.2%) em 86.4s
+2025-04-28 13:01:53,898 - INFO - Progresso: 490/638 linhas processadas (76.8%) em 88.2s
+2025-04-28 13:01:55,848 - INFO - Progresso: 500/638 linhas processadas (78.4%) em 90.1s
+2025-04-28 13:01:57,846 - INFO - Progresso: 510/638 linhas processadas (79.9%) em 92.1s
+2025-04-28 13:01:59,786 - INFO - Progresso: 520/638 linhas processadas (81.5%) em 94.1s
+2025-04-28 13:02:01,725 - INFO - Progresso: 530/638 linhas processadas (83.1%) em 96.0s
+2025-04-28 13:02:03,298 - INFO - Progresso: 540/638 linhas processadas (84.6%) em 97.6s
+2025-04-28 13:02:04,027 - INFO - Progresso: 550/638 linhas processadas (86.2%) em 98.3s
+2025-04-28 13:02:05,395 - INFO - Progresso: 560/638 linhas processadas (87.8%) em 99.7s
+2025-04-28 13:02:07,318 - INFO - Progresso: 570/638 linhas processadas (89.3%) em 101.6s
+2025-04-28 13:02:09,225 - INFO - Progresso: 580/638 linhas processadas (90.9%) em 103.5s
+2025-04-28 13:02:10,158 - INFO - Progresso: 590/638 linhas processadas (92.5%) em 104.4s
+2025-04-28 13:02:11,107 - INFO - Progresso: 600/638 linhas processadas (94.0%) em 105.4s
+2025-04-28 13:02:12,095 - INFO - Progresso: 610/638 linhas processadas (95.6%) em 106.4s
+2025-04-28 13:02:12,965 - INFO - Progresso: 620/638 linhas processadas (97.2%) em 107.2s
+2025-04-28 13:02:14,077 - INFO - Progresso: 630/638 linhas processadas (98.7%) em 108.4s
+2025-04-28 13:02:14,707 - INFO - Processamento concluído: 638/638 linhas processadas em 109.0s
+2025-04-28 13:02:14,707 - INFO - Total de 0 links encontrados e atualizados
+2025-04-28 13:02:14,708 - INFO - Nenhum link correspondente encontrado
+2025-04-28 13:02:14,762 - INFO - Processo finalizado
+2025-04-28 14:00:02,213 - INFO - ================================================================================
+2025-04-28 14:00:02,213 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
+2025-04-28 14:00:02,213 - INFO - ================================================================================
+2025-04-28 14:00:02,214 - INFO - Iniciando processo de busca de links de download
+2025-04-28 14:00:02,271 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 14:00:02,277 - INFO - Encontradas 206 solicitações aguardando links
+2025-04-28 14:00:02,278 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 14:00:02,278 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 14:00:05,010 - INFO - Autenticando no SEFAZ
+2025-04-28 14:00:05,026 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 14:00:07,044 - INFO - Autenticação bem-sucedida
+2025-04-28 14:00:07,045 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?limparSessao=true
+2025-04-28 14:00:28,198 - INFO - Procurando links de download disponíveis
+2025-04-28 14:00:28,274 - INFO - Tabela carregada, processando linhas...
+2025-04-28 14:00:28,330 - INFO - Encontradas 654 linhas com anexos para processar
+2025-04-28 14:00:29,983 - INFO - Progresso: 10/654 linhas processadas (1.5%) em 1.7s
+2025-04-28 14:00:32,003 - INFO - Progresso: 20/654 linhas processadas (3.1%) em 3.7s
+2025-04-28 14:00:34,029 - INFO - Progresso: 30/654 linhas processadas (4.6%) em 5.7s
+2025-04-28 14:00:35,763 - INFO - Progresso: 40/654 linhas processadas (6.1%) em 7.4s
+2025-04-28 14:00:37,671 - INFO - Progresso: 50/654 linhas processadas (7.6%) em 9.3s
+2025-04-28 14:00:38,896 - INFO - Progresso: 60/654 linhas processadas (9.2%) em 10.6s
+2025-04-28 14:00:40,025 - INFO - Progresso: 70/654 linhas processadas (10.7%) em 11.7s
+2025-04-28 14:00:41,834 - INFO - Progresso: 80/654 linhas processadas (12.2%) em 13.5s
+2025-04-28 14:00:43,835 - INFO - Progresso: 90/654 linhas processadas (13.8%) em 15.5s
+2025-04-28 14:00:45,911 - INFO - Progresso: 100/654 linhas processadas (15.3%) em 17.6s
+2025-04-28 14:00:47,820 - INFO - Progresso: 110/654 linhas processadas (16.8%) em 19.5s
+2025-04-28 14:00:49,852 - INFO - Progresso: 120/654 linhas processadas (18.3%) em 21.5s
+2025-04-28 14:00:51,100 - INFO - Progresso: 130/654 linhas processadas (19.9%) em 22.8s
+2025-04-28 14:00:52,894 - INFO - Progresso: 140/654 linhas processadas (21.4%) em 24.6s
+2025-04-28 14:00:54,973 - INFO - Progresso: 150/654 linhas processadas (22.9%) em 26.6s
+2025-04-28 14:00:57,014 - INFO - Progresso: 160/654 linhas processadas (24.5%) em 28.7s
+2025-04-28 14:00:59,032 - INFO - Progresso: 170/654 linhas processadas (26.0%) em 30.7s
+2025-04-28 14:01:01,063 - INFO - Progresso: 180/654 linhas processadas (27.5%) em 32.7s
+2025-04-28 14:01:02,995 - INFO - Progresso: 190/654 linhas processadas (29.1%) em 34.7s
+2025-04-28 14:01:03,715 - INFO - Progresso: 200/654 linhas processadas (30.6%) em 35.4s
+2025-04-28 14:01:04,835 - INFO - Progresso: 210/654 linhas processadas (32.1%) em 36.5s
+2025-04-28 14:01:05,604 - INFO - Progresso: 220/654 linhas processadas (33.6%) em 37.3s
+2025-04-28 14:01:07,671 - INFO - Progresso: 230/654 linhas processadas (35.2%) em 39.3s
+2025-04-28 14:01:09,455 - INFO - Progresso: 240/654 linhas processadas (36.7%) em 41.1s
+2025-04-28 14:01:11,331 - INFO - Progresso: 250/654 linhas processadas (38.2%) em 43.0s
+2025-04-28 14:01:13,379 - INFO - Progresso: 260/654 linhas processadas (39.8%) em 45.0s
+2025-04-28 14:01:15,655 - INFO - Progresso: 270/654 linhas processadas (41.3%) em 47.3s
+2025-04-28 14:01:17,747 - INFO - Progresso: 280/654 linhas processadas (42.8%) em 49.4s
+2025-04-28 14:01:19,782 - INFO - Progresso: 290/654 linhas processadas (44.3%) em 51.5s
+2025-04-28 14:01:21,821 - INFO - Progresso: 300/654 linhas processadas (45.9%) em 53.5s
+2025-04-28 14:01:23,842 - INFO - Progresso: 310/654 linhas processadas (47.4%) em 55.5s
+2025-04-28 14:01:25,842 - INFO - Progresso: 320/654 linhas processadas (48.9%) em 57.5s
+2025-04-28 14:01:27,843 - INFO - Progresso: 330/654 linhas processadas (50.5%) em 59.5s
+2025-04-28 14:01:29,851 - INFO - Progresso: 340/654 linhas processadas (52.0%) em 61.5s
+2025-04-28 14:01:31,851 - INFO - Progresso: 350/654 linhas processadas (53.5%) em 63.5s
+2025-04-28 14:01:33,852 - INFO - Progresso: 360/654 linhas processadas (55.0%) em 65.5s
+2025-04-28 14:01:35,851 - INFO - Progresso: 370/654 linhas processadas (56.6%) em 67.5s
+2025-04-28 14:01:37,851 - INFO - Progresso: 380/654 linhas processadas (58.1%) em 69.5s
+2025-04-28 14:01:39,843 - INFO - Progresso: 390/654 linhas processadas (59.6%) em 71.5s
+2025-04-28 14:01:41,842 - INFO - Progresso: 400/654 linhas processadas (61.2%) em 73.5s
+2025-04-28 14:01:43,852 - INFO - Progresso: 410/654 linhas processadas (62.7%) em 75.5s
+2025-04-28 14:01:44,683 - INFO - Progresso: 420/654 linhas processadas (64.2%) em 76.4s
+2025-04-28 14:01:45,383 - INFO - Progresso: 430/654 linhas processadas (65.7%) em 77.1s
+2025-04-28 14:01:46,991 - INFO - Progresso: 440/654 linhas processadas (67.3%) em 78.7s
+2025-04-28 14:01:49,001 - INFO - Progresso: 450/654 linhas processadas (68.8%) em 80.7s
+2025-04-28 14:01:51,011 - INFO - Progresso: 460/654 linhas processadas (70.3%) em 82.7s
+2025-04-28 14:01:52,750 - INFO - Progresso: 470/654 linhas processadas (71.9%) em 84.4s
+2025-04-28 14:01:54,761 - INFO - Progresso: 480/654 linhas processadas (73.4%) em 86.4s
+2025-04-28 14:01:56,761 - INFO - Progresso: 490/654 linhas processadas (74.9%) em 88.4s
+2025-04-28 14:01:58,640 - INFO - Progresso: 500/654 linhas processadas (76.5%) em 90.3s
+2025-04-28 14:02:00,531 - INFO - Progresso: 510/654 linhas processadas (78.0%) em 92.2s
+2025-04-28 14:02:02,543 - INFO - Progresso: 520/654 linhas processadas (79.5%) em 94.2s
+2025-04-28 14:02:04,551 - INFO - Progresso: 530/654 linhas processadas (81.0%) em 96.2s
+2025-04-28 14:02:06,603 - INFO - Progresso: 540/654 linhas processadas (82.6%) em 98.3s
+2025-04-28 14:02:08,670 - INFO - Progresso: 550/654 linhas processadas (84.1%) em 100.3s
+2025-04-28 14:02:09,762 - INFO - Progresso: 560/654 linhas processadas (85.6%) em 101.4s
+2025-04-28 14:02:10,466 - INFO - Progresso: 570/654 linhas processadas (87.2%) em 102.1s
+2025-04-28 14:02:12,331 - INFO - Progresso: 580/654 linhas processadas (88.7%) em 104.0s
+2025-04-28 14:02:14,111 - INFO - Progresso: 590/654 linhas processadas (90.2%) em 105.8s
+2025-04-28 14:02:15,881 - INFO - Progresso: 600/654 linhas processadas (91.7%) em 107.6s
+2025-04-28 14:02:16,584 - INFO - Progresso: 610/654 linhas processadas (93.3%) em 108.3s
+2025-04-28 14:02:17,544 - INFO - Progresso: 620/654 linhas processadas (94.8%) em 109.2s
+2025-04-28 14:02:18,503 - INFO - Progresso: 630/654 linhas processadas (96.3%) em 110.2s
+2025-04-28 14:02:19,602 - INFO - Progresso: 640/654 linhas processadas (97.9%) em 111.3s
+2025-04-28 14:02:20,432 - INFO - Progresso: 650/654 linhas processadas (99.4%) em 112.1s
+2025-04-28 14:02:20,782 - INFO - Processamento concluído: 654/654 linhas processadas em 112.5s
+2025-04-28 14:02:20,782 - INFO - Total de 0 links encontrados e atualizados
+2025-04-28 14:02:20,783 - INFO - Nenhum link correspondente encontrado
+2025-04-28 14:02:20,887 - INFO - Processo finalizado
