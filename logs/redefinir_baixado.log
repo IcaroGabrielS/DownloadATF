@@ -1,0 +1,9 @@
+2025-04-28 16:53:24,846 - INFO - ================================================================================
+2025-04-28 16:53:24,847 - INFO - INICIANDO REDEFINIÇÃO DO CAMPO 'BAIXADO' PARA FALSE
+2025-04-28 16:53:24,847 - INFO - ================================================================================
+2025-04-28 16:53:24,893 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:53:24,898 - INFO - Total de solicitações com baixado=true: 7
+2025-04-28 16:53:24,902 - INFO - Campo 'baixado' redefinido para false em 7 solicitações
+2025-04-28 16:53:24,902 - INFO - Exemplos de IDs atualizados: 24, 20, 13, 8, 3...
+2025-04-28 16:53:24,904 - INFO - Conexão encerrada
+2025-04-28 16:53:24,904 - INFO - Processo de redefinição do campo 'baixado' concluído com sucesso!

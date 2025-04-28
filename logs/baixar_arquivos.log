@@ -122,3 +122,294 @@
 2025-04-28 14:00:02,190 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
 2025-04-28 14:00:02,196 - INFO - Encontradas 0 solicitações com link pendentes de download
 2025-04-28 14:00:02,196 - INFO - Não há solicitações pendentes de download
+2025-04-28 16:44:58,500 - INFO - ================================================================================
+2025-04-28 16:44:58,501 - INFO - INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML
+2025-04-28 16:44:58,502 - INFO - ================================================================================
+2025-04-28 16:44:58,502 - INFO - Iniciando processo de download dos arquivos
+2025-04-28 16:44:58,502 - INFO - Diretório de downloads configurado: /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 16:44:58,547 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:44:58,556 - INFO - Encontradas 47 solicitações com link pendentes de download
+2025-04-28 16:44:58,557 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 16:44:58,559 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 16:45:03,513 - INFO - Autenticando no SEFAZ
+2025-04-28 16:45:03,527 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 16:45:05,330 - INFO - Autenticação bem-sucedida
+2025-04-28 16:45:05,331 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975593
+2025-04-28 16:45:10,528 - INFO - Download iniciado para solicitação 24
+2025-04-28 16:45:15,577 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:45:15,585 - INFO - Solicitação 24 marcada como baixada
+2025-04-28 16:45:15,586 - INFO - Solicitação 24 marcada como baixada no banco
+2025-04-28 16:45:25,588 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975523
+2025-04-28 16:45:28,317 - INFO - Download iniciado para solicitação 20
+2025-04-28 16:45:33,354 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:45:33,361 - INFO - Solicitação 20 marcada como baixada
+2025-04-28 16:45:33,362 - INFO - Solicitação 20 marcada como baixada no banco
+2025-04-28 16:45:43,363 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975387
+2025-04-28 16:45:46,094 - INFO - Download iniciado para solicitação 13
+2025-04-28 16:45:51,129 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:45:51,138 - INFO - Solicitação 13 marcada como baixada
+2025-04-28 16:45:51,138 - INFO - Solicitação 13 marcada como baixada no banco
+2025-04-28 16:46:01,139 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975309
+2025-04-28 16:46:06,158 - INFO - Download iniciado para solicitação 8
+2025-04-28 16:46:11,193 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:46:11,201 - INFO - Solicitação 8 marcada como baixada
+2025-04-28 16:46:11,202 - INFO - Solicitação 8 marcada como baixada no banco
+2025-04-28 16:46:21,203 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975199
+2025-04-28 16:46:24,603 - INFO - Download iniciado para solicitação 3
+2025-04-28 16:46:29,642 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:46:29,649 - INFO - Solicitação 3 marcada como baixada
+2025-04-28 16:46:29,650 - INFO - Solicitação 3 marcada como baixada no banco
+2025-04-28 16:46:39,651 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975187
+2025-04-28 16:46:42,306 - INFO - Download iniciado para solicitação 2
+2025-04-28 16:46:47,341 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:46:47,349 - INFO - Solicitação 2 marcada como baixada
+2025-04-28 16:46:47,350 - INFO - Solicitação 2 marcada como baixada no banco
+2025-04-28 16:46:57,351 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975796
+2025-04-28 16:46:59,972 - INFO - Download iniciado para solicitação 37
+2025-04-28 16:47:05,005 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:47:05,013 - INFO - Solicitação 37 marcada como baixada
+2025-04-28 16:47:05,013 - INFO - Solicitação 37 marcada como baixada no banco
+2025-04-28 16:47:15,014 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975932
+2025-04-28 16:48:15,226 - ERROR - Erro ao realizar download para solicitação 43: Message: timeout: Timed out receiving message from renderer: -0.061
+  (Session info: chrome=128.0.6613.137)
+Stacktrace:
+#0 0x605af5bfb0ca <unknown>
+#1 0x605af58c72b0 <unknown>
+#2 0x605af58af380 <unknown>
+#3 0x605af58af06d <unknown>
+#4 0x605af58ad078 <unknown>
+#5 0x605af58ad87f <unknown>
+#6 0x605af58bd29b <unknown>
+#7 0x605af58d3674 <unknown>
+#8 0x605af58d8bab <unknown>
+#9 0x605af58adf8e <unknown>
+#10 0x605af58d34cf <unknown>
+#11 0x605af5959cef <unknown>
+#12 0x605af593b6a3 <unknown>
+#13 0x605af59094f3 <unknown>
+#14 0x605af590a4fe <unknown>
+#15 0x605af5bc1d7b <unknown>
+#16 0x605af5bc5d31 <unknown>
+#17 0x605af5badc85 <unknown>
+#18 0x605af5bc68a2 <unknown>
+#19 0x605af5b92e1f <unknown>
+#20 0x605af5be9e48 <unknown>
+#21 0x605af5bea013 <unknown>
+#22 0x605af5bf9ebc <unknown>
+#23 0x7e3c2ec62ac3 <unknown>
+
+2025-04-28 16:48:25,228 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975884
+2025-04-28 16:48:27,668 - INFO - Nenhum download em andamento detectado no diretório /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 16:50:28,380 - INFO - ================================================================================
+2025-04-28 16:50:28,381 - INFO - INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML
+2025-04-28 16:50:28,381 - INFO - ================================================================================
+2025-04-28 16:50:28,382 - INFO - Iniciando processo de download dos arquivos
+2025-04-28 16:50:28,382 - INFO - Diretório de downloads configurado: /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 16:50:28,429 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:50:28,439 - INFO - Encontradas 40 solicitações com link pendentes de download
+2025-04-28 16:50:28,440 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 16:50:28,441 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 16:51:02,938 - INFO - Autenticando no SEFAZ
+2025-04-28 16:51:02,953 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 16:51:05,381 - ERROR - Erro ao realizar login: Message: 
+Stacktrace:
+#0 0x5b156658e0ca <unknown>
+#1 0x5b156625a2b0 <unknown>
+#2 0x5b15662a9b22 <unknown>
+#3 0x5b15662a9dc1 <unknown>
+#4 0x5b15662ef994 <unknown>
+#5 0x5b15662ce92d <unknown>
+#6 0x5b15662ece26 <unknown>
+#7 0x5b15662ce6a3 <unknown>
+#8 0x5b156629c4f3 <unknown>
+#9 0x5b156629d4fe <unknown>
+#10 0x5b1566554d7b <unknown>
+#11 0x5b1566558d31 <unknown>
+#12 0x5b1566540c85 <unknown>
+#13 0x5b15665598a2 <unknown>
+#14 0x5b1566525e1f <unknown>
+#15 0x5b156657ce48 <unknown>
+#16 0x5b156657d013 <unknown>
+#17 0x5b156658cebc <unknown>
+#18 0x712b4e4d2ac3 <unknown>
+
+2025-04-28 16:51:05,383 - ERROR - Falha na autenticação ou inicialização do navegador
+2025-04-28 16:51:05,384 - INFO - Nenhum download em andamento detectado no diretório /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 16:51:05,501 - INFO - Processo de download finalizado
+2025-04-28 16:53:44,595 - INFO - ================================================================================
+2025-04-28 16:53:44,596 - INFO - INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML
+2025-04-28 16:53:44,596 - INFO - ================================================================================
+2025-04-28 16:53:44,597 - INFO - Iniciando processo de download dos arquivos
+2025-04-28 16:53:44,597 - INFO - Diretório de downloads configurado: /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 16:53:44,635 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:53:44,642 - INFO - Encontradas 47 solicitações com link pendentes de download
+2025-04-28 16:53:44,643 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 16:53:44,643 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 16:53:49,360 - INFO - Autenticando no SEFAZ
+2025-04-28 16:53:49,375 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 16:53:51,038 - INFO - Autenticação bem-sucedida
+2025-04-28 16:53:51,039 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975593
+2025-04-28 16:53:56,720 - INFO - Download iniciado para solicitação 24
+2025-04-28 16:54:01,754 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:54:01,761 - INFO - Solicitação 24 marcada como baixada
+2025-04-28 16:54:01,762 - INFO - Solicitação 24 marcada como baixada no banco
+2025-04-28 16:54:11,762 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975523
+2025-04-28 16:54:14,586 - INFO - Download iniciado para solicitação 20
+2025-04-28 16:54:19,614 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:54:19,619 - INFO - Solicitação 20 marcada como baixada
+2025-04-28 16:54:19,620 - INFO - Solicitação 20 marcada como baixada no banco
+2025-04-28 16:54:29,620 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975387
+2025-04-28 16:54:33,239 - INFO - Download iniciado para solicitação 13
+2025-04-28 16:54:38,272 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:54:38,279 - INFO - Solicitação 13 marcada como baixada
+2025-04-28 16:54:38,280 - INFO - Solicitação 13 marcada como baixada no banco
+2025-04-28 16:54:48,282 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975309
+2025-04-28 16:54:51,606 - INFO - Download iniciado para solicitação 8
+2025-04-28 16:54:56,641 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:54:56,649 - INFO - Solicitação 8 marcada como baixada
+2025-04-28 16:54:56,650 - INFO - Solicitação 8 marcada como baixada no banco
+2025-04-28 16:55:06,651 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975199
+2025-04-28 16:55:09,368 - INFO - Download iniciado para solicitação 3
+2025-04-28 16:55:14,407 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:55:14,414 - INFO - Solicitação 3 marcada como baixada
+2025-04-28 16:55:14,415 - INFO - Solicitação 3 marcada como baixada no banco
+2025-04-28 16:55:24,416 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975187
+2025-04-28 16:55:27,482 - INFO - Download iniciado para solicitação 2
+2025-04-28 16:55:32,515 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:55:32,521 - INFO - Solicitação 2 marcada como baixada
+2025-04-28 16:55:32,522 - INFO - Solicitação 2 marcada como baixada no banco
+2025-04-28 16:55:42,523 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975796
+2025-04-28 16:55:45,626 - INFO - Download iniciado para solicitação 37
+2025-04-28 16:55:50,665 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:55:50,671 - INFO - Solicitação 37 marcada como baixada
+2025-04-28 16:55:50,673 - INFO - Solicitação 37 marcada como baixada no banco
+2025-04-28 16:56:00,674 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975932
+2025-04-28 16:57:00,896 - ERROR - Erro ao realizar download para solicitação 43: Message: timeout: Timed out receiving message from renderer: -0.061
+  (Session info: chrome=128.0.6613.137)
+Stacktrace:
+#0 0x5ff36a3340ca <unknown>
+#1 0x5ff36a0002b0 <unknown>
+#2 0x5ff369fe8380 <unknown>
+#3 0x5ff369fe806d <unknown>
+#4 0x5ff369fe6078 <unknown>
+#5 0x5ff369fe687f <unknown>
+#6 0x5ff369ff629b <unknown>
+#7 0x5ff36a00c674 <unknown>
+#8 0x5ff36a011bab <unknown>
+#9 0x5ff369fe6f8e <unknown>
+#10 0x5ff36a00c4cf <unknown>
+#11 0x5ff36a092cef <unknown>
+#12 0x5ff36a0746a3 <unknown>
+#13 0x5ff36a0424f3 <unknown>
+#14 0x5ff36a0434fe <unknown>
+#15 0x5ff36a2fad7b <unknown>
+#16 0x5ff36a2fed31 <unknown>
+#17 0x5ff36a2e6c85 <unknown>
+#18 0x5ff36a2ff8a2 <unknown>
+#19 0x5ff36a2cbe1f <unknown>
+#20 0x5ff36a322e48 <unknown>
+#21 0x5ff36a323013 <unknown>
+#22 0x5ff36a332ebc <unknown>
+#23 0x73c2a2d56ac3 <unknown>
+
+2025-04-28 16:57:10,898 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975884
+2025-04-28 16:58:11,098 - ERROR - Erro ao realizar download para solicitação 41: Message: timeout: Timed out receiving message from renderer: -0.058
+  (Session info: chrome=128.0.6613.137)
+Stacktrace:
+#0 0x5ff36a3340ca <unknown>
+#1 0x5ff36a0002b0 <unknown>
+#2 0x5ff369fe8380 <unknown>
+#3 0x5ff369fe806d <unknown>
+#4 0x5ff369fe6078 <unknown>
+#5 0x5ff369fe687f <unknown>
+#6 0x5ff369ff629b <unknown>
+#7 0x5ff36a00c674 <unknown>
+#8 0x5ff36a011bab <unknown>
+#9 0x5ff369fe6f8e <unknown>
+#10 0x5ff36a00c4cf <unknown>
+#11 0x5ff36a092cef <unknown>
+#12 0x5ff36a0746a3 <unknown>
+#13 0x5ff36a0424f3 <unknown>
+#14 0x5ff36a0434fe <unknown>
+#15 0x5ff36a2fad7b <unknown>
+#16 0x5ff36a2fed31 <unknown>
+#17 0x5ff36a2e6c85 <unknown>
+#18 0x5ff36a2ff8a2 <unknown>
+#19 0x5ff36a2cbe1f <unknown>
+#20 0x5ff36a322e48 <unknown>
+#21 0x5ff36a323013 <unknown>
+#22 0x5ff36a332ebc <unknown>
+#23 0x73c2a2d56ac3 <unknown>
+
+2025-04-28 16:58:21,101 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975829
+2025-04-28 16:58:45,471 - INFO - Nenhum download em andamento detectado no diretório /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 17:12:08,055 - INFO - ================================================================================
+2025-04-28 17:12:08,056 - INFO - INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML
+2025-04-28 17:12:08,057 - INFO - ================================================================================
+2025-04-28 17:12:08,057 - INFO - Iniciando processo de download dos arquivos
+2025-04-28 17:12:08,057 - INFO - Diretório de downloads configurado: /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 17:12:08,105 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:12:08,116 - INFO - Encontradas 40 solicitações com link pendentes de download
+2025-04-28 17:12:08,117 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 17:12:08,118 - INFO - Configurando download_dir: /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 17:12:08,119 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 17:12:13,183 - INFO - Autenticando no SEFAZ
+2025-04-28 17:12:13,199 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 17:12:15,185 - INFO - Autenticação bem-sucedida
+2025-04-28 17:12:15,185 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975932
+2025-04-28 17:12:20,634 - INFO - Download iniciado para solicitação 43
+2025-04-28 17:12:25,680 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:12:25,688 - INFO - Solicitação 43 marcada como baixada
+2025-04-28 17:12:25,689 - INFO - Solicitação 43 marcada como baixada no banco
+2025-04-28 17:12:35,690 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975884
+2025-04-28 17:12:38,365 - INFO - Download iniciado para solicitação 41
+2025-04-28 17:12:43,397 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:12:43,403 - INFO - Solicitação 41 marcada como baixada
+2025-04-28 17:12:43,404 - INFO - Solicitação 41 marcada como baixada no banco
+2025-04-28 17:12:53,406 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975829
+2025-04-28 17:12:55,792 - INFO - Download iniciado para solicitação 39
+2025-04-28 17:13:00,825 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:13:00,834 - INFO - Solicitação 39 marcada como baixada
+2025-04-28 17:13:00,834 - INFO - Solicitação 39 marcada como baixada no banco
+2025-04-28 17:13:10,835 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975822
+2025-04-28 17:13:13,287 - INFO - Download iniciado para solicitação 38
+2025-04-28 17:13:18,333 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:13:18,339 - INFO - Solicitação 38 marcada como baixada
+2025-04-28 17:13:18,340 - INFO - Solicitação 38 marcada como baixada no banco
+2025-04-28 17:13:28,342 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975736
+2025-04-28 17:13:31,087 - INFO - Download iniciado para solicitação 35
+2025-04-28 17:13:36,122 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:13:36,130 - INFO - Solicitação 35 marcada como baixada
+2025-04-28 17:13:36,131 - INFO - Solicitação 35 marcada como baixada no banco
+2025-04-28 17:13:46,132 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975705
+2025-04-28 17:13:48,882 - INFO - Download iniciado para solicitação 33
+2025-04-28 17:13:53,920 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:13:53,928 - INFO - Solicitação 33 marcada como baixada
+2025-04-28 17:13:53,929 - INFO - Solicitação 33 marcada como baixada no banco
+2025-04-28 17:14:03,929 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975700
+2025-04-28 17:14:06,776 - INFO - Download iniciado para solicitação 32
+2025-04-28 17:14:11,810 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:14:11,819 - INFO - Solicitação 32 marcada como baixada
+2025-04-28 17:14:11,819 - INFO - Solicitação 32 marcada como baixada no banco
+2025-04-28 17:14:21,820 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975690
+2025-04-28 17:14:24,755 - INFO - Download iniciado para solicitação 31
+2025-04-28 17:14:29,813 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:14:29,824 - INFO - Solicitação 31 marcada como baixada
+2025-04-28 17:14:29,825 - INFO - Solicitação 31 marcada como baixada no banco
+2025-04-28 17:14:39,826 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975685
+2025-04-28 17:14:43,186 - INFO - Download iniciado para solicitação 30
+2025-04-28 17:14:48,229 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:14:48,234 - INFO - Solicitação 30 marcada como baixada
+2025-04-28 17:14:48,235 - INFO - Solicitação 30 marcada como baixada no banco
+2025-04-28 17:14:58,236 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975670
+2025-04-28 17:15:00,871 - INFO - Download iniciado para solicitação 29
+2025-04-28 17:15:05,911 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:15:05,919 - INFO - Solicitação 29 marcada como baixada
+2025-04-28 17:15:05,920 - INFO - Solicitação 29 marcada como baixada no banco
+2025-04-28 17:15:15,921 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975639
+2025-04-28 17:15:18,692 - INFO - Download iniciado para solicitação 27
+2025-04-28 17:15:23,722 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:15:23,729 - INFO - Solicitação 27 marcada como baixada
+2025-04-28 17:15:23,730 - INFO - Solicitação 27 marcada como baixada no banco
+2025-04-28 17:15:33,731 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975606
+2025-04-28 17:15:38,949 - INFO - Nenhum download em andamento detectado no diretório /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming

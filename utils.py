@@ -38,7 +38,7 @@ def obter_diretorio_execucao():
 
 def garantir_diretorios():
     """Garante que os diretórios necessários existam"""
-    diretorio_downloads = os.path.join(obter_diretorio_execucao(), os.environ.get("DIRETORIO_DOWNLOADS"))
+    diretorio_downloads = os.environ.get("DIRETORIO_DOWNLOADS")
     os.makedirs(diretorio_downloads, exist_ok=True)
     logging.info(f"Diretório de downloads verificado: {diretorio_downloads}")
     return diretorio_downloads
@@ -196,7 +196,8 @@ def iniciar_navegador_selenoid(download_dir=None, browser_type="chrome"):
                 "safebrowsing.enabled": False
             }
             options.add_experimental_option("prefs", prefs)
-    
+            logging.info(f"Configurando download_dir: {download_dir}")
+
     # Adicionar argumentos extras
     if browser_type.lower() == "chrome":
         options.add_argument("--no-sandbox")

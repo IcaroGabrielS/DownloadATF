@@ -1003,3 +1003,583 @@ Stacktrace:
 2025-04-28 19:26:04,506 - INFO - Total de 0 links encontrados e atualizados
 2025-04-28 19:26:04,507 - INFO - Nenhum link correspondente encontrado
 2025-04-28 19:26:04,618 - INFO - Processo finalizado
+2025-04-28 16:36:22,208 - INFO - ================================================================================
+2025-04-28 16:36:22,209 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
+2025-04-28 16:36:22,210 - INFO - ================================================================================
+2025-04-28 16:36:22,211 - INFO - Iniciando processo de busca de links de download
+2025-04-28 16:36:22,247 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:22,254 - INFO - Encontradas 57 solicitações aguardando links
+2025-04-28 16:36:22,254 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 16:36:22,255 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 16:36:26,700 - INFO - Autenticando no SEFAZ
+2025-04-28 16:36:26,714 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 16:36:28,701 - INFO - Autenticação bem-sucedida
+2025-04-28 16:36:28,702 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?limparSessao=true
+2025-04-28 16:36:41,573 - INFO - Procurando links de download disponíveis
+2025-04-28 16:36:41,666 - INFO - Tabela carregada, processando linhas...
+2025-04-28 16:36:41,991 - INFO - Encontradas 783 linhas com anexos para processar
+2025-04-28 16:36:43,213 - INFO - Progresso: 10/783 linhas processadas (1.3%) em 1.2s
+2025-04-28 16:36:44,748 - INFO - Progresso: 20/783 linhas processadas (2.6%) em 2.8s
+2025-04-28 16:36:46,215 - INFO - Progresso: 30/783 linhas processadas (3.8%) em 4.2s
+2025-04-28 16:36:46,934 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:46,940 - INFO - Link atualizado para solicitação 57
+2025-04-28 16:36:46,941 - INFO - Link adicionado para solicitação 57 (horário 28/04/2025 15:59:02)
+2025-04-28 16:36:47,086 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:47,090 - INFO - Link atualizado para solicitação 55
+2025-04-28 16:36:47,091 - INFO - Link adicionado para solicitação 55 (horário 28/04/2025 15:58:01)
+2025-04-28 16:36:47,392 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:47,401 - INFO - Link atualizado para solicitação 54
+2025-04-28 16:36:47,403 - INFO - Link adicionado para solicitação 54 (horário 28/04/2025 15:57:31)
+2025-04-28 16:36:47,586 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:47,593 - INFO - Link atualizado para solicitação 53
+2025-04-28 16:36:47,594 - INFO - Link adicionado para solicitação 53 (horário 28/04/2025 15:57:02)
+2025-04-28 16:36:47,789 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:47,797 - INFO - Link atualizado para solicitação 52
+2025-04-28 16:36:47,798 - INFO - Link adicionado para solicitação 52 (horário 28/04/2025 15:56:32)
+2025-04-28 16:36:47,798 - INFO - Progresso: 40/783 linhas processadas (5.1%) em 5.8s
+2025-04-28 16:36:48,026 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:48,033 - INFO - Link atualizado para solicitação 46
+2025-04-28 16:36:48,033 - INFO - Link adicionado para solicitação 46 (horário 28/04/2025 15:53:33)
+2025-04-28 16:36:48,253 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:48,259 - INFO - Link atualizado para solicitação 45
+2025-04-28 16:36:48,261 - INFO - Link adicionado para solicitação 45 (horário 28/04/2025 15:53:03)
+2025-04-28 16:36:48,470 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:48,479 - INFO - Link atualizado para solicitação 43
+2025-04-28 16:36:48,480 - INFO - Link adicionado para solicitação 43 (horário 28/04/2025 15:52:01)
+2025-04-28 16:36:48,695 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:48,703 - INFO - Link atualizado para solicitação 43
+2025-04-28 16:36:48,703 - INFO - Link adicionado para solicitação 43 (horário 28/04/2025 15:51:54)
+2025-04-28 16:36:48,869 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:48,874 - INFO - Link atualizado para solicitação 41
+2025-04-28 16:36:48,875 - INFO - Link adicionado para solicitação 41 (horário 28/04/2025 15:51:03)
+2025-04-28 16:36:49,032 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:49,036 - INFO - Link atualizado para solicitação 40
+2025-04-28 16:36:49,037 - INFO - Link adicionado para solicitação 40 (horário 28/04/2025 15:50:31)
+2025-04-28 16:36:49,178 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:49,183 - INFO - Link atualizado para solicitação 39
+2025-04-28 16:36:49,184 - INFO - Link adicionado para solicitação 39 (horário 28/04/2025 15:50:01)
+2025-04-28 16:36:49,328 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:49,332 - INFO - Link atualizado para solicitação 39
+2025-04-28 16:36:49,332 - INFO - Link adicionado para solicitação 39 (horário 28/04/2025 15:49:56)
+2025-04-28 16:36:49,490 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:49,496 - INFO - Link atualizado para solicitação 38
+2025-04-28 16:36:49,497 - INFO - Link adicionado para solicitação 38 (horário 28/04/2025 15:49:41)
+2025-04-28 16:36:49,678 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:49,683 - INFO - Link atualizado para solicitação 38
+2025-04-28 16:36:49,684 - INFO - Link adicionado para solicitação 38 (horário 28/04/2025 15:49:32)
+2025-04-28 16:36:49,684 - INFO - Progresso: 50/783 linhas processadas (6.4%) em 7.7s
+2025-04-28 16:36:49,860 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:49,868 - INFO - Link atualizado para solicitação 37
+2025-04-28 16:36:49,869 - INFO - Link adicionado para solicitação 37 (horário 28/04/2025 15:49:01)
+2025-04-28 16:36:50,192 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:50,197 - INFO - Link atualizado para solicitação 35
+2025-04-28 16:36:50,198 - INFO - Link adicionado para solicitação 35 (horário 28/04/2025 15:48:01)
+2025-04-28 16:36:50,497 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:50,502 - INFO - Link atualizado para solicitação 34
+2025-04-28 16:36:50,502 - INFO - Link adicionado para solicitação 34 (horário 28/04/2025 15:47:32)
+2025-04-28 16:36:50,657 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:50,663 - INFO - Link atualizado para solicitação 34
+2025-04-28 16:36:50,663 - INFO - Link adicionado para solicitação 34 (horário 28/04/2025 15:47:30)
+2025-04-28 16:36:50,824 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:50,830 - INFO - Link atualizado para solicitação 33
+2025-04-28 16:36:50,831 - INFO - Link adicionado para solicitação 33 (horário 28/04/2025 15:47:02)
+2025-04-28 16:36:50,961 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:50,970 - INFO - Link atualizado para solicitação 32
+2025-04-28 16:36:50,970 - INFO - Link adicionado para solicitação 32 (horário 28/04/2025 15:46:31)
+2025-04-28 16:36:51,163 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:51,170 - INFO - Link atualizado para solicitação 31
+2025-04-28 16:36:51,171 - INFO - Link adicionado para solicitação 31 (horário 28/04/2025 15:46:02)
+2025-04-28 16:36:51,350 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:51,359 - INFO - Link atualizado para solicitação 30
+2025-04-28 16:36:51,359 - INFO - Link adicionado para solicitação 30 (horário 28/04/2025 15:45:31)
+2025-04-28 16:36:51,530 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:51,537 - INFO - Link atualizado para solicitação 29
+2025-04-28 16:36:51,538 - INFO - Link adicionado para solicitação 29 (horário 28/04/2025 15:45:02)
+2025-04-28 16:36:51,539 - INFO - Progresso: 60/783 linhas processadas (7.7%) em 9.5s
+2025-04-28 16:36:51,722 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:51,728 - INFO - Link atualizado para solicitação 28
+2025-04-28 16:36:51,729 - INFO - Link adicionado para solicitação 28 (horário 28/04/2025 15:44:32)
+2025-04-28 16:36:51,907 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:51,913 - INFO - Link atualizado para solicitação 27
+2025-04-28 16:36:51,915 - INFO - Link adicionado para solicitação 27 (horário 28/04/2025 15:43:51)
+2025-04-28 16:36:52,098 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:52,105 - INFO - Link atualizado para solicitação 26
+2025-04-28 16:36:52,105 - INFO - Link adicionado para solicitação 26 (horário 28/04/2025 15:43:33)
+2025-04-28 16:36:52,276 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:52,282 - INFO - Link atualizado para solicitação 26
+2025-04-28 16:36:52,283 - INFO - Link adicionado para solicitação 26 (horário 28/04/2025 15:43:32)
+2025-04-28 16:36:52,609 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:52,616 - INFO - Link atualizado para solicitação 25
+2025-04-28 16:36:52,616 - INFO - Link adicionado para solicitação 25 (horário 28/04/2025 15:43:02)
+2025-04-28 16:36:52,829 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:52,835 - INFO - Link atualizado para solicitação 24
+2025-04-28 16:36:52,838 - INFO - Link adicionado para solicitação 24 (horário 28/04/2025 15:42:32)
+2025-04-28 16:36:53,037 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:53,048 - INFO - Link atualizado para solicitação 23
+2025-04-28 16:36:53,049 - INFO - Link adicionado para solicitação 23 (horário 28/04/2025 15:42:02)
+2025-04-28 16:36:53,247 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:53,255 - INFO - Link atualizado para solicitação 21
+2025-04-28 16:36:53,256 - INFO - Link adicionado para solicitação 21 (horário 28/04/2025 15:41:08)
+2025-04-28 16:36:53,454 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:53,468 - INFO - Link atualizado para solicitação 21
+2025-04-28 16:36:53,468 - INFO - Link adicionado para solicitação 21 (horário 28/04/2025 15:41:02)
+2025-04-28 16:36:53,469 - INFO - Progresso: 70/783 linhas processadas (8.9%) em 11.5s
+2025-04-28 16:36:53,792 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:53,799 - INFO - Link atualizado para solicitação 20
+2025-04-28 16:36:53,800 - INFO - Link adicionado para solicitação 20 (horário 28/04/2025 15:40:32)
+2025-04-28 16:36:53,993 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:54,005 - INFO - Link atualizado para solicitação 20
+2025-04-28 16:36:54,006 - INFO - Link adicionado para solicitação 20 (horário 28/04/2025 15:40:23)
+2025-04-28 16:36:54,180 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:54,187 - INFO - Link atualizado para solicitação 19
+2025-04-28 16:36:54,188 - INFO - Link adicionado para solicitação 19 (horário 28/04/2025 15:40:02)
+2025-04-28 16:36:54,384 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:54,390 - INFO - Link atualizado para solicitação 19
+2025-04-28 16:36:54,391 - INFO - Link adicionado para solicitação 19 (horário 28/04/2025 15:40:01)
+2025-04-28 16:36:54,563 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:54,568 - INFO - Link atualizado para solicitação 18
+2025-04-28 16:36:54,569 - INFO - Link adicionado para solicitação 18 (horário 28/04/2025 15:39:31)
+2025-04-28 16:36:54,754 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:54,761 - INFO - Link atualizado para solicitação 18
+2025-04-28 16:36:54,763 - INFO - Link adicionado para solicitação 18 (horário 28/04/2025 15:39:26)
+2025-04-28 16:36:54,943 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:54,949 - INFO - Link atualizado para solicitação 17
+2025-04-28 16:36:54,950 - INFO - Link adicionado para solicitação 17 (horário 28/04/2025 15:39:08)
+2025-04-28 16:36:55,141 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:55,147 - INFO - Link atualizado para solicitação 17
+2025-04-28 16:36:55,148 - INFO - Link adicionado para solicitação 17 (horário 28/04/2025 15:39:02)
+2025-04-28 16:36:55,323 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:55,331 - INFO - Link atualizado para solicitação 16
+2025-04-28 16:36:55,331 - INFO - Link adicionado para solicitação 16 (horário 28/04/2025 15:38:34)
+2025-04-28 16:36:55,332 - INFO - Progresso: 80/783 linhas processadas (10.2%) em 13.3s
+2025-04-28 16:36:55,508 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:55,516 - INFO - Link atualizado para solicitação 16
+2025-04-28 16:36:55,517 - INFO - Link adicionado para solicitação 16 (horário 28/04/2025 15:38:31)
+2025-04-28 16:36:55,719 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:55,725 - INFO - Link atualizado para solicitação 15
+2025-04-28 16:36:55,726 - INFO - Link adicionado para solicitação 15 (horário 28/04/2025 15:38:04)
+2025-04-28 16:36:55,902 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:55,910 - INFO - Link atualizado para solicitação 14
+2025-04-28 16:36:55,911 - INFO - Link adicionado para solicitação 14 (horário 28/04/2025 15:37:32)
+2025-04-28 16:36:56,125 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:56,132 - INFO - Link atualizado para solicitação 13
+2025-04-28 16:36:56,133 - INFO - Link adicionado para solicitação 13 (horário 28/04/2025 15:37:02)
+2025-04-28 16:36:56,305 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:56,311 - INFO - Link atualizado para solicitação 13
+2025-04-28 16:36:56,312 - INFO - Link adicionado para solicitação 13 (horário 28/04/2025 15:37:02)
+2025-04-28 16:36:56,661 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:56,668 - INFO - Link atualizado para solicitação 12
+2025-04-28 16:36:56,669 - INFO - Link adicionado para solicitação 12 (horário 28/04/2025 15:36:32)
+2025-04-28 16:36:57,020 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:57,026 - INFO - Link atualizado para solicitação 11
+2025-04-28 16:36:57,028 - INFO - Link adicionado para solicitação 11 (horário 28/04/2025 15:36:02)
+2025-04-28 16:36:57,203 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:57,208 - INFO - Link atualizado para solicitação 10
+2025-04-28 16:36:57,209 - INFO - Link adicionado para solicitação 10 (horário 28/04/2025 15:35:40)
+2025-04-28 16:36:57,210 - INFO - Progresso: 90/783 linhas processadas (11.5%) em 15.2s
+2025-04-28 16:36:57,381 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:57,387 - INFO - Link atualizado para solicitação 10
+2025-04-28 16:36:57,388 - INFO - Link adicionado para solicitação 10 (horário 28/04/2025 15:35:32)
+2025-04-28 16:36:57,580 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:57,586 - INFO - Link atualizado para solicitação 9
+2025-04-28 16:36:57,587 - INFO - Link adicionado para solicitação 9 (horário 28/04/2025 15:35:04)
+2025-04-28 16:36:57,847 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:57,852 - INFO - Link atualizado para solicitação 8
+2025-04-28 16:36:57,853 - INFO - Link adicionado para solicitação 8 (horário 28/04/2025 15:34:32)
+2025-04-28 16:36:58,042 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:58,049 - INFO - Link atualizado para solicitação 8
+2025-04-28 16:36:58,049 - INFO - Link adicionado para solicitação 8 (horário 28/04/2025 15:34:31)
+2025-04-28 16:36:58,218 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:58,224 - INFO - Link atualizado para solicitação 7
+2025-04-28 16:36:58,225 - INFO - Link adicionado para solicitação 7 (horário 28/04/2025 15:34:11)
+2025-04-28 16:36:58,400 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:58,406 - INFO - Link atualizado para solicitação 7
+2025-04-28 16:36:58,406 - INFO - Link adicionado para solicitação 7 (horário 28/04/2025 15:33:51)
+2025-04-28 16:36:58,582 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:58,588 - INFO - Link atualizado para solicitação 6
+2025-04-28 16:36:58,588 - INFO - Link adicionado para solicitação 6 (horário 28/04/2025 15:33:31)
+2025-04-28 16:36:58,935 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:58,940 - INFO - Link atualizado para solicitação 5
+2025-04-28 16:36:58,941 - INFO - Link adicionado para solicitação 5 (horário 28/04/2025 15:33:02)
+2025-04-28 16:36:59,098 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:59,103 - INFO - Link atualizado para solicitação 4
+2025-04-28 16:36:59,104 - INFO - Link adicionado para solicitação 4 (horário 28/04/2025 15:32:32)
+2025-04-28 16:36:59,104 - INFO - Progresso: 100/783 linhas processadas (12.8%) em 17.1s
+2025-04-28 16:36:59,234 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:59,240 - INFO - Link atualizado para solicitação 3
+2025-04-28 16:36:59,241 - INFO - Link adicionado para solicitação 3 (horário 28/04/2025 15:32:09)
+2025-04-28 16:36:59,420 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:59,426 - INFO - Link atualizado para solicitação 3
+2025-04-28 16:36:59,427 - INFO - Link adicionado para solicitação 3 (horário 28/04/2025 15:32:02)
+2025-04-28 16:36:59,735 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:36:59,741 - INFO - Link atualizado para solicitação 2
+2025-04-28 16:36:59,742 - INFO - Link adicionado para solicitação 2 (horário 28/04/2025 15:31:32)
+2025-04-28 16:37:00,067 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:37:00,073 - INFO - Link atualizado para solicitação 1
+2025-04-28 16:37:00,074 - INFO - Link adicionado para solicitação 1 (horário 28/04/2025 15:31:01)
+2025-04-28 16:37:00,258 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:37:00,265 - INFO - Link atualizado para solicitação 1
+2025-04-28 16:37:00,265 - INFO - Link adicionado para solicitação 1 (horário 28/04/2025 15:30:56)
+2025-04-28 16:37:00,672 - INFO - Progresso: 110/783 linhas processadas (14.0%) em 18.7s
+2025-04-28 16:37:02,115 - INFO - Progresso: 120/783 linhas processadas (15.3%) em 20.1s
+2025-04-28 16:37:03,206 - INFO - Progresso: 130/783 linhas processadas (16.6%) em 21.2s
+2025-04-28 16:37:04,657 - INFO - Progresso: 140/783 linhas processadas (17.9%) em 22.7s
+2025-04-28 16:37:06,309 - INFO - Progresso: 150/783 linhas processadas (19.2%) em 24.3s
+2025-04-28 16:37:07,640 - INFO - Progresso: 160/783 linhas processadas (20.4%) em 25.6s
+2025-04-28 16:37:09,033 - INFO - Progresso: 170/783 linhas processadas (21.7%) em 27.0s
+2025-04-28 16:37:10,466 - INFO - Progresso: 180/783 linhas processadas (23.0%) em 28.5s
+2025-04-28 16:37:11,391 - INFO - Progresso: 190/783 linhas processadas (24.3%) em 29.4s
+2025-04-28 16:37:12,306 - INFO - Progresso: 200/783 linhas processadas (25.5%) em 30.3s
+2025-04-28 16:37:13,578 - INFO - Progresso: 210/783 linhas processadas (26.8%) em 31.6s
+2025-04-28 16:37:14,963 - INFO - Progresso: 220/783 linhas processadas (28.1%) em 33.0s
+2025-04-28 16:37:16,464 - INFO - Progresso: 230/783 linhas processadas (29.4%) em 34.5s
+2025-04-28 16:37:17,786 - INFO - Progresso: 240/783 linhas processadas (30.7%) em 35.8s
+2025-04-28 16:37:19,182 - INFO - Progresso: 250/783 linhas processadas (31.9%) em 37.2s
+2025-04-28 16:37:20,196 - INFO - Progresso: 260/783 linhas processadas (33.2%) em 38.2s
+2025-04-28 16:37:21,629 - INFO - Progresso: 270/783 linhas processadas (34.5%) em 39.6s
+2025-04-28 16:37:23,100 - INFO - Progresso: 280/783 linhas processadas (35.8%) em 41.1s
+2025-04-28 16:37:24,578 - INFO - Progresso: 290/783 linhas processadas (37.0%) em 42.6s
+2025-04-28 16:37:25,944 - INFO - Progresso: 300/783 linhas processadas (38.3%) em 44.0s
+2025-04-28 16:37:27,544 - INFO - Progresso: 310/783 linhas processadas (39.6%) em 45.6s
+2025-04-28 16:37:29,105 - INFO - Progresso: 320/783 linhas processadas (40.9%) em 47.1s
+2025-04-28 16:37:29,734 - INFO - Progresso: 330/783 linhas processadas (42.1%) em 47.7s
+2025-04-28 16:37:30,625 - INFO - Progresso: 340/783 linhas processadas (43.4%) em 48.6s
+2025-04-28 16:37:31,251 - INFO - Progresso: 350/783 linhas processadas (44.7%) em 49.3s
+2025-04-28 16:37:32,670 - INFO - Progresso: 360/783 linhas processadas (46.0%) em 50.7s
+2025-04-28 16:37:33,987 - INFO - Progresso: 370/783 linhas processadas (47.3%) em 52.0s
+2025-04-28 16:37:35,321 - INFO - Progresso: 380/783 linhas processadas (48.5%) em 53.3s
+2025-04-28 16:37:36,869 - INFO - Progresso: 390/783 linhas processadas (49.8%) em 54.9s
+2025-04-28 16:37:38,349 - INFO - Progresso: 400/783 linhas processadas (51.1%) em 56.4s
+2025-04-28 16:37:39,881 - INFO - Progresso: 410/783 linhas processadas (52.4%) em 57.9s
+2025-04-28 16:37:41,366 - INFO - Progresso: 420/783 linhas processadas (53.6%) em 59.4s
+2025-04-28 16:37:42,890 - INFO - Progresso: 430/783 linhas processadas (54.9%) em 60.9s
+2025-04-28 16:37:44,266 - INFO - Progresso: 440/783 linhas processadas (56.2%) em 62.3s
+2025-04-28 16:37:45,682 - INFO - Progresso: 450/783 linhas processadas (57.5%) em 63.7s
+2025-04-28 16:37:47,189 - INFO - Progresso: 460/783 linhas processadas (58.7%) em 65.2s
+2025-04-28 16:37:48,666 - INFO - Progresso: 470/783 linhas processadas (60.0%) em 66.7s
+2025-04-28 16:37:50,149 - INFO - Progresso: 480/783 linhas processadas (61.3%) em 68.2s
+2025-04-28 16:37:51,720 - INFO - Progresso: 490/783 linhas processadas (62.6%) em 69.7s
+2025-04-28 16:37:53,151 - INFO - Progresso: 500/783 linhas processadas (63.9%) em 71.2s
+2025-04-28 16:37:54,700 - INFO - Progresso: 510/783 linhas processadas (65.1%) em 72.7s
+2025-04-28 16:37:56,201 - INFO - Progresso: 520/783 linhas processadas (66.4%) em 74.2s
+2025-04-28 16:37:57,675 - INFO - Progresso: 530/783 linhas processadas (67.7%) em 75.7s
+2025-04-28 16:37:59,320 - INFO - Progresso: 540/783 linhas processadas (69.0%) em 77.3s
+2025-04-28 16:37:59,866 - INFO - Progresso: 550/783 linhas processadas (70.2%) em 77.9s
+2025-04-28 16:38:00,360 - INFO - Progresso: 560/783 linhas processadas (71.5%) em 78.4s
+2025-04-28 16:38:01,609 - INFO - Progresso: 570/783 linhas processadas (72.8%) em 79.6s
+2025-04-28 16:38:03,242 - INFO - Progresso: 580/783 linhas processadas (74.1%) em 81.3s
+2025-04-28 16:38:04,353 - INFO - Progresso: 590/783 linhas processadas (75.4%) em 82.4s
+2025-04-28 16:38:05,190 - INFO - Progresso: 600/783 linhas processadas (76.6%) em 83.2s
+2025-04-28 16:38:06,630 - INFO - Progresso: 610/783 linhas processadas (77.9%) em 84.6s
+2025-04-28 16:38:08,090 - INFO - Progresso: 620/783 linhas processadas (79.2%) em 86.1s
+2025-04-28 16:38:09,442 - INFO - Progresso: 630/783 linhas processadas (80.5%) em 87.5s
+2025-04-28 16:38:11,017 - INFO - Progresso: 640/783 linhas processadas (81.7%) em 89.0s
+2025-04-28 16:38:12,508 - INFO - Progresso: 650/783 linhas processadas (83.0%) em 90.5s
+2025-04-28 16:38:14,133 - INFO - Progresso: 660/783 linhas processadas (84.3%) em 92.1s
+2025-04-28 16:38:15,715 - INFO - Progresso: 670/783 linhas processadas (85.6%) em 93.7s
+2025-04-28 16:38:17,109 - INFO - Progresso: 680/783 linhas processadas (86.8%) em 95.1s
+2025-04-28 16:38:17,866 - INFO - Progresso: 690/783 linhas processadas (88.1%) em 95.9s
+2025-04-28 16:38:18,495 - INFO - Progresso: 700/783 linhas processadas (89.4%) em 96.5s
+2025-04-28 16:38:19,972 - INFO - Progresso: 710/783 linhas processadas (90.7%) em 98.0s
+2025-04-28 16:38:21,390 - INFO - Progresso: 720/783 linhas processadas (92.0%) em 99.4s
+2025-04-28 16:38:22,657 - INFO - Progresso: 730/783 linhas processadas (93.2%) em 100.7s
+2025-04-28 16:38:23,264 - INFO - Progresso: 740/783 linhas processadas (94.5%) em 101.3s
+2025-04-28 16:38:24,075 - INFO - Progresso: 750/783 linhas processadas (95.8%) em 102.1s
+2025-04-28 16:38:24,817 - INFO - Progresso: 760/783 linhas processadas (97.1%) em 102.8s
+2025-04-28 16:38:25,852 - INFO - Progresso: 770/783 linhas processadas (98.3%) em 103.9s
+2025-04-28 16:38:26,405 - INFO - Progresso: 780/783 linhas processadas (99.6%) em 104.4s
+2025-04-28 16:38:26,597 - INFO - Processamento concluído: 783/783 linhas processadas em 104.6s
+2025-04-28 16:38:26,598 - INFO - Total de 64 links encontrados e atualizados
+2025-04-28 16:38:26,599 - INFO - Processo concluído com sucesso: 64 links encontrados e salvos
+2025-04-28 16:38:26,711 - INFO - Processo finalizado
+2025-04-28 16:44:58,500 - INFO - ================================================================================
+2025-04-28 16:44:58,501 - INFO - INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML
+2025-04-28 16:44:58,502 - INFO - ================================================================================
+2025-04-28 16:44:58,502 - INFO - Iniciando processo de download dos arquivos
+2025-04-28 16:44:58,502 - INFO - Diretório de downloads configurado: /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 16:44:58,547 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:44:58,556 - INFO - Encontradas 47 solicitações com link pendentes de download
+2025-04-28 16:44:58,557 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 16:44:58,559 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 16:45:03,513 - INFO - Autenticando no SEFAZ
+2025-04-28 16:45:03,527 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 16:45:05,330 - INFO - Autenticação bem-sucedida
+2025-04-28 16:45:05,331 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975593
+2025-04-28 16:45:10,528 - INFO - Download iniciado para solicitação 24
+2025-04-28 16:45:15,577 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:45:15,585 - INFO - Solicitação 24 marcada como baixada
+2025-04-28 16:45:15,586 - INFO - Solicitação 24 marcada como baixada no banco
+2025-04-28 16:45:25,588 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975523
+2025-04-28 16:45:28,317 - INFO - Download iniciado para solicitação 20
+2025-04-28 16:45:33,354 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:45:33,361 - INFO - Solicitação 20 marcada como baixada
+2025-04-28 16:45:33,362 - INFO - Solicitação 20 marcada como baixada no banco
+2025-04-28 16:45:43,363 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975387
+2025-04-28 16:45:46,094 - INFO - Download iniciado para solicitação 13
+2025-04-28 16:45:51,129 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:45:51,138 - INFO - Solicitação 13 marcada como baixada
+2025-04-28 16:45:51,138 - INFO - Solicitação 13 marcada como baixada no banco
+2025-04-28 16:46:01,139 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975309
+2025-04-28 16:46:06,158 - INFO - Download iniciado para solicitação 8
+2025-04-28 16:46:11,193 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:46:11,201 - INFO - Solicitação 8 marcada como baixada
+2025-04-28 16:46:11,202 - INFO - Solicitação 8 marcada como baixada no banco
+2025-04-28 16:46:21,203 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975199
+2025-04-28 16:46:24,603 - INFO - Download iniciado para solicitação 3
+2025-04-28 16:46:29,642 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:46:29,649 - INFO - Solicitação 3 marcada como baixada
+2025-04-28 16:46:29,650 - INFO - Solicitação 3 marcada como baixada no banco
+2025-04-28 16:46:39,651 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975187
+2025-04-28 16:46:42,306 - INFO - Download iniciado para solicitação 2
+2025-04-28 16:46:47,341 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:46:47,349 - INFO - Solicitação 2 marcada como baixada
+2025-04-28 16:46:47,350 - INFO - Solicitação 2 marcada como baixada no banco
+2025-04-28 16:46:57,351 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975796
+2025-04-28 16:46:59,972 - INFO - Download iniciado para solicitação 37
+2025-04-28 16:47:05,005 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:47:05,013 - INFO - Solicitação 37 marcada como baixada
+2025-04-28 16:47:05,013 - INFO - Solicitação 37 marcada como baixada no banco
+2025-04-28 16:47:15,014 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975932
+2025-04-28 16:48:15,226 - ERROR - Erro ao realizar download para solicitação 43: Message: timeout: Timed out receiving message from renderer: -0.061
+  (Session info: chrome=128.0.6613.137)
+Stacktrace:
+#0 0x605af5bfb0ca <unknown>
+#1 0x605af58c72b0 <unknown>
+#2 0x605af58af380 <unknown>
+#3 0x605af58af06d <unknown>
+#4 0x605af58ad078 <unknown>
+#5 0x605af58ad87f <unknown>
+#6 0x605af58bd29b <unknown>
+#7 0x605af58d3674 <unknown>
+#8 0x605af58d8bab <unknown>
+#9 0x605af58adf8e <unknown>
+#10 0x605af58d34cf <unknown>
+#11 0x605af5959cef <unknown>
+#12 0x605af593b6a3 <unknown>
+#13 0x605af59094f3 <unknown>
+#14 0x605af590a4fe <unknown>
+#15 0x605af5bc1d7b <unknown>
+#16 0x605af5bc5d31 <unknown>
+#17 0x605af5badc85 <unknown>
+#18 0x605af5bc68a2 <unknown>
+#19 0x605af5b92e1f <unknown>
+#20 0x605af5be9e48 <unknown>
+#21 0x605af5bea013 <unknown>
+#22 0x605af5bf9ebc <unknown>
+#23 0x7e3c2ec62ac3 <unknown>
+
+2025-04-28 16:48:25,228 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975884
+2025-04-28 16:48:27,668 - INFO - Nenhum download em andamento detectado no diretório /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 16:50:28,380 - INFO - ================================================================================
+2025-04-28 16:50:28,381 - INFO - INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML
+2025-04-28 16:50:28,381 - INFO - ================================================================================
+2025-04-28 16:50:28,382 - INFO - Iniciando processo de download dos arquivos
+2025-04-28 16:50:28,382 - INFO - Diretório de downloads configurado: /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 16:50:28,429 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:50:28,439 - INFO - Encontradas 40 solicitações com link pendentes de download
+2025-04-28 16:50:28,440 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 16:50:28,441 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 16:51:02,938 - INFO - Autenticando no SEFAZ
+2025-04-28 16:51:02,953 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 16:51:05,381 - ERROR - Erro ao realizar login: Message: 
+Stacktrace:
+#0 0x5b156658e0ca <unknown>
+#1 0x5b156625a2b0 <unknown>
+#2 0x5b15662a9b22 <unknown>
+#3 0x5b15662a9dc1 <unknown>
+#4 0x5b15662ef994 <unknown>
+#5 0x5b15662ce92d <unknown>
+#6 0x5b15662ece26 <unknown>
+#7 0x5b15662ce6a3 <unknown>
+#8 0x5b156629c4f3 <unknown>
+#9 0x5b156629d4fe <unknown>
+#10 0x5b1566554d7b <unknown>
+#11 0x5b1566558d31 <unknown>
+#12 0x5b1566540c85 <unknown>
+#13 0x5b15665598a2 <unknown>
+#14 0x5b1566525e1f <unknown>
+#15 0x5b156657ce48 <unknown>
+#16 0x5b156657d013 <unknown>
+#17 0x5b156658cebc <unknown>
+#18 0x712b4e4d2ac3 <unknown>
+
+2025-04-28 16:51:05,383 - ERROR - Falha na autenticação ou inicialização do navegador
+2025-04-28 16:51:05,384 - INFO - Nenhum download em andamento detectado no diretório /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 16:51:05,501 - INFO - Processo de download finalizado
+2025-04-28 16:53:44,595 - INFO - ================================================================================
+2025-04-28 16:53:44,596 - INFO - INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML
+2025-04-28 16:53:44,596 - INFO - ================================================================================
+2025-04-28 16:53:44,597 - INFO - Iniciando processo de download dos arquivos
+2025-04-28 16:53:44,597 - INFO - Diretório de downloads configurado: /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 16:53:44,635 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:53:44,642 - INFO - Encontradas 47 solicitações com link pendentes de download
+2025-04-28 16:53:44,643 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 16:53:44,643 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 16:53:49,360 - INFO - Autenticando no SEFAZ
+2025-04-28 16:53:49,375 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 16:53:51,038 - INFO - Autenticação bem-sucedida
+2025-04-28 16:53:51,039 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975593
+2025-04-28 16:53:56,720 - INFO - Download iniciado para solicitação 24
+2025-04-28 16:54:01,754 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:54:01,761 - INFO - Solicitação 24 marcada como baixada
+2025-04-28 16:54:01,762 - INFO - Solicitação 24 marcada como baixada no banco
+2025-04-28 16:54:11,762 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975523
+2025-04-28 16:54:14,586 - INFO - Download iniciado para solicitação 20
+2025-04-28 16:54:19,614 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:54:19,619 - INFO - Solicitação 20 marcada como baixada
+2025-04-28 16:54:19,620 - INFO - Solicitação 20 marcada como baixada no banco
+2025-04-28 16:54:29,620 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975387
+2025-04-28 16:54:33,239 - INFO - Download iniciado para solicitação 13
+2025-04-28 16:54:38,272 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:54:38,279 - INFO - Solicitação 13 marcada como baixada
+2025-04-28 16:54:38,280 - INFO - Solicitação 13 marcada como baixada no banco
+2025-04-28 16:54:48,282 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975309
+2025-04-28 16:54:51,606 - INFO - Download iniciado para solicitação 8
+2025-04-28 16:54:56,641 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:54:56,649 - INFO - Solicitação 8 marcada como baixada
+2025-04-28 16:54:56,650 - INFO - Solicitação 8 marcada como baixada no banco
+2025-04-28 16:55:06,651 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975199
+2025-04-28 16:55:09,368 - INFO - Download iniciado para solicitação 3
+2025-04-28 16:55:14,407 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:55:14,414 - INFO - Solicitação 3 marcada como baixada
+2025-04-28 16:55:14,415 - INFO - Solicitação 3 marcada como baixada no banco
+2025-04-28 16:55:24,416 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975187
+2025-04-28 16:55:27,482 - INFO - Download iniciado para solicitação 2
+2025-04-28 16:55:32,515 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:55:32,521 - INFO - Solicitação 2 marcada como baixada
+2025-04-28 16:55:32,522 - INFO - Solicitação 2 marcada como baixada no banco
+2025-04-28 16:55:42,523 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975796
+2025-04-28 16:55:45,626 - INFO - Download iniciado para solicitação 37
+2025-04-28 16:55:50,665 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 16:55:50,671 - INFO - Solicitação 37 marcada como baixada
+2025-04-28 16:55:50,673 - INFO - Solicitação 37 marcada como baixada no banco
+2025-04-28 16:56:00,674 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975932
+2025-04-28 16:57:00,896 - ERROR - Erro ao realizar download para solicitação 43: Message: timeout: Timed out receiving message from renderer: -0.061
+  (Session info: chrome=128.0.6613.137)
+Stacktrace:
+#0 0x5ff36a3340ca <unknown>
+#1 0x5ff36a0002b0 <unknown>
+#2 0x5ff369fe8380 <unknown>
+#3 0x5ff369fe806d <unknown>
+#4 0x5ff369fe6078 <unknown>
+#5 0x5ff369fe687f <unknown>
+#6 0x5ff369ff629b <unknown>
+#7 0x5ff36a00c674 <unknown>
+#8 0x5ff36a011bab <unknown>
+#9 0x5ff369fe6f8e <unknown>
+#10 0x5ff36a00c4cf <unknown>
+#11 0x5ff36a092cef <unknown>
+#12 0x5ff36a0746a3 <unknown>
+#13 0x5ff36a0424f3 <unknown>
+#14 0x5ff36a0434fe <unknown>
+#15 0x5ff36a2fad7b <unknown>
+#16 0x5ff36a2fed31 <unknown>
+#17 0x5ff36a2e6c85 <unknown>
+#18 0x5ff36a2ff8a2 <unknown>
+#19 0x5ff36a2cbe1f <unknown>
+#20 0x5ff36a322e48 <unknown>
+#21 0x5ff36a323013 <unknown>
+#22 0x5ff36a332ebc <unknown>
+#23 0x73c2a2d56ac3 <unknown>
+
+2025-04-28 16:57:10,898 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975884
+2025-04-28 16:58:11,098 - ERROR - Erro ao realizar download para solicitação 41: Message: timeout: Timed out receiving message from renderer: -0.058
+  (Session info: chrome=128.0.6613.137)
+Stacktrace:
+#0 0x5ff36a3340ca <unknown>
+#1 0x5ff36a0002b0 <unknown>
+#2 0x5ff369fe8380 <unknown>
+#3 0x5ff369fe806d <unknown>
+#4 0x5ff369fe6078 <unknown>
+#5 0x5ff369fe687f <unknown>
+#6 0x5ff369ff629b <unknown>
+#7 0x5ff36a00c674 <unknown>
+#8 0x5ff36a011bab <unknown>
+#9 0x5ff369fe6f8e <unknown>
+#10 0x5ff36a00c4cf <unknown>
+#11 0x5ff36a092cef <unknown>
+#12 0x5ff36a0746a3 <unknown>
+#13 0x5ff36a0424f3 <unknown>
+#14 0x5ff36a0434fe <unknown>
+#15 0x5ff36a2fad7b <unknown>
+#16 0x5ff36a2fed31 <unknown>
+#17 0x5ff36a2e6c85 <unknown>
+#18 0x5ff36a2ff8a2 <unknown>
+#19 0x5ff36a2cbe1f <unknown>
+#20 0x5ff36a322e48 <unknown>
+#21 0x5ff36a323013 <unknown>
+#22 0x5ff36a332ebc <unknown>
+#23 0x73c2a2d56ac3 <unknown>
+
+2025-04-28 16:58:21,101 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975829
+2025-04-28 16:58:45,471 - INFO - Nenhum download em andamento detectado no diretório /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 17:12:08,055 - INFO - ================================================================================
+2025-04-28 17:12:08,056 - INFO - INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML
+2025-04-28 17:12:08,057 - INFO - ================================================================================
+2025-04-28 17:12:08,057 - INFO - Iniciando processo de download dos arquivos
+2025-04-28 17:12:08,057 - INFO - Diretório de downloads configurado: /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 17:12:08,105 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:12:08,116 - INFO - Encontradas 40 solicitações com link pendentes de download
+2025-04-28 17:12:08,117 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 17:12:08,118 - INFO - Configurando download_dir: /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 17:12:08,119 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 17:12:13,183 - INFO - Autenticando no SEFAZ
+2025-04-28 17:12:13,199 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 17:12:15,185 - INFO - Autenticação bem-sucedida
+2025-04-28 17:12:15,185 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975932
+2025-04-28 17:12:20,634 - INFO - Download iniciado para solicitação 43
+2025-04-28 17:12:25,680 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:12:25,688 - INFO - Solicitação 43 marcada como baixada
+2025-04-28 17:12:25,689 - INFO - Solicitação 43 marcada como baixada no banco
+2025-04-28 17:12:35,690 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975884
+2025-04-28 17:12:38,365 - INFO - Download iniciado para solicitação 41
+2025-04-28 17:12:43,397 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:12:43,403 - INFO - Solicitação 41 marcada como baixada
+2025-04-28 17:12:43,404 - INFO - Solicitação 41 marcada como baixada no banco
+2025-04-28 17:12:53,406 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975829
+2025-04-28 17:12:55,792 - INFO - Download iniciado para solicitação 39
+2025-04-28 17:13:00,825 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:13:00,834 - INFO - Solicitação 39 marcada como baixada
+2025-04-28 17:13:00,834 - INFO - Solicitação 39 marcada como baixada no banco
+2025-04-28 17:13:10,835 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975822
+2025-04-28 17:13:13,287 - INFO - Download iniciado para solicitação 38
+2025-04-28 17:13:18,333 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:13:18,339 - INFO - Solicitação 38 marcada como baixada
+2025-04-28 17:13:18,340 - INFO - Solicitação 38 marcada como baixada no banco
+2025-04-28 17:13:28,342 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975736
+2025-04-28 17:13:31,087 - INFO - Download iniciado para solicitação 35
+2025-04-28 17:13:36,122 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:13:36,130 - INFO - Solicitação 35 marcada como baixada
+2025-04-28 17:13:36,131 - INFO - Solicitação 35 marcada como baixada no banco
+2025-04-28 17:13:46,132 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975705
+2025-04-28 17:13:48,882 - INFO - Download iniciado para solicitação 33
+2025-04-28 17:13:53,920 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:13:53,928 - INFO - Solicitação 33 marcada como baixada
+2025-04-28 17:13:53,929 - INFO - Solicitação 33 marcada como baixada no banco
+2025-04-28 17:14:03,929 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975700
+2025-04-28 17:14:06,776 - INFO - Download iniciado para solicitação 32
+2025-04-28 17:14:11,810 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:14:11,819 - INFO - Solicitação 32 marcada como baixada
+2025-04-28 17:14:11,819 - INFO - Solicitação 32 marcada como baixada no banco
+2025-04-28 17:14:21,820 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975690
+2025-04-28 17:14:24,755 - INFO - Download iniciado para solicitação 31
+2025-04-28 17:14:29,813 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:14:29,824 - INFO - Solicitação 31 marcada como baixada
+2025-04-28 17:14:29,825 - INFO - Solicitação 31 marcada como baixada no banco
+2025-04-28 17:14:39,826 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975685
+2025-04-28 17:14:43,186 - INFO - Download iniciado para solicitação 30
+2025-04-28 17:14:48,229 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:14:48,234 - INFO - Solicitação 30 marcada como baixada
+2025-04-28 17:14:48,235 - INFO - Solicitação 30 marcada como baixada no banco
+2025-04-28 17:14:58,236 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975670
+2025-04-28 17:15:00,871 - INFO - Download iniciado para solicitação 29
+2025-04-28 17:15:05,911 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:15:05,919 - INFO - Solicitação 29 marcada como baixada
+2025-04-28 17:15:05,920 - INFO - Solicitação 29 marcada como baixada no banco
+2025-04-28 17:15:15,921 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975639
+2025-04-28 17:15:18,692 - INFO - Download iniciado para solicitação 27
+2025-04-28 17:15:23,722 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 17:15:23,729 - INFO - Solicitação 27 marcada como baixada
+2025-04-28 17:15:23,730 - INFO - Solicitação 27 marcada como baixada no banco
+2025-04-28 17:15:33,731 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem=77975606
+2025-04-28 17:15:38,949 - INFO - Nenhum download em andamento detectado no diretório /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
