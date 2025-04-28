@@ -137,3 +137,11 @@
 2025-04-28 09:45:00,296 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
 2025-04-28 09:45:00,301 - INFO - Encontradas 0 solicitações com link pendentes de download
 2025-04-28 09:45:00,302 - INFO - Não há solicitações pendentes de download
+2025-04-28 10:00:02,381 - INFO - ================================================================================
+2025-04-28 10:00:02,381 - INFO - INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML
+2025-04-28 10:00:02,382 - INFO - ================================================================================
+2025-04-28 10:00:02,382 - INFO - Iniciando processo de download dos arquivos
+2025-04-28 10:00:02,382 - INFO - Diretório de downloads configurado: C:\Users\icaro.saldanha\Documents\DownloadATF\Gerenciador De Arquivos\NFCE_XML_TEMP\incoming
+2025-04-28 10:00:02,449 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 10:00:02,455 - INFO - Encontradas 0 solicitações com link pendentes de download
+2025-04-28 10:00:02,455 - INFO - Não há solicitações pendentes de download

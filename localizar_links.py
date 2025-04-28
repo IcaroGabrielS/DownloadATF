@@ -1,8 +1,10 @@
-import re, logging, os
+import re, logging, os, time
 from datetime import datetime
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from dotenv import load_dotenv
-from utils import (conectar_postgres, iniciar_navegador_firefox, autenticar_sefaz, acessar_pagina)
+from utils import (conectar_postgres, iniciar_navegador_selenoid, autenticar_sefaz, acessar_pagina)
 
 load_dotenv()
 
@@ -93,25 +95,53 @@ def atualizar_link_solicitacao(id_solicitacao, link):
 def processar_links_disponíveis(navegador, solicitacoes):
     """Extrai e atualiza links de download da página"""
     logging.info("Procurando links de download disponíveis")
-    linhas = navegador.find_elements(By.XPATH, "//table/tbody/tr")
-    links_encontrados = 0
     
+    # Adicionar timeout explícito para carregamento da tabela
+    wait = WebDriverWait(navegador, 10)
+    try:
+        wait.until(EC.presence_of_element_located((By.XPATH, "//table/tbody/tr")))
+        logging.info("Tabela carregada, processando linhas...")
+    except:
+        logging.warning("Timeout ao aguardar carregamento da tabela")
+    
+    try:
+        # Obter apenas linhas com anexos para processar
+        linhas = navegador.find_elements(By.XPATH, "//table/tbody/tr[td[3]/a/img[@alt='Anexo']]")
+        total_linhas = len(linhas)
+        logging.info(f"Encontradas {total_linhas} linhas com anexos para processar")
+    except Exception as e:
+        logging.error(f"Erro ao localizar linhas com anexos: {str(e)}")
+        return 0
+    
+    links_encontrados = 0
+    processadas = 0
+    
+    # Criar um dicionário de solicitações por horário para busca mais rápida
+    solicitacoes_por_horario = {item["horario"]: item for item in solicitacoes if item["horario"]}
+    
+    inicio = time.time()
     for linha in linhas:
         try:
-            # Verifica se é um anexo (imagem na coluna 3)
-            imagem = linha.find_element(By.XPATH, "./td[3]/a/img")
-            if imagem.get_attribute("alt") != "Anexo":
-                continue
+            processadas += 1
+            if processadas % 10 == 0:
+                tempo_decorrido = time.time() - inicio
+                logging.info(f"Progresso: {processadas}/{total_linhas} linhas processadas ({(processadas/total_linhas*100):.1f}%) em {tempo_decorrido:.1f}s")
                 
-            # Verifica se o texto na coluna 4 começa com "FIS_1484"
-            coluna4 = linha.find_element(By.XPATH, "./td[4]/a")
-            if not coluna4.text.strip().startswith("FIS_1484"):
+            # Verificar se o texto na coluna 4 começa com "FIS_1484"
+            try:
+                coluna4 = linha.find_element(By.XPATH, "./td[4]/a")
+                if not coluna4.text.strip().startswith("FIS_1484"):
+                    continue
+            except:
                 continue
                 
             # Obtém o link na coluna 6
-            link = linha.find_element(By.XPATH, "./td[6]/a")
-            href = link.get_attribute("href")
-            link_text = link.text.strip()
+            try:
+                link = linha.find_element(By.XPATH, "./td[6]/a")
+                href = link.get_attribute("href")
+                link_text = link.text.strip()
+            except:
+                continue
             
             # Processa o link JavaScript
             match = re.match(r"javascript:abrirFilhas\('(\d+)',(\d+)\)", href)
@@ -119,7 +149,15 @@ def processar_links_disponíveis(navegador, solicitacoes):
                 mensagem_id = match.group(1)
                 url = f"https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?hidsqMensagem={mensagem_id}"
                 
-                # Faz a correspondência por horário
+                # Verifica se o horário está no nosso dicionário para correspondência rápida
+                if link_text in solicitacoes_por_horario:
+                    item = solicitacoes_por_horario[link_text]
+                    atualizar_link_solicitacao(item["id"], url)
+                    links_encontrados += 1
+                    logging.info(f"Link adicionado para solicitação {item['id']} (horário {link_text})")
+                    continue
+                
+                # Se não encontrou correspondência exata, faz a busca por proximidade
                 try:
                     link_time = datetime.strptime(link_text, "%d/%m/%Y %H:%M:%S")
                     for item in solicitacoes:
@@ -133,9 +171,11 @@ def processar_links_disponíveis(navegador, solicitacoes):
                     continue
                     
         except Exception as e:
-            logging.debug(f"Linha ignorada: {str(e)}")
+            logging.debug(f"Erro ao processar linha: {str(e)}")
             continue
     
+    tempo_total = time.time() - inicio
+    logging.info(f"Processamento concluído: {processadas}/{total_linhas} linhas processadas em {tempo_total:.1f}s")
     logging.info(f"Total de {links_encontrados} links encontrados e atualizados")
     return links_encontrados
 
@@ -152,7 +192,9 @@ def executar_processo_busca_links():
     
     navegador = None
     try:
-        navegador = iniciar_navegador_firefox()
+        # Usa Selenoid em vez de Firefox
+        browser_type = os.environ.get("SELENOID_BROWSER", "chrome") 
+        navegador = iniciar_navegador_selenoid(browser_type=browser_type)
         
         if navegador and autenticar_sefaz(navegador):
             # Acessa a caixa de mensagens

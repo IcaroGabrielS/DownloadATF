@@ -8,7 +8,7 @@ from utils import (
     obter_diretorio_execucao,
     garantir_diretorios,
     conectar_postgres,
-    iniciar_navegador_firefox,
+    iniciar_navegador_selenoid,
     autenticar_sefaz,
     acessar_pagina,
     verificar_downloads_em_progresso,
@@ -150,8 +150,9 @@ def executar_processo_downloads():
     
     navegador = None
     try:
-        # Inicia o navegador com o diretório de downloads absoluto
-        navegador = iniciar_navegador_firefox(diretorio_downloads)
+        # Inicia o navegador com Selenoid com o diretório de downloads absoluto
+        browser_type = os.environ.get("SELENOID_BROWSER", "chrome")
+        navegador = iniciar_navegador_selenoid(diretorio_downloads, browser_type)
         
         if navegador and autenticar_sefaz(navegador):
             downloads_realizados = 0

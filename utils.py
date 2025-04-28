@@ -4,7 +4,8 @@ from datetime import datetime
 from dateutil import parser
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from dotenv import load_dotenv
@@ -37,8 +38,10 @@ def obter_diretorio_execucao():
 
 def garantir_diretorios():
     """Garante que os diretórios necessários existam"""
-    os.makedirs(os.environ.get("DIRETORIO_DOWNLOADS"), exist_ok=True)
-    logging.info(f"Diretório de downloads verificado: {os.environ.get('DIRETORIO_DOWNLOADS')}")
+    diretorio_downloads = os.path.join(obter_diretorio_execucao(), os.environ.get("DIRETORIO_DOWNLOADS"))
+    os.makedirs(diretorio_downloads, exist_ok=True)
+    logging.info(f"Diretório de downloads verificado: {diretorio_downloads}")
+    return diretorio_downloads
 
 # ============================================
 # DATABASE FUNCTIONS
@@ -151,29 +154,79 @@ def extrair_dado_xml(xml_path, tipo):
 # BROWSER FUNCTIONS
 # ============================================
 
-def iniciar_navegador_firefox(download_dir=None):
-    """Inicia o navegador Firefox com as configurações adequadas"""
-    logging.info("Iniciando navegador Firefox")
+def iniciar_navegador_selenoid(download_dir=None, browser_type="chrome"):
+    """Inicia um navegador usando Selenoid com as configurações adequadas"""
+    logging.info(f"Iniciando navegador {browser_type} com Selenoid")
     
-    options = Options()
+    # Seleciona o tipo de opções com base no navegador
+    if browser_type.lower() == "firefox":
+        options = FirefoxOptions()
+    else:  # chrome é o padrão
+        options = ChromeOptions()
+        
+    # Adicionar capacidades específicas do Selenoid
+    capabilities = {
+        "browserName": browser_type.lower(),
+        "browserVersion": os.environ.get("SELENOID_VERSION", "latest"),
+        "selenoid:options": {
+            "enableVNC": True,
+            "enableVideo": False,
+            "sessionTimeout": "3m"
+        }
+    }
     
-    # Configurar download se o diretório for especificado
+    # Adicionar configurações de download se especificado
     if download_dir:
-        options.set_preference("browser.download.dir", download_dir)
-        options.set_preference("browser.download.folderList", 2)
-        options.set_preference("browser.download.useDownloadDir", True)
-        options.set_preference("browser.helperApps.neverAsk.saveToDisk", 
-                              "application/pdf, application/x-pdf, application/octet-stream, application/xml")
-        options.set_preference("browser.download.manager.showWhenStarting", False)
-        options.set_preference("browser.download.manager.focusWhenStarting", False)
-        options.set_preference("browser.download.manager.closeWhenDone", True)
+        if browser_type.lower() == "firefox":
+            # Configurações para Firefox
+            options.set_preference("browser.download.dir", download_dir)
+            options.set_preference("browser.download.folderList", 2)
+            options.set_preference("browser.download.useDownloadDir", True)
+            options.set_preference("browser.helperApps.neverAsk.saveToDisk", 
+                                 "application/pdf,application/x-pdf,application/octet-stream,application/xml")
+            options.set_preference("browser.download.manager.showWhenStarting", False)
+            options.set_preference("browser.download.manager.focusWhenStarting", False)
+            options.set_preference("browser.download.manager.closeWhenDone", True)
+        else:
+            # Configurações para Chrome
+            prefs = {
+                "download.default_directory": download_dir,
+                "download.prompt_for_download": False,
+                "download.directory_upgrade": True,
+                "safebrowsing.enabled": False
+            }
+            options.add_experimental_option("prefs", prefs)
+    
+    # Adicionar argumentos extras
+    if browser_type.lower() == "chrome":
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--disable-gpu")
+        options.add_argument("--disable-extensions")
     
     try:
-        navegador = webdriver.Firefox(options=options)
+        # Conectar ao Selenoid
+        selenoid_url = os.environ.get("SELENOID_URL", "http://localhost:4444/wd/hub")
+        logging.info(f"Conectando ao Selenoid em: {selenoid_url}")
+        
+        # Combinar opções e capacidades
+        for key, value in capabilities.items():
+            options.set_capability(key, value)
+        
+        navegador = webdriver.Remote(
+            command_executor=selenoid_url,
+            options=options
+        )
+        
+        # Configurar timeouts
+        navegador.set_page_load_timeout(60)
+        navegador.set_script_timeout(60)
+        
+        # Acessar URL de login
         navegador.get(os.environ.get("URL_LOGIN"))
         return navegador
     except Exception as e:
-        logging.error(f"Erro ao inicializar o navegador: {e}")
+        logging.error(f"Erro ao iniciar o navegador com Selenoid: {str(e)}")
         return None
 
 def autenticar_sefaz(navegador, espera=2):
@@ -209,7 +262,8 @@ def verificar_downloads_em_progresso(diretorio_download):
     """Verifica se existem downloads em andamento"""
     try:
         if os.path.exists(diretorio_download):
-            downloads_em_progresso = any(arquivo.endswith('.part') for arquivo in os.listdir(diretorio_download))
+            downloads_em_progresso = any(arquivo.endswith('.part') or arquivo.endswith('.crdownload') 
+                                       for arquivo in os.listdir(diretorio_download))
             if downloads_em_progresso:
                 logging.info(f"Existem downloads em andamento no diretório {diretorio_download}")
             else:
