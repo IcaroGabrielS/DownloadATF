@@ -1,0 +1,17 @@
+2025-04-28 18:20:32,531 - INFO - ================================================================================
+2025-04-28 18:20:32,532 - INFO - INICIANDO SERVIÇO DE MONITORAMENTO E GERENCIAMENTO DE ARQUIVOS NFC-e
+2025-04-28 18:20:32,532 - INFO - ================================================================================
+2025-04-28 18:20:32,533 - INFO - Diretório incoming verificado: /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 18:20:32,533 - INFO - Diretório processing verificado: /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/processing
+2025-04-28 18:20:32,534 - INFO - Diretório failed verificado: /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/failed
+2025-04-28 18:20:32,534 - INFO - Criando pastas de empresas no destino: /mnt/arquivos/Fiscal/18. Agendador de Downloads/NFCE
+2025-04-28 18:20:32,534 - INFO - Listando empresas do banco de dados
+2025-04-28 18:20:32,546 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 18:20:32,556 - INFO - 190 empresas encontradas
+2025-04-28 18:20:32,885 - INFO - Estrutura de diretórios criada em /mnt/arquivos/Fiscal/18. Agendador de Downloads/NFCE
+2025-04-28 18:20:32,886 - INFO - Nenhum processamento pendente encontrado
+2025-04-28 18:20:32,886 - INFO - Processando arquivos existentes na pasta incoming
+2025-04-28 18:20:32,887 - INFO - Nenhum arquivo ZIP encontrado na pasta incoming
+2025-04-28 18:20:32,888 - INFO - Iniciando monitoramento da pasta: /home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming
+2025-04-28 18:20:41,298 - INFO - Sinal recebido: 2. Encerrando...
+2025-04-28 18:20:41,894 - INFO - Monitoramento finalizado

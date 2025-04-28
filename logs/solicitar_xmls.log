@@ -1,0 +1,11 @@
+2025-04-28 18:21:10,456 - INFO - ================================================================================
+2025-04-28 18:21:10,456 - INFO - INICIANDO PROCESSO DE SOLICITAÇÃO DE ARQUIVOS XML
+2025-04-28 18:21:10,457 - INFO - ================================================================================
+2025-04-28 18:21:10,491 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:21:10,498 - INFO - Encontradas 190 solicitações pendentes
+2025-04-28 18:21:10,498 - INFO - Iniciando solicitações de NFC-e para 190 registros...
+2025-04-28 18:21:10,499 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 18:21:10,499 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 18:21:10,507 - ERROR - Erro ao iniciar o navegador com Selenoid: Message: Requested environment is not available
+
+2025-04-28 18:21:10,508 - ERROR - Falha na autenticação ou inicialização do navegador

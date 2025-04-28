@@ -573,3 +573,28 @@ Stacktrace:
 2025-04-28 14:02:20,782 - INFO - Total de 0 links encontrados e atualizados
 2025-04-28 14:02:20,783 - INFO - Nenhum link correspondente encontrado
 2025-04-28 14:02:20,887 - INFO - Processo finalizado
+2025-04-28 18:20:59,597 - INFO - ================================================================================
+2025-04-28 18:20:59,598 - INFO - INICIANDO PROCESSO DE CRIAÇÃO DE SOLICITAÇÕES
+2025-04-28 18:20:59,599 - INFO - ================================================================================
+2025-04-28 18:20:59,641 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:20:59,668 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 18:20:59,672 - INFO - Encontradas 190 empresas no MySQL
+2025-04-28 18:20:59,708 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:20:59,889 - INFO - Sincronização concluída: 0 empresas inseridas, 190 atualizadas
+2025-04-28 18:20:59,890 - INFO - Total de empresas sincronizadas: 190
+2025-04-28 18:20:59,891 - INFO - Criando solicitações para a data: 23/04/2025
+2025-04-28 18:20:59,931 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:21:00,032 - INFO - Processo concluído: 0 novas solicitações criadas para 23/04/2025
+2025-04-28 18:21:00,033 - INFO - Total de solicitações criadas: 0
+2025-04-28 18:21:00,034 - INFO - Processo finalizado com sucesso!
+2025-04-28 18:21:10,456 - INFO - ================================================================================
+2025-04-28 18:21:10,456 - INFO - INICIANDO PROCESSO DE SOLICITAÇÃO DE ARQUIVOS XML
+2025-04-28 18:21:10,457 - INFO - ================================================================================
+2025-04-28 18:21:10,491 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:21:10,498 - INFO - Encontradas 190 solicitações pendentes
+2025-04-28 18:21:10,498 - INFO - Iniciando solicitações de NFC-e para 190 registros...
+2025-04-28 18:21:10,499 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 18:21:10,499 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 18:21:10,507 - ERROR - Erro ao iniciar o navegador com Selenoid: Message: Requested environment is not available
+
+2025-04-28 18:21:10,508 - ERROR - Falha na autenticação ou inicialização do navegador
