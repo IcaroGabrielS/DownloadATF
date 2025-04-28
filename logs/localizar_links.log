@@ -338,3 +338,99 @@ Stacktrace:
 2025-04-28 14:02:20,782 - INFO - Total de 0 links encontrados e atualizados
 2025-04-28 14:02:20,783 - INFO - Nenhum link correspondente encontrado
 2025-04-28 14:02:20,887 - INFO - Processo finalizado
+2025-04-28 19:24:08,418 - INFO - ================================================================================
+2025-04-28 19:24:08,418 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
+2025-04-28 19:24:08,418 - INFO - ================================================================================
+2025-04-28 19:24:08,419 - INFO - Iniciando processo de busca de links de download
+2025-04-28 19:24:08,450 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 19:24:08,460 - INFO - Encontradas 57 solicitações aguardando links
+2025-04-28 19:24:08,461 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 19:24:08,461 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 19:24:12,776 - INFO - Autenticando no SEFAZ
+2025-04-28 19:24:12,788 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 19:24:14,434 - INFO - Autenticação bem-sucedida
+2025-04-28 19:24:14,435 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?limparSessao=true
+2025-04-28 19:24:27,159 - INFO - Procurando links de download disponíveis
+2025-04-28 19:24:27,370 - INFO - Tabela carregada, processando linhas...
+2025-04-28 19:24:27,640 - INFO - Encontradas 770 linhas com anexos para processar
+2025-04-28 19:24:29,051 - INFO - Progresso: 10/770 linhas processadas (1.3%) em 1.4s
+2025-04-28 19:24:30,469 - INFO - Progresso: 20/770 linhas processadas (2.6%) em 2.8s
+2025-04-28 19:24:31,720 - INFO - Progresso: 30/770 linhas processadas (3.9%) em 4.1s
+2025-04-28 19:24:33,083 - INFO - Progresso: 40/770 linhas processadas (5.2%) em 5.4s
+2025-04-28 19:24:34,691 - INFO - Progresso: 50/770 linhas processadas (6.5%) em 7.0s
+2025-04-28 19:24:36,112 - INFO - Progresso: 60/770 linhas processadas (7.8%) em 8.5s
+2025-04-28 19:24:37,500 - INFO - Progresso: 70/770 linhas processadas (9.1%) em 9.9s
+2025-04-28 19:24:38,890 - INFO - Progresso: 80/770 linhas processadas (10.4%) em 11.2s
+2025-04-28 19:24:40,332 - INFO - Progresso: 90/770 linhas processadas (11.7%) em 12.7s
+2025-04-28 19:24:41,799 - INFO - Progresso: 100/770 linhas processadas (13.0%) em 14.2s
+2025-04-28 19:24:43,205 - INFO - Progresso: 110/770 linhas processadas (14.3%) em 15.6s
+2025-04-28 19:24:44,192 - INFO - Progresso: 120/770 linhas processadas (15.6%) em 16.6s
+2025-04-28 19:24:45,718 - INFO - Progresso: 130/770 linhas processadas (16.9%) em 18.1s
+2025-04-28 19:24:47,127 - INFO - Progresso: 140/770 linhas processadas (18.2%) em 19.5s
+2025-04-28 19:24:48,383 - INFO - Progresso: 150/770 linhas processadas (19.5%) em 20.7s
+2025-04-28 19:24:49,596 - INFO - Progresso: 160/770 linhas processadas (20.8%) em 22.0s
+2025-04-28 19:24:50,814 - INFO - Progresso: 170/770 linhas processadas (22.1%) em 23.2s
+2025-04-28 19:24:51,450 - INFO - Progresso: 180/770 linhas processadas (23.4%) em 23.8s
+2025-04-28 19:24:52,680 - INFO - Progresso: 190/770 linhas processadas (24.7%) em 25.0s
+2025-04-28 19:24:53,925 - INFO - Progresso: 200/770 linhas processadas (26.0%) em 26.3s
+2025-04-28 19:24:55,313 - INFO - Progresso: 210/770 linhas processadas (27.3%) em 27.7s
+2025-04-28 19:24:56,453 - INFO - Progresso: 220/770 linhas processadas (28.6%) em 28.8s
+2025-04-28 19:24:57,748 - INFO - Progresso: 230/770 linhas processadas (29.9%) em 30.1s
+2025-04-28 19:24:59,070 - INFO - Progresso: 240/770 linhas processadas (31.2%) em 31.4s
+2025-04-28 19:24:59,858 - INFO - Progresso: 250/770 linhas processadas (32.5%) em 32.2s
+2025-04-28 19:25:01,326 - INFO - Progresso: 260/770 linhas processadas (33.8%) em 33.7s
+2025-04-28 19:25:02,745 - INFO - Progresso: 270/770 linhas processadas (35.1%) em 35.1s
+2025-04-28 19:25:04,103 - INFO - Progresso: 280/770 linhas processadas (36.4%) em 36.5s
+2025-04-28 19:25:05,570 - INFO - Progresso: 290/770 linhas processadas (37.7%) em 37.9s
+2025-04-28 19:25:07,005 - INFO - Progresso: 300/770 linhas processadas (39.0%) em 39.4s
+2025-04-28 19:25:08,019 - INFO - Progresso: 310/770 linhas processadas (40.3%) em 40.4s
+2025-04-28 19:25:08,723 - INFO - Progresso: 320/770 linhas processadas (41.6%) em 41.1s
+2025-04-28 19:25:09,597 - INFO - Progresso: 330/770 linhas processadas (42.9%) em 42.0s
+2025-04-28 19:25:10,428 - INFO - Progresso: 340/770 linhas processadas (44.2%) em 42.8s
+2025-04-28 19:25:11,729 - INFO - Progresso: 350/770 linhas processadas (45.5%) em 44.1s
+2025-04-28 19:25:13,203 - INFO - Progresso: 360/770 linhas processadas (46.8%) em 45.6s
+2025-04-28 19:25:14,693 - INFO - Progresso: 370/770 linhas processadas (48.1%) em 47.1s
+2025-04-28 19:25:16,142 - INFO - Progresso: 380/770 linhas processadas (49.4%) em 48.5s
+2025-04-28 19:25:17,553 - INFO - Progresso: 390/770 linhas processadas (50.6%) em 49.9s
+2025-04-28 19:25:18,864 - INFO - Progresso: 400/770 linhas processadas (51.9%) em 51.2s
+2025-04-28 19:25:20,319 - INFO - Progresso: 410/770 linhas processadas (53.2%) em 52.7s
+2025-04-28 19:25:21,816 - INFO - Progresso: 420/770 linhas processadas (54.5%) em 54.2s
+2025-04-28 19:25:23,230 - INFO - Progresso: 430/770 linhas processadas (55.8%) em 55.6s
+2025-04-28 19:25:24,616 - INFO - Progresso: 440/770 linhas processadas (57.1%) em 57.0s
+2025-04-28 19:25:26,058 - INFO - Progresso: 450/770 linhas processadas (58.4%) em 58.4s
+2025-04-28 19:25:27,528 - INFO - Progresso: 460/770 linhas processadas (59.7%) em 59.9s
+2025-04-28 19:25:29,033 - INFO - Progresso: 470/770 linhas processadas (61.0%) em 61.4s
+2025-04-28 19:25:30,361 - INFO - Progresso: 480/770 linhas processadas (62.3%) em 62.7s
+2025-04-28 19:25:31,675 - INFO - Progresso: 490/770 linhas processadas (63.6%) em 64.0s
+2025-04-28 19:25:33,122 - INFO - Progresso: 500/770 linhas processadas (64.9%) em 65.5s
+2025-04-28 19:25:34,539 - INFO - Progresso: 510/770 linhas processadas (66.2%) em 66.9s
+2025-04-28 19:25:35,980 - INFO - Progresso: 520/770 linhas processadas (67.5%) em 68.3s
+2025-04-28 19:25:37,086 - INFO - Progresso: 530/770 linhas processadas (68.8%) em 69.4s
+2025-04-28 19:25:37,666 - INFO - Progresso: 540/770 linhas processadas (70.1%) em 70.0s
+2025-04-28 19:25:38,412 - INFO - Progresso: 550/770 linhas processadas (71.4%) em 70.8s
+2025-04-28 19:25:39,817 - INFO - Progresso: 560/770 linhas processadas (72.7%) em 72.2s
+2025-04-28 19:25:41,226 - INFO - Progresso: 570/770 linhas processadas (74.0%) em 73.6s
+2025-04-28 19:25:42,649 - INFO - Progresso: 580/770 linhas processadas (75.3%) em 75.0s
+2025-04-28 19:25:43,908 - INFO - Progresso: 590/770 linhas processadas (76.6%) em 76.3s
+2025-04-28 19:25:45,344 - INFO - Progresso: 600/770 linhas processadas (77.9%) em 77.7s
+2025-04-28 19:25:46,799 - INFO - Progresso: 610/770 linhas processadas (79.2%) em 79.2s
+2025-04-28 19:25:48,101 - INFO - Progresso: 620/770 linhas processadas (80.5%) em 80.5s
+2025-04-28 19:25:49,564 - INFO - Progresso: 630/770 linhas processadas (81.8%) em 81.9s
+2025-04-28 19:25:50,867 - INFO - Progresso: 640/770 linhas processadas (83.1%) em 83.2s
+2025-04-28 19:25:52,294 - INFO - Progresso: 650/770 linhas processadas (84.4%) em 84.7s
+2025-04-28 19:25:53,877 - INFO - Progresso: 660/770 linhas processadas (85.7%) em 86.2s
+2025-04-28 19:25:55,314 - INFO - Progresso: 670/770 linhas processadas (87.0%) em 87.7s
+2025-04-28 19:25:55,972 - INFO - Progresso: 680/770 linhas processadas (88.3%) em 88.3s
+2025-04-28 19:25:56,733 - INFO - Progresso: 690/770 linhas processadas (89.6%) em 89.1s
+2025-04-28 19:25:58,158 - INFO - Progresso: 700/770 linhas processadas (90.9%) em 90.5s
+2025-04-28 19:25:59,404 - INFO - Progresso: 710/770 linhas processadas (92.2%) em 91.8s
+2025-04-28 19:26:00,337 - INFO - Progresso: 720/770 linhas processadas (93.5%) em 92.7s
+2025-04-28 19:26:01,027 - INFO - Progresso: 730/770 linhas processadas (94.8%) em 93.4s
+2025-04-28 19:26:01,886 - INFO - Progresso: 740/770 linhas processadas (96.1%) em 94.2s
+2025-04-28 19:26:02,734 - INFO - Progresso: 750/770 linhas processadas (97.4%) em 95.1s
+2025-04-28 19:26:03,822 - INFO - Progresso: 760/770 linhas processadas (98.7%) em 96.2s
+2025-04-28 19:26:04,444 - INFO - Progresso: 770/770 linhas processadas (100.0%) em 96.8s
+2025-04-28 19:26:04,505 - INFO - Processamento concluído: 770/770 linhas processadas em 96.9s
+2025-04-28 19:26:04,506 - INFO - Total de 0 links encontrados e atualizados
+2025-04-28 19:26:04,507 - INFO - Nenhum link correspondente encontrado
+2025-04-28 19:26:04,618 - INFO - Processo finalizado

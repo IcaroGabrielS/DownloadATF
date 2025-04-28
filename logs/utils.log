@@ -598,3 +598,408 @@ Stacktrace:
 2025-04-28 18:21:10,507 - ERROR - Erro ao iniciar o navegador com Selenoid: Message: Requested environment is not available
 
 2025-04-28 18:21:10,508 - ERROR - Falha na autenticação ou inicialização do navegador
+2025-04-28 18:25:21,462 - INFO - ================================================================================
+2025-04-28 18:25:21,463 - INFO - INICIANDO PROCESSO DE SOLICITAÇÃO DE ARQUIVOS XML
+2025-04-28 18:25:21,463 - INFO - ================================================================================
+2025-04-28 18:25:21,497 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:25:21,506 - INFO - Encontradas 190 solicitações pendentes
+2025-04-28 18:25:21,507 - INFO - Iniciando solicitações de NFC-e para 190 registros...
+2025-04-28 18:25:21,508 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 18:25:21,509 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 18:25:21,521 - ERROR - Erro ao iniciar o navegador com Selenoid: Message: Requested environment is not available
+
+2025-04-28 18:25:21,523 - ERROR - Falha na autenticação ou inicialização do navegador
+2025-04-28 18:30:44,476 - INFO - ================================================================================
+2025-04-28 18:30:44,477 - INFO - INICIANDO PROCESSO DE SOLICITAÇÃO DE ARQUIVOS XML
+2025-04-28 18:30:44,477 - INFO - ================================================================================
+2025-04-28 18:30:44,510 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:30:44,519 - INFO - Encontradas 190 solicitações pendentes
+2025-04-28 18:30:44,520 - INFO - Iniciando solicitações de NFC-e para 190 registros...
+2025-04-28 18:30:44,521 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 18:30:44,522 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 18:30:52,188 - INFO - Autenticando no SEFAZ
+2025-04-28 18:30:52,204 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 18:30:53,898 - INFO - Autenticação bem-sucedida
+2025-04-28 18:30:53,898 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:30:57,537 - INFO - Solicitando NFC-e para IE: 160967562
+2025-04-28 18:31:01,292 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:31:01,302 - INFO - Solicitação 1 atualizada com sucesso
+2025-04-28 18:31:11,305 - INFO - Solicitação 1 processada com sucesso
+2025-04-28 18:31:11,306 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:31:12,324 - INFO - Solicitando NFC-e para IE: 161579019
+2025-04-28 18:31:31,419 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:31:31,428 - INFO - Solicitação 2 atualizada com sucesso
+2025-04-28 18:31:41,429 - INFO - Solicitação 2 processada com sucesso
+2025-04-28 18:31:41,431 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:31:43,164 - INFO - Solicitando NFC-e para IE: 161117287
+2025-04-28 18:32:01,353 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:32:01,368 - INFO - Solicitação 3 atualizada com sucesso
+2025-04-28 18:32:11,369 - INFO - Solicitação 3 processada com sucesso
+2025-04-28 18:32:11,369 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:32:12,401 - INFO - Solicitando NFC-e para IE: 161436790
+2025-04-28 18:32:31,897 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:32:31,910 - INFO - Solicitação 4 atualizada com sucesso
+2025-04-28 18:32:41,911 - INFO - Solicitação 4 processada com sucesso
+2025-04-28 18:32:41,912 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:32:43,009 - INFO - Solicitando NFC-e para IE: 162533080
+2025-04-28 18:33:01,932 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:33:01,944 - INFO - Solicitação 5 atualizada com sucesso
+2025-04-28 18:33:11,945 - INFO - Solicitação 5 processada com sucesso
+2025-04-28 18:33:11,946 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:33:13,233 - INFO - Solicitando NFC-e para IE: 161344607
+2025-04-28 18:33:31,667 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:33:31,683 - INFO - Solicitação 6 atualizada com sucesso
+2025-04-28 18:33:41,684 - INFO - Solicitação 6 processada com sucesso
+2025-04-28 18:33:41,685 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:33:42,567 - INFO - Solicitando NFC-e para IE: 161957471
+2025-04-28 18:34:01,563 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:34:01,576 - INFO - Solicitação 7 atualizada com sucesso
+2025-04-28 18:34:11,578 - INFO - Solicitação 7 processada com sucesso
+2025-04-28 18:34:11,579 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:34:12,886 - INFO - Solicitando NFC-e para IE: 161339670
+2025-04-28 18:34:32,139 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:34:32,148 - INFO - Solicitação 8 atualizada com sucesso
+2025-04-28 18:34:42,148 - INFO - Solicitação 8 processada com sucesso
+2025-04-28 18:34:42,149 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:34:43,382 - INFO - Solicitando NFC-e para IE: 161538940
+2025-04-28 18:35:01,481 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:35:01,494 - INFO - Solicitação 9 atualizada com sucesso
+2025-04-28 18:35:11,495 - INFO - Solicitação 9 processada com sucesso
+2025-04-28 18:35:11,496 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:35:12,684 - INFO - Solicitando NFC-e para IE: 161037054
+2025-04-28 18:35:31,659 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:35:31,672 - INFO - Solicitação 10 atualizada com sucesso
+2025-04-28 18:35:41,673 - INFO - Solicitação 10 processada com sucesso
+2025-04-28 18:35:41,674 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:35:42,793 - INFO - Solicitando NFC-e para IE: 160973406
+2025-04-28 18:36:01,838 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:36:01,844 - INFO - Solicitação 11 atualizada com sucesso
+2025-04-28 18:36:11,845 - INFO - Solicitação 11 processada com sucesso
+2025-04-28 18:36:11,846 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:36:12,986 - INFO - Solicitando NFC-e para IE: 161457533
+2025-04-28 18:36:31,685 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:36:31,690 - INFO - Solicitação 12 atualizada com sucesso
+2025-04-28 18:36:41,691 - INFO - Solicitação 12 processada com sucesso
+2025-04-28 18:36:41,692 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:36:42,827 - INFO - Solicitando NFC-e para IE: 160190606
+2025-04-28 18:37:02,026 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:37:02,040 - INFO - Solicitação 13 atualizada com sucesso
+2025-04-28 18:37:12,044 - INFO - Solicitação 13 processada com sucesso
+2025-04-28 18:37:12,045 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:37:13,189 - INFO - Solicitando NFC-e para IE: 161414591
+2025-04-28 18:37:32,037 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:37:32,046 - INFO - Solicitação 14 atualizada com sucesso
+2025-04-28 18:37:42,047 - INFO - Solicitação 14 processada com sucesso
+2025-04-28 18:37:42,048 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:37:43,116 - INFO - Solicitando NFC-e para IE: 161081274
+2025-04-28 18:38:01,332 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:38:01,341 - INFO - Solicitação 15 atualizada com sucesso
+2025-04-28 18:38:11,342 - INFO - Solicitação 15 processada com sucesso
+2025-04-28 18:38:11,343 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:38:13,245 - INFO - Solicitando NFC-e para IE: 161309151
+2025-04-28 18:38:31,225 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:38:31,235 - INFO - Solicitação 16 atualizada com sucesso
+2025-04-28 18:38:41,237 - INFO - Solicitação 16 processada com sucesso
+2025-04-28 18:38:41,238 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:38:42,454 - INFO - Solicitando NFC-e para IE: 161439683
+2025-04-28 18:39:01,998 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:39:02,007 - INFO - Solicitação 17 atualizada com sucesso
+2025-04-28 18:39:12,008 - INFO - Solicitação 17 processada com sucesso
+2025-04-28 18:39:12,009 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:39:13,227 - INFO - Solicitando NFC-e para IE: 161188206
+2025-04-28 18:39:31,493 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:39:31,503 - INFO - Solicitação 18 atualizada com sucesso
+2025-04-28 18:39:41,504 - INFO - Solicitação 18 processada com sucesso
+2025-04-28 18:39:41,505 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:39:42,671 - INFO - Solicitando NFC-e para IE: 161616186
+2025-04-28 18:40:01,964 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:40:01,976 - INFO - Solicitação 19 atualizada com sucesso
+2025-04-28 18:40:11,977 - INFO - Solicitação 19 processada com sucesso
+2025-04-28 18:40:11,978 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:40:13,093 - INFO - Solicitando NFC-e para IE: 162308493
+2025-04-28 18:40:32,072 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:40:32,082 - INFO - Solicitação 20 atualizada com sucesso
+2025-04-28 18:40:42,083 - INFO - Solicitação 20 processada com sucesso
+2025-04-28 18:40:42,084 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:40:43,362 - INFO - Solicitando NFC-e para IE: 160337607
+2025-04-28 18:41:01,728 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:41:01,738 - INFO - Solicitação 21 atualizada com sucesso
+2025-04-28 18:41:11,739 - INFO - Solicitação 21 processada com sucesso
+2025-04-28 18:41:11,740 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:41:12,888 - INFO - Solicitando NFC-e para IE: 161063772
+2025-04-28 18:41:31,691 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:41:31,702 - INFO - Solicitação 22 atualizada com sucesso
+2025-04-28 18:41:41,704 - INFO - Solicitação 22 processada com sucesso
+2025-04-28 18:41:41,705 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:41:42,655 - INFO - Solicitando NFC-e para IE: 161526071
+2025-04-28 18:42:01,712 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:42:01,726 - INFO - Solicitação 23 atualizada com sucesso
+2025-04-28 18:42:11,727 - INFO - Solicitação 23 processada com sucesso
+2025-04-28 18:42:11,728 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:42:12,881 - INFO - Solicitando NFC-e para IE: 162355750
+2025-04-28 18:42:31,901 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:42:31,911 - INFO - Solicitação 24 atualizada com sucesso
+2025-04-28 18:42:41,913 - INFO - Solicitação 24 processada com sucesso
+2025-04-28 18:42:41,914 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:42:43,082 - INFO - Solicitando NFC-e para IE: 162513127
+2025-04-28 18:43:01,825 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:43:01,836 - INFO - Solicitação 25 atualizada com sucesso
+2025-04-28 18:43:11,838 - INFO - Solicitação 25 processada com sucesso
+2025-04-28 18:43:11,839 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:43:12,996 - INFO - Solicitando NFC-e para IE: 161490905
+2025-04-28 18:43:32,150 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:43:32,157 - INFO - Solicitação 26 atualizada com sucesso
+2025-04-28 18:43:42,159 - INFO - Solicitação 26 processada com sucesso
+2025-04-28 18:43:42,160 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:43:43,401 - INFO - Solicitando NFC-e para IE: 161382746
+2025-04-28 18:44:01,885 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:44:01,894 - INFO - Solicitação 27 atualizada com sucesso
+2025-04-28 18:44:11,895 - INFO - Solicitação 27 processada com sucesso
+2025-04-28 18:44:11,896 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:44:13,072 - INFO - Solicitando NFC-e para IE: 162380160
+2025-04-28 18:44:31,633 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:44:31,640 - INFO - Solicitação 28 atualizada com sucesso
+2025-04-28 18:44:41,643 - INFO - Solicitação 28 processada com sucesso
+2025-04-28 18:44:41,644 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:44:42,904 - INFO - Solicitando NFC-e para IE: 162489978
+2025-04-28 18:45:01,837 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:45:01,848 - INFO - Solicitação 29 atualizada com sucesso
+2025-04-28 18:45:11,848 - INFO - Solicitação 29 processada com sucesso
+2025-04-28 18:45:11,849 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:45:13,217 - INFO - Solicitando NFC-e para IE: 161081207
+2025-04-28 18:45:31,422 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:45:31,431 - INFO - Solicitação 30 atualizada com sucesso
+2025-04-28 18:45:41,432 - INFO - Solicitação 30 processada com sucesso
+2025-04-28 18:45:41,433 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:45:42,784 - INFO - Solicitando NFC-e para IE: 161755330
+2025-04-28 18:46:02,107 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:46:02,121 - INFO - Solicitação 31 atualizada com sucesso
+2025-04-28 18:46:12,122 - INFO - Solicitação 31 processada com sucesso
+2025-04-28 18:46:12,123 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:46:13,269 - INFO - Solicitando NFC-e para IE: 163040648
+2025-04-28 18:46:31,491 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:46:31,502 - INFO - Solicitação 32 atualizada com sucesso
+2025-04-28 18:46:41,503 - INFO - Solicitação 32 processada com sucesso
+2025-04-28 18:46:41,504 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:46:42,677 - INFO - Solicitando NFC-e para IE: 162949405
+2025-04-28 18:47:02,112 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:47:02,121 - INFO - Solicitação 33 atualizada com sucesso
+2025-04-28 18:47:12,122 - INFO - Solicitação 33 processada com sucesso
+2025-04-28 18:47:12,123 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:47:13,144 - INFO - Solicitando NFC-e para IE: 161291481
+2025-04-28 18:47:32,272 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:47:32,281 - INFO - Solicitação 34 atualizada com sucesso
+2025-04-28 18:47:42,282 - INFO - Solicitação 34 processada com sucesso
+2025-04-28 18:47:42,283 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:47:43,343 - INFO - Solicitando NFC-e para IE: 163126739
+2025-04-28 18:48:01,424 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:48:01,430 - INFO - Solicitação 35 atualizada com sucesso
+2025-04-28 18:48:11,430 - INFO - Solicitação 35 processada com sucesso
+2025-04-28 18:48:11,431 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:48:12,638 - INFO - Solicitando NFC-e para IE: 162869649
+2025-04-28 18:48:31,899 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:48:31,908 - INFO - Solicitação 36 atualizada com sucesso
+2025-04-28 18:48:41,909 - INFO - Solicitação 36 processada com sucesso
+2025-04-28 18:48:41,910 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:48:43,061 - INFO - Solicitando NFC-e para IE: 161249205
+2025-04-28 18:49:01,403 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:49:01,415 - INFO - Solicitação 37 atualizada com sucesso
+2025-04-28 18:49:11,416 - INFO - Solicitação 37 processada com sucesso
+2025-04-28 18:49:11,417 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:49:12,689 - INFO - Solicitando NFC-e para IE: 162802021
+2025-04-28 18:49:31,713 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:49:31,725 - INFO - Solicitação 38 atualizada com sucesso
+2025-04-28 18:49:41,726 - INFO - Solicitação 38 processada com sucesso
+2025-04-28 18:49:41,727 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:49:43,359 - INFO - Solicitando NFC-e para IE: 162664192
+2025-04-28 18:50:01,442 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:50:01,452 - INFO - Solicitação 39 atualizada com sucesso
+2025-04-28 18:50:11,454 - INFO - Solicitação 39 processada com sucesso
+2025-04-28 18:50:11,456 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:50:12,672 - INFO - Solicitando NFC-e para IE: 161613713
+2025-04-28 18:50:31,414 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:50:31,424 - INFO - Solicitação 40 atualizada com sucesso
+2025-04-28 18:50:41,426 - INFO - Solicitação 40 processada com sucesso
+2025-04-28 18:50:41,427 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:50:42,810 - INFO - Solicitando NFC-e para IE: 163152080
+2025-04-28 18:51:01,990 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:51:02,004 - INFO - Solicitação 41 atualizada com sucesso
+2025-04-28 18:51:12,005 - INFO - Solicitação 41 processada com sucesso
+2025-04-28 18:51:12,006 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:51:13,053 - INFO - Solicitando NFC-e para IE: 163143005
+2025-04-28 18:51:32,074 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:51:32,081 - INFO - Solicitação 42 atualizada com sucesso
+2025-04-28 18:51:42,084 - INFO - Solicitação 42 processada com sucesso
+2025-04-28 18:51:42,085 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:51:43,813 - INFO - Solicitando NFC-e para IE: 163281025
+2025-04-28 18:52:01,622 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:52:01,631 - INFO - Solicitação 43 atualizada com sucesso
+2025-04-28 18:52:11,632 - INFO - Solicitação 43 processada com sucesso
+2025-04-28 18:52:11,633 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:52:12,684 - INFO - Solicitando NFC-e para IE: 161492061
+2025-04-28 18:52:31,886 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:52:31,894 - INFO - Solicitação 44 atualizada com sucesso
+2025-04-28 18:52:41,894 - INFO - Solicitação 44 processada com sucesso
+2025-04-28 18:52:41,895 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:52:43,292 - INFO - Solicitando NFC-e para IE: 162194110
+2025-04-28 18:53:02,187 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:53:02,197 - INFO - Solicitação 45 atualizada com sucesso
+2025-04-28 18:53:12,198 - INFO - Solicitação 45 processada com sucesso
+2025-04-28 18:53:12,200 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:53:13,443 - INFO - Solicitando NFC-e para IE: 163276978
+2025-04-28 18:53:31,912 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:53:31,920 - INFO - Solicitação 46 atualizada com sucesso
+2025-04-28 18:53:41,921 - INFO - Solicitação 46 processada com sucesso
+2025-04-28 18:53:41,922 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:53:42,969 - INFO - Solicitando NFC-e para IE: 161599680
+2025-04-28 18:54:01,407 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:54:01,419 - INFO - Solicitação 47 atualizada com sucesso
+2025-04-28 18:54:11,420 - INFO - Solicitação 47 processada com sucesso
+2025-04-28 18:54:11,420 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:54:12,700 - INFO - Solicitando NFC-e para IE: 162640102
+2025-04-28 18:54:31,396 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:54:31,403 - INFO - Solicitação 48 atualizada com sucesso
+2025-04-28 18:54:41,406 - INFO - Solicitação 48 processada com sucesso
+2025-04-28 18:54:41,407 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:54:44,468 - INFO - Solicitando NFC-e para IE: 163383359
+2025-04-28 18:55:01,356 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:55:01,367 - INFO - Solicitação 49 atualizada com sucesso
+2025-04-28 18:55:11,369 - INFO - Solicitação 49 processada com sucesso
+2025-04-28 18:55:11,370 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:55:12,876 - INFO - Solicitando NFC-e para IE: 161716130
+2025-04-28 18:55:32,053 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:55:32,065 - INFO - Solicitação 50 atualizada com sucesso
+2025-04-28 18:55:42,066 - INFO - Solicitação 50 processada com sucesso
+2025-04-28 18:55:42,067 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:55:43,141 - INFO - Solicitando NFC-e para IE: 161413773
+2025-04-28 18:56:01,566 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:56:01,572 - INFO - Solicitação 51 atualizada com sucesso
+2025-04-28 18:56:11,573 - INFO - Solicitação 51 processada com sucesso
+2025-04-28 18:56:11,574 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:56:13,456 - INFO - Solicitando NFC-e para IE: 161589391
+2025-04-28 18:56:31,926 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:56:31,936 - INFO - Solicitação 52 atualizada com sucesso
+2025-04-28 18:56:41,937 - INFO - Solicitação 52 processada com sucesso
+2025-04-28 18:56:41,938 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:56:42,926 - INFO - Solicitando NFC-e para IE: 161321720
+2025-04-28 18:57:01,837 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:57:01,846 - INFO - Solicitação 53 atualizada com sucesso
+2025-04-28 18:57:11,847 - INFO - Solicitação 53 processada com sucesso
+2025-04-28 18:57:11,848 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:57:13,060 - INFO - Solicitando NFC-e para IE: 161481540
+2025-04-28 18:57:31,708 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:57:31,716 - INFO - Solicitação 54 atualizada com sucesso
+2025-04-28 18:57:41,717 - INFO - Solicitação 54 processada com sucesso
+2025-04-28 18:57:41,718 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:57:43,028 - INFO - Solicitando NFC-e para IE: 161217001
+2025-04-28 18:58:01,383 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:58:01,394 - INFO - Solicitação 55 atualizada com sucesso
+2025-04-28 18:58:11,396 - INFO - Solicitação 55 processada com sucesso
+2025-04-28 18:58:11,397 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:58:13,071 - INFO - Solicitando NFC-e para IE: 163227659
+2025-04-28 18:58:32,024 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:58:32,032 - INFO - Solicitação 56 atualizada com sucesso
+2025-04-28 18:58:42,033 - INFO - Solicitação 56 processada com sucesso
+2025-04-28 18:58:42,034 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:58:43,272 - INFO - Solicitando NFC-e para IE: 161501800
+2025-04-28 18:59:01,611 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 18:59:01,622 - INFO - Solicitação 57 atualizada com sucesso
+2025-04-28 18:59:11,622 - INFO - Solicitação 57 processada com sucesso
+2025-04-28 18:59:11,623 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-28 18:59:12,866 - INFO - Solicitando NFC-e para IE: 161622003
+2025-04-28 19:24:08,418 - INFO - ================================================================================
+2025-04-28 19:24:08,418 - INFO - INICIANDO PROCESSO DE BUSCA DE LINKS DE DOWNLOAD
+2025-04-28 19:24:08,418 - INFO - ================================================================================
+2025-04-28 19:24:08,419 - INFO - Iniciando processo de busca de links de download
+2025-04-28 19:24:08,450 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-28 19:24:08,460 - INFO - Encontradas 57 solicitações aguardando links
+2025-04-28 19:24:08,461 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-28 19:24:08,461 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-28 19:24:12,776 - INFO - Autenticando no SEFAZ
+2025-04-28 19:24:12,788 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-28 19:24:14,434 - INFO - Autenticação bem-sucedida
+2025-04-28 19:24:14,435 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/seg/SEGf_MinhasMensagens.do?limparSessao=true
+2025-04-28 19:24:27,159 - INFO - Procurando links de download disponíveis
+2025-04-28 19:24:27,370 - INFO - Tabela carregada, processando linhas...
+2025-04-28 19:24:27,640 - INFO - Encontradas 770 linhas com anexos para processar
+2025-04-28 19:24:29,051 - INFO - Progresso: 10/770 linhas processadas (1.3%) em 1.4s
+2025-04-28 19:24:30,469 - INFO - Progresso: 20/770 linhas processadas (2.6%) em 2.8s
+2025-04-28 19:24:31,720 - INFO - Progresso: 30/770 linhas processadas (3.9%) em 4.1s
+2025-04-28 19:24:33,083 - INFO - Progresso: 40/770 linhas processadas (5.2%) em 5.4s
+2025-04-28 19:24:34,691 - INFO - Progresso: 50/770 linhas processadas (6.5%) em 7.0s
+2025-04-28 19:24:36,112 - INFO - Progresso: 60/770 linhas processadas (7.8%) em 8.5s
+2025-04-28 19:24:37,500 - INFO - Progresso: 70/770 linhas processadas (9.1%) em 9.9s
+2025-04-28 19:24:38,890 - INFO - Progresso: 80/770 linhas processadas (10.4%) em 11.2s
+2025-04-28 19:24:40,332 - INFO - Progresso: 90/770 linhas processadas (11.7%) em 12.7s
+2025-04-28 19:24:41,799 - INFO - Progresso: 100/770 linhas processadas (13.0%) em 14.2s
+2025-04-28 19:24:43,205 - INFO - Progresso: 110/770 linhas processadas (14.3%) em 15.6s
+2025-04-28 19:24:44,192 - INFO - Progresso: 120/770 linhas processadas (15.6%) em 16.6s
+2025-04-28 19:24:45,718 - INFO - Progresso: 130/770 linhas processadas (16.9%) em 18.1s
+2025-04-28 19:24:47,127 - INFO - Progresso: 140/770 linhas processadas (18.2%) em 19.5s
+2025-04-28 19:24:48,383 - INFO - Progresso: 150/770 linhas processadas (19.5%) em 20.7s
+2025-04-28 19:24:49,596 - INFO - Progresso: 160/770 linhas processadas (20.8%) em 22.0s
+2025-04-28 19:24:50,814 - INFO - Progresso: 170/770 linhas processadas (22.1%) em 23.2s
+2025-04-28 19:24:51,450 - INFO - Progresso: 180/770 linhas processadas (23.4%) em 23.8s
+2025-04-28 19:24:52,680 - INFO - Progresso: 190/770 linhas processadas (24.7%) em 25.0s
+2025-04-28 19:24:53,925 - INFO - Progresso: 200/770 linhas processadas (26.0%) em 26.3s
+2025-04-28 19:24:55,313 - INFO - Progresso: 210/770 linhas processadas (27.3%) em 27.7s
+2025-04-28 19:24:56,453 - INFO - Progresso: 220/770 linhas processadas (28.6%) em 28.8s
+2025-04-28 19:24:57,748 - INFO - Progresso: 230/770 linhas processadas (29.9%) em 30.1s
+2025-04-28 19:24:59,070 - INFO - Progresso: 240/770 linhas processadas (31.2%) em 31.4s
+2025-04-28 19:24:59,858 - INFO - Progresso: 250/770 linhas processadas (32.5%) em 32.2s
+2025-04-28 19:25:01,326 - INFO - Progresso: 260/770 linhas processadas (33.8%) em 33.7s
+2025-04-28 19:25:02,745 - INFO - Progresso: 270/770 linhas processadas (35.1%) em 35.1s
+2025-04-28 19:25:04,103 - INFO - Progresso: 280/770 linhas processadas (36.4%) em 36.5s
+2025-04-28 19:25:05,570 - INFO - Progresso: 290/770 linhas processadas (37.7%) em 37.9s
+2025-04-28 19:25:07,005 - INFO - Progresso: 300/770 linhas processadas (39.0%) em 39.4s
+2025-04-28 19:25:08,019 - INFO - Progresso: 310/770 linhas processadas (40.3%) em 40.4s
+2025-04-28 19:25:08,723 - INFO - Progresso: 320/770 linhas processadas (41.6%) em 41.1s
+2025-04-28 19:25:09,597 - INFO - Progresso: 330/770 linhas processadas (42.9%) em 42.0s
+2025-04-28 19:25:10,428 - INFO - Progresso: 340/770 linhas processadas (44.2%) em 42.8s
+2025-04-28 19:25:11,729 - INFO - Progresso: 350/770 linhas processadas (45.5%) em 44.1s
+2025-04-28 19:25:13,203 - INFO - Progresso: 360/770 linhas processadas (46.8%) em 45.6s
+2025-04-28 19:25:14,693 - INFO - Progresso: 370/770 linhas processadas (48.1%) em 47.1s
+2025-04-28 19:25:16,142 - INFO - Progresso: 380/770 linhas processadas (49.4%) em 48.5s
+2025-04-28 19:25:17,553 - INFO - Progresso: 390/770 linhas processadas (50.6%) em 49.9s
+2025-04-28 19:25:18,864 - INFO - Progresso: 400/770 linhas processadas (51.9%) em 51.2s
+2025-04-28 19:25:20,319 - INFO - Progresso: 410/770 linhas processadas (53.2%) em 52.7s
+2025-04-28 19:25:21,816 - INFO - Progresso: 420/770 linhas processadas (54.5%) em 54.2s
+2025-04-28 19:25:23,230 - INFO - Progresso: 430/770 linhas processadas (55.8%) em 55.6s
+2025-04-28 19:25:24,616 - INFO - Progresso: 440/770 linhas processadas (57.1%) em 57.0s
+2025-04-28 19:25:26,058 - INFO - Progresso: 450/770 linhas processadas (58.4%) em 58.4s
+2025-04-28 19:25:27,528 - INFO - Progresso: 460/770 linhas processadas (59.7%) em 59.9s
+2025-04-28 19:25:29,033 - INFO - Progresso: 470/770 linhas processadas (61.0%) em 61.4s
+2025-04-28 19:25:30,361 - INFO - Progresso: 480/770 linhas processadas (62.3%) em 62.7s
+2025-04-28 19:25:31,675 - INFO - Progresso: 490/770 linhas processadas (63.6%) em 64.0s
+2025-04-28 19:25:33,122 - INFO - Progresso: 500/770 linhas processadas (64.9%) em 65.5s
+2025-04-28 19:25:34,539 - INFO - Progresso: 510/770 linhas processadas (66.2%) em 66.9s
+2025-04-28 19:25:35,980 - INFO - Progresso: 520/770 linhas processadas (67.5%) em 68.3s
+2025-04-28 19:25:37,086 - INFO - Progresso: 530/770 linhas processadas (68.8%) em 69.4s
+2025-04-28 19:25:37,666 - INFO - Progresso: 540/770 linhas processadas (70.1%) em 70.0s
+2025-04-28 19:25:38,412 - INFO - Progresso: 550/770 linhas processadas (71.4%) em 70.8s
+2025-04-28 19:25:39,817 - INFO - Progresso: 560/770 linhas processadas (72.7%) em 72.2s
+2025-04-28 19:25:41,226 - INFO - Progresso: 570/770 linhas processadas (74.0%) em 73.6s
+2025-04-28 19:25:42,649 - INFO - Progresso: 580/770 linhas processadas (75.3%) em 75.0s
+2025-04-28 19:25:43,908 - INFO - Progresso: 590/770 linhas processadas (76.6%) em 76.3s
+2025-04-28 19:25:45,344 - INFO - Progresso: 600/770 linhas processadas (77.9%) em 77.7s
+2025-04-28 19:25:46,799 - INFO - Progresso: 610/770 linhas processadas (79.2%) em 79.2s
+2025-04-28 19:25:48,101 - INFO - Progresso: 620/770 linhas processadas (80.5%) em 80.5s
+2025-04-28 19:25:49,564 - INFO - Progresso: 630/770 linhas processadas (81.8%) em 81.9s
+2025-04-28 19:25:50,867 - INFO - Progresso: 640/770 linhas processadas (83.1%) em 83.2s
+2025-04-28 19:25:52,294 - INFO - Progresso: 650/770 linhas processadas (84.4%) em 84.7s
+2025-04-28 19:25:53,877 - INFO - Progresso: 660/770 linhas processadas (85.7%) em 86.2s
+2025-04-28 19:25:55,314 - INFO - Progresso: 670/770 linhas processadas (87.0%) em 87.7s
+2025-04-28 19:25:55,972 - INFO - Progresso: 680/770 linhas processadas (88.3%) em 88.3s
+2025-04-28 19:25:56,733 - INFO - Progresso: 690/770 linhas processadas (89.6%) em 89.1s
+2025-04-28 19:25:58,158 - INFO - Progresso: 700/770 linhas processadas (90.9%) em 90.5s
+2025-04-28 19:25:59,404 - INFO - Progresso: 710/770 linhas processadas (92.2%) em 91.8s
+2025-04-28 19:26:00,337 - INFO - Progresso: 720/770 linhas processadas (93.5%) em 92.7s
+2025-04-28 19:26:01,027 - INFO - Progresso: 730/770 linhas processadas (94.8%) em 93.4s
+2025-04-28 19:26:01,886 - INFO - Progresso: 740/770 linhas processadas (96.1%) em 94.2s
+2025-04-28 19:26:02,734 - INFO - Progresso: 750/770 linhas processadas (97.4%) em 95.1s
+2025-04-28 19:26:03,822 - INFO - Progresso: 760/770 linhas processadas (98.7%) em 96.2s
+2025-04-28 19:26:04,444 - INFO - Progresso: 770/770 linhas processadas (100.0%) em 96.8s
+2025-04-28 19:26:04,505 - INFO - Processamento concluído: 770/770 linhas processadas em 96.9s
+2025-04-28 19:26:04,506 - INFO - Total de 0 links encontrados e atualizados
+2025-04-28 19:26:04,507 - INFO - Nenhum link correspondente encontrado
+2025-04-28 19:26:04,618 - INFO - Processo finalizado
