@@ -5,8 +5,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from dotenv import load_dotenv
 from utils import (
-    obter_diretorio_execucao,
-    garantir_diretorios,
     conectar_postgres,
     iniciar_navegador_selenoid,
     autenticar_sefaz,
@@ -22,7 +20,7 @@ from logging.handlers import RotatingFileHandler
 MAX_LOG_SIZE = 220 * 1024 * 1024  # 220 MB
 logging.getLogger().setLevel(logging.INFO)
 log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-log_file = "/home/desenvolvimento/DownloadATF/logs/baixar_arquivos.log"
+log_file = "logs/baixar_arquivos.log"  # Caminho relativo para maior portabilidade
 file_handler = RotatingFileHandler(log_file, maxBytes=MAX_LOG_SIZE, backupCount=5, encoding='utf-8')
 file_handler.setFormatter(log_formatter)
 logging.getLogger().addHandler(file_handler)
@@ -110,8 +108,9 @@ def realizar_download(navegador, solicitacao):
         acessar_pagina(navegador, solicitacao["link"])
         
         # Clica nos elementos de download
-        if clicar_elemento(navegador, os.environ.get("XPATH_IMAGEM_ANEXO"), int(os.environ.get("ESPERA_CURTA", 2))) and \
-           clicar_elemento(navegador, os.environ.get("XPATH_LINK_DOWNLOAD"), int(os.environ.get("ESPERA_CURTA", 2))):
+        espera_curta = int(os.environ.get("ESPERA_CURTA", 2))
+        if clicar_elemento(navegador, os.environ.get("XPATH_IMAGEM_ANEXO"), espera_curta) and \
+           clicar_elemento(navegador, os.environ.get("XPATH_LINK_DOWNLOAD"), espera_curta):
             logging.info(f"Download iniciado para solicitação {solicitacao['id']}")
             # Aguarda um pouco para o download iniciar
             time.sleep(5)
@@ -131,11 +130,8 @@ def executar_processo_downloads():
     """Função principal que executa o processo de download dos arquivos"""
     logging.info("Iniciando processo de download dos arquivos")
     
-    # Obtém o diretório de execução do programa
-    diretorio_base = obter_diretorio_execucao()
-    
-    # Cria um caminho absoluto para o diretório de downloads
-    diretorio_downloads = os.path.join(diretorio_base, os.environ.get("DIRETORIO_DOWNLOADS"))
+    # Definir diretório de downloads fixo conforme solicitado
+    diretorio_downloads = "/home/desenvolvimento/DownloadATF/NFCE_XML_TEMP/incoming"
     logging.info(f"Diretório de downloads configurado: {diretorio_downloads}")
     
     # Garante que o diretório de downloads existe
@@ -150,7 +146,7 @@ def executar_processo_downloads():
     
     navegador = None
     try:
-        # Inicia o navegador com Selenoid com o diretório de downloads absoluto
+        # Inicia o navegador com Selenoid (com mapeamento de volume)
         browser_type = os.environ.get("SELENOID_BROWSER", "chrome")
         navegador = iniciar_navegador_selenoid(diretorio_downloads, browser_type)
         
@@ -177,10 +173,10 @@ def executar_processo_downloads():
     except Exception as e:
         logging.error(f"Erro durante a execução: {str(e)}")
     finally:
-        # Usa o caminho absoluto para verificar downloads em progresso
-        tentativa, max_tentativas = 0, int(os.environ.get("MAX_TENTATIVAS", 10))
-        
         # Aguarda downloads em andamento concluírem
+        max_tentativas = int(os.environ.get("MAX_TENTATIVAS", 10))
+        tentativa = 0
+        
         while verificar_downloads_em_progresso(diretorio_downloads) and tentativa < max_tentativas:
             time.sleep(2)
             tentativa += 1
@@ -192,19 +188,9 @@ def executar_processo_downloads():
             navegador.quit()
             
         logging.info("Processo de download finalizado")
-            # Depois que todos os downloads forem concluídos
-        logging.info("Verificando arquivos baixados...")
-        if os.path.exists(diretorio_downloads):
-            arquivos = os.listdir(diretorio_downloads)
-            logging.info(f"Arquivos encontrados no diretório de downloads: {len(arquivos)}")
-            for arquivo in arquivos[:5]:  # Mostrar até 5 arquivos como exemplo
-                logging.info(f"Arquivo na pasta de downloads: {arquivo}")
-        else:
-            logging.warning(f"Diretório de downloads não existe: {diretorio_downloads}")
     
 if __name__ == "__main__":
     logging.info("=" * 80)
     logging.info("INICIANDO PROCESSO DE DOWNLOAD DE ARQUIVOS XML")
     logging.info("=" * 80)
     executar_processo_downloads()
-    
