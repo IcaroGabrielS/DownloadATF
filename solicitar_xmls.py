@@ -21,26 +21,27 @@ console_handler = logging.StreamHandler()
 console_handler.setFormatter(log_formatter)
 logging.getLogger().addHandler(console_handler)
 
-def obter_solicitacoes_pendentes():
-    """Busca solicitações pendentes no banco de dados PostgreSQL"""
+def obter_solicitacoes_pendentes(limite=20):
+    """Busca solicitações pendentes no banco de dados PostgreSQL com limite"""
     solicitacoes_pendentes = []
     max_tentativas = int(os.environ.get('MAX_TENTATIVAS', 3))
-    
+
     conexao = conectar_postgres()
     if not conexao:
         logging.error("Falha ao conectar ao PostgreSQL")
         return []
-    
+
     try:
         cursor = conexao.cursor()
-        # Busca solicitações com contador de tentativas = 0
+        # Busca solicitações com contador de tentativas = 0, COM LIMITE
         cursor.execute("""
-            SELECT id, inscricao_estadual, data_ini, data_fim 
-            FROM solicitacoes 
+            SELECT id, inscricao_estadual, data_ini, data_fim
+            FROM solicitacoes
             WHERE solicitado = 0 AND tipo = 'NFCE'
             ORDER BY data_solicitacao
-        """)
-        
+            LIMIT %s
+        """, (limite,))
+
         for id, inscricao_estadual, data_ini, data_fim in cursor.fetchall():
             solicitacoes_pendentes.append({
                 "id": id,
@@ -48,13 +49,13 @@ def obter_solicitacoes_pendentes():
                 "data_ini": data_ini,
                 "data_fim": data_fim
             })
-        
+
         cursor.close()
         conexao.close()
-        
-        logging.info(f"Encontradas {len(solicitacoes_pendentes)} solicitações pendentes")
+
+        logging.info(f"Encontradas {len(solicitacoes_pendentes)} solicitações pendentes (limitado a {limite})")
         return solicitacoes_pendentes
-        
+
     except Exception as erro:
         logging.error(f"Erro ao obter solicitações pendentes: {erro}")
         if conexao:
@@ -67,23 +68,23 @@ def atualizar_solicitacao(id_solicitacao, horario):
     if not conexao:
         logging.error(f"Falha ao conectar ao PostgreSQL para atualizar solicitação {id_solicitacao}")
         return False
-    
+
     try:
         cursor = conexao.cursor()
-        
+
         cursor.execute("""
-            UPDATE solicitacoes 
+            UPDATE solicitacoes
             SET solicitado = solicitado + 1, horario = %s, atualizado_em = CURRENT_TIMESTAMP
             WHERE id = %s
         """, (horario, id_solicitacao))
-        
+
         conexao.commit()
         cursor.close()
         conexao.close()
-        
+
         logging.info(f"Solicitação {id_solicitacao} atualizada com sucesso")
         return True
-        
+
     except Exception as erro:
         logging.error(f"Erro ao atualizar solicitação: {erro}")
         if conexao:
@@ -126,13 +127,13 @@ def solicitar_nfce(navegador, solicitacao, espera=2):
         inserir_datas_formulario(navegador, solicitacao["data_ini"], solicitacao["data_fim"], espera)
         preencher_campo_iframe(navegador, solicitacao["inscricao_estadual"], espera)
         selecionar_xml_executar(navegador, espera)
-        
+
         # Capturar data/hora atual
         horario = datetime.now()
-        
+
         # Atualizar banco de dados
         sucesso = atualizar_solicitacao(solicitacao["id"], horario)
-        
+
         # Esperar download iniciar
         time.sleep(10)
         return sucesso
@@ -140,39 +141,40 @@ def solicitar_nfce(navegador, solicitacao, espera=2):
         logging.error(f"Erro ao solicitar NFCE para IE {solicitacao['inscricao_estadual']}: {e}")
         return False
 
-def executar_processo_requests_nfce():
+def executar_processo_requests_nfce(limite=20):
     """Executa o processo de solicitação de XMLs para todas as solicitações pendentes"""
-    solicitacoes = obter_solicitacoes_pendentes()
-    
+    # Usa o parâmetro de limite
+    solicitacoes = obter_solicitacoes_pendentes(limite)
+
     if not solicitacoes:
         logging.info("Não há solicitações pendentes para processar")
         return
-    
+
     logging.info(f"Iniciando solicitações de NFC-e para {len(solicitacoes)} registros...")
     navegador = None
-    
+
     try:
         # Substitui a inicialização do Firefox pelo Selenoid
         browser_type = os.environ.get("SELENOID_BROWSER", "chrome")
         navegador = iniciar_navegador_selenoid(browser_type=browser_type)
-        
+
         if navegador and autenticar_sefaz(navegador):
             link = os.environ.get('LINK_SEFAZ_NFCE')
             acessar_pagina(navegador, link)
-            
+
             for solicitacao in solicitacoes:
                 if solicitar_nfce(navegador, solicitacao):
                     logging.info(f"Solicitação {solicitacao['id']} processada com sucesso")
                 else:
                     logging.warning(f"Falha ao processar solicitação {solicitacao['id']}")
-                
+
                 # Recarregar página para próxima solicitação
                 acessar_pagina(navegador, link)
-            
+
             logging.info("Processo concluído com sucesso")
         else:
             logging.error("Falha na autenticação ou inicialização do navegador")
-    except Exception as e: 
+    except Exception as e:
         logging.error(f"Erro durante a execução: {e}")
     finally:
         if navegador:
@@ -182,4 +184,8 @@ if __name__ == "__main__":
     logging.info("=" * 80)
     logging.info("INICIANDO PROCESSO DE SOLICITAÇÃO DE ARQUIVOS XML")
     logging.info("=" * 80)
-    executar_processo_requests_nfce()
+    
+    # Obter limite de solicitações do ambiente ou usar padrão
+    limite_solicitacoes = int(os.environ.get("LIMITE_SOLICITACOES", 20))
+    logging.info(f"Processando com limite de {limite_solicitacoes} solicitações")
+    executar_processo_requests_nfce(limite_solicitacoes)
