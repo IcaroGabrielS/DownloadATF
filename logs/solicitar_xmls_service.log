@@ -204,3 +204,24 @@
 2025-04-30 17:46:12,103 - INFO - Solicitação 121 processada com sucesso
 2025-04-30 17:46:12,104 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
 2025-04-30 17:46:13,365 - INFO - Solicitando NFC-e para IE: 164434003
+2025-04-30 17:46:31,790 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-30 17:46:31,807 - INFO - Solicitação 123 atualizada com sucesso
+2025-04-30 17:46:41,808 - INFO - Solicitação 123 processada com sucesso
+2025-04-30 17:46:41,809 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-30 17:46:43,513 - INFO - Solicitando NFC-e para IE: 163894787
+2025-04-30 17:47:01,503 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-30 17:47:01,517 - INFO - Solicitação 124 atualizada com sucesso
+2025-04-30 17:47:11,518 - INFO - Solicitação 124 processada com sucesso
+2025-04-30 17:47:11,518 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-30 17:47:12,713 - INFO - Solicitando NFC-e para IE: 161704581
+2025-04-30 17:47:31,818 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-30 17:47:31,825 - INFO - Solicitação 127 atualizada com sucesso
+2025-04-30 17:47:41,826 - INFO - Solicitação 127 processada com sucesso
+2025-04-30 17:47:41,826 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-30 17:47:43,145 - INFO - Solicitando NFC-e para IE: 164298460
+2025-04-30 17:48:01,360 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-30 17:48:01,373 - INFO - Solicitação 139 atualizada com sucesso
+2025-04-30 17:48:11,374 - INFO - Solicitação 139 processada com sucesso
+2025-04-30 17:48:11,375 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-30 17:48:12,456 - INFO - Processo concluído: 20 solicitações processadas com sucesso
+2025-04-30 17:48:12,457 - INFO - Ciclo 2 concluído - 20 solicitações processadas
