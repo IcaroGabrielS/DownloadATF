@@ -318,3 +318,72 @@
 2025-04-28 18:59:11,622 - INFO - Solicitação 57 processada com sucesso
 2025-04-28 18:59:11,623 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
 2025-04-28 18:59:12,866 - INFO - Solicitando NFC-e para IE: 161622003
+2025-04-30 15:40:25,364 - INFO - ================================================================================
+2025-04-30 15:40:25,365 - INFO - INICIANDO PROCESSO DE SOLICITAÇÃO DE ARQUIVOS XML
+2025-04-30 15:40:25,365 - INFO - ================================================================================
+2025-04-30 15:40:25,411 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-30 15:40:25,420 - INFO - Encontradas 250 solicitações pendentes
+2025-04-30 15:40:25,421 - INFO - Iniciando solicitações de NFC-e para 250 registros...
+2025-04-30 15:40:25,421 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-30 15:40:25,421 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-30 15:40:29,928 - INFO - Autenticando no SEFAZ
+2025-04-30 15:40:34,467 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-30 15:40:36,120 - INFO - Autenticação bem-sucedida
+2025-04-30 15:40:36,124 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-30 15:40:39,502 - INFO - Solicitando NFC-e para IE: 161501052
+2025-04-30 15:56:29,496 - INFO - ================================================================================
+2025-04-30 15:56:29,497 - INFO - INICIANDO PROCESSO DE SOLICITAÇÃO DE ARQUIVOS XML
+2025-04-30 15:56:29,497 - INFO - ================================================================================
+2025-04-30 15:56:29,498 - INFO - Processando com limite de 20 solicitações
+2025-04-30 15:56:29,544 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-30 15:56:29,552 - INFO - Encontradas 20 solicitações pendentes (limitado a 20)
+2025-04-30 15:56:29,552 - INFO - Iniciando solicitações de NFC-e para 20 registros...
+2025-04-30 15:56:29,553 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-30 15:56:29,553 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-30 15:56:34,223 - INFO - Autenticando no SEFAZ
+2025-04-30 15:56:34,238 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-30 15:56:36,018 - INFO - Autenticação bem-sucedida
+2025-04-30 15:56:36,019 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-30 15:56:39,403 - INFO - Solicitando NFC-e para IE: 164311505
+2025-04-30 15:57:41,037 - INFO - ================================================================================
+2025-04-30 15:57:41,038 - INFO - INICIANDO PROCESSO DE SOLICITAÇÃO DE ARQUIVOS XML
+2025-04-30 15:57:41,039 - INFO - ================================================================================
+2025-04-30 15:57:41,040 - INFO - Processando com limite de 2 solicitações
+2025-04-30 15:57:41,091 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-30 15:57:41,098 - INFO - Encontradas 2 solicitações pendentes (limitado a 2)
+2025-04-30 15:57:41,098 - INFO - Iniciando solicitações de NFC-e para 2 registros...
+2025-04-30 15:57:41,099 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-30 15:57:41,099 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-30 15:57:45,646 - INFO - Autenticando no SEFAZ
+2025-04-30 15:57:45,660 - INFO - Conexão ao MySQL estabelecida com sucesso
+2025-04-30 15:57:46,858 - INFO - Autenticação bem-sucedida
+2025-04-30 15:57:46,860 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-30 15:57:50,502 - INFO - Solicitando NFC-e para IE: 162565364
+2025-04-30 15:58:01,927 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-30 15:58:01,938 - INFO - Solicitação 97 atualizada com sucesso
+2025-04-30 15:58:11,939 - INFO - Solicitação 97 processada com sucesso
+2025-04-30 15:58:11,939 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-30 15:58:13,127 - INFO - Solicitando NFC-e para IE: 160880840
+2025-04-30 15:58:31,370 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-30 15:58:31,378 - INFO - Solicitação 98 atualizada com sucesso
+2025-04-30 15:58:41,379 - INFO - Solicitação 98 processada com sucesso
+2025-04-30 15:58:41,380 - INFO - Acessando página: https://www4.sefaz.pb.gov.br/atf/fis/FISf_ConsultaGenericaEmitenteNFCe.do?limparSessao=true
+2025-04-30 15:58:42,489 - INFO - Processo concluído com sucesso
+2025-04-30 16:29:31,290 - INFO - ================================================================================
+2025-04-30 16:29:31,290 - INFO - INICIANDO PROCESSO DE SOLICITAÇÃO DE ARQUIVOS XML
+2025-04-30 16:29:31,290 - INFO - ================================================================================
+2025-04-30 16:29:31,291 - INFO - Processando com limite de 20 solicitações
+2025-04-30 16:29:31,322 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-30 16:29:31,327 - INFO - Encontradas 20 solicitações pendentes (limitado a 20)
+2025-04-30 16:29:31,328 - INFO - Iniciando solicitações de NFC-e para 20 registros...
+2025-04-30 16:29:31,329 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-30 16:29:31,329 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
+2025-04-30 16:29:41,164 - INFO - ================================================================================
+2025-04-30 16:29:41,165 - INFO - INICIANDO PROCESSO DE SOLICITAÇÃO DE ARQUIVOS XML
+2025-04-30 16:29:41,165 - INFO - ================================================================================
+2025-04-30 16:29:41,165 - INFO - Processando com limite de 20 solicitações
+2025-04-30 16:29:41,202 - INFO - Conexão ao PostgreSQL estabelecida com sucesso
+2025-04-30 16:29:41,209 - INFO - Encontradas 20 solicitações pendentes (limitado a 20)
+2025-04-30 16:29:41,209 - INFO - Iniciando solicitações de NFC-e para 20 registros...
+2025-04-30 16:29:41,210 - INFO - Iniciando navegador chrome com Selenoid
+2025-04-30 16:29:41,210 - INFO - Conectando ao Selenoid em: http://localhost:4444/wd/hub
